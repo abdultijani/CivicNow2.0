@@ -78,12 +78,10 @@ header {
 .logo { display: flex; align-items: center; flex-shrink: 0; }
 
 .logo-img {
-    border-radius: 10%;
   height: 46px;
   width: auto;
   transition: opacity .2s, transform .2s;
   filter: drop-shadow(0 1px 4px rgba(0,0,0,.25));
-
 }
 
 .logo-img:hover { opacity: .9; transform: scale(1.02); }
@@ -177,29 +175,37 @@ header {
    HOMEPAGE HERO
 ══════════════════════════════════════════ */
 .home-hero {
-  background: linear-gradient(145deg, #001730 0%, var(--navy) 40%, #0d3a70 75%, #1a5090 100%);
-  position: relative;
+  background: url('mass.jpeg') center top / cover no-repeat;
+  position:relative;
   overflow: hidden;
-  padding: 88px 28px 68px;
+  padding: 88px 18px 68px;
 }
 
+/* Dark gradient overlay — heavy at top for text legibility, lightens toward bottom */
 .home-hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 600px 400px at 85% 20%, rgba(201,162,39,.1) 0%, transparent 60%),
-    radial-gradient(ellipse 400px 500px at 10% 80%, rgba(58,125,68,.12) 0%, transparent 60%);
+    linear-gradient(
+      160deg,
+      rgba(0,21,48,.90) 0%,
+      rgba(0,33,71,.84) 38%,
+      rgba(0,33,71,.68) 68%,
+      rgba(0,20,50,.75) 100%
+    ),
+    radial-gradient(ellipse 600px 400px at 85% 15%, rgba(201,162,39,.11) 0%, transparent 55%);
   pointer-events: none;
 }
 
+/* Subtle grid texture */
 .home-hero::after {
   content: '';
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
   background-size: 48px 48px;
   pointer-events: none;
 }
@@ -391,7 +397,7 @@ header {
 
 .how-icon-wrap {
   width: 100%;
-  height: 238px;
+  height: 148px;
   overflow: hidden;
   background: var(--bg-alt);
 }
