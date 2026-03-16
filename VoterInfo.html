@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicNow | Voter Info</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="64x64" href="favicon-64.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="VoterInfo.css" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <a href="index.html"><div class="logo"><img src="wavcon.png" alt="CivicNow" class="logo-img" /></div></a>
+    <nav class="main-nav">
+      <a href="FindReps.html"><div class="nav-box">Find Representatives</div></a>
+      <a href="VoterInfo.html" class="active"><div class="nav-box">Voter Information</div></a>
+      <a href="About.html"><div class="nav-box">About</div></a>
+      <a href="FAQs.html"><div class="nav-box">FAQs</div></a>
+    </nav>
+  </div>
+</header>
+
+<!-- NEUTRALITY BANNER -->
+<div class="neutrality">
+  <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  </svg>
+  CivicNow does not endorse, support, or oppose any candidate or political party.
+</div>
+
+<!-- HERO -->
+<section class="vi-hero">
+  <div class="vi-hero-inner">
+    <div class="vi-hero-text">
+      <h1>Massachusetts Voter Information</h1>
+      <p>Every election. Every deadline. Everything you need to make your voice heard in 2026.</p>
+      <div class="vi-hero-actions">
+        <a href="https://www.sec.state.ma.us/ovr/" target="_blank" rel="noopener" class="vi-btn vi-btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Register to Vote
+        </a>
+        <a href="https://www.sec.state.ma.us/wheredoivotema/" target="_blank" rel="noopener" class="vi-btn vi-btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Find Your Polling Place
+        </a>
+        <a href="https://www.sec.state.ma.us/VoterRegistrationSearch/MyVoterRegStatus.aspx" target="_blank" rel="noopener" class="vi-btn vi-btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          Check Registration Status
+        </a>
+      </div>
+    </div>
+    <div class="vi-hero-stat-row">
+      <div class="vi-stat">
+        <div class="vi-stat-date">Sep 1</div>
+        <div class="vi-stat-label">State Primary 2026</div>
+      </div>
+      <div class="vi-stat-divider"></div>
+      <div class="vi-stat">
+        <div class="vi-stat-date">Nov 3</div>
+        <div class="vi-stat-label">General Election 2026</div>
+      </div>
+      <div class="vi-stat-divider"></div>
+      <div class="vi-stat">
+        <div class="vi-stat-date">10 days</div>
+        <div class="vi-stat-label">Before any election to register</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+  <!-- QUICK NAV -->
+  <nav class="vi-quicknav reveal" aria-label="Jump to section">
+    <a href="#calendar">📅 Election Calendar</a>
+    <a href="#register">📋 How to Register</a>
+    <a href="#polling">📍 Polling & Voting</a>
+    <a href="#candidates">🗳 Candidates</a>
+    <a href="#votebymail">✉ Vote by Mail</a>
+    <a href="#resources">🔗 Resources</a>
+  </nav>
+
+  <!-- ══════════════════════
+       ELECTION CALENDAR
+  ══════════════════════ -->
+  <section id="calendar" class="vi-section reveal">
+
+    <div class="vi-section-header">
+      <span class="vi-badge vi-badge-primary">2026</span>
+      <h2>Election Calendar</h2>
+      <div class="vi-divider"></div>
+    </div>
+
+    <!-- Filter chips -->
+    <div class="vi-filter-row">
+      <button class="vi-filter-chip vi-chip-active" data-filter="all" onclick="filterElections(this)">All Elections</button>
+      <button class="vi-filter-chip" data-filter="special" onclick="filterElections(this)">Special Elections</button>
+      <button class="vi-filter-chip" data-filter="primary" onclick="filterElections(this)">Primary</button>
+      <button class="vi-filter-chip" data-filter="general" onclick="filterElections(this)">General</button>
+      <button class="vi-filter-chip" data-filter="local" onclick="filterElections(this)">Town / Local</button>
+    </div>
+
+    <div class="vi-election-list" id="electionList">
+
+      <!-- Special Election — 1st Middlesex Senate -->
+      <div class="vi-election-card reveal" data-type="special">
+        <div class="vi-election-badge vi-badge-special">Special Election</div>
+        <div class="vi-election-body">
+          <div class="vi-election-main">
+            <div class="vi-election-date-block">
+              <div class="vi-date-month">MAR</div>
+              <div class="vi-date-day">3</div>
+              <div class="vi-date-year">2026</div>
+            </div>
+            <div class="vi-election-info">
+              <h3>State Senate — 1st Middlesex District</h3>
+              <p class="vi-election-meta">Special Election · Middlesex County</p>
+              <p class="vi-election-desc">Fill the seat vacated in the 1st Middlesex Senate District. Covers communities including Billerica, Lowell, and Tyngsborough.</p>
+              <div class="vi-deadline-row">
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <strong>Register by:</strong> Feb 21, 2026
+                </div>
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <strong>Polls open:</strong> 7 am – 8 pm
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi-election-actions">
+            <a href="https://www.sec.state.ma.us/divisions/elections/recent-updates/upcoming-elections.htm" target="_blank" rel="noopener" class="vi-action-btn">Election Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Special Election — 5th Essex House -->
+      <div class="vi-election-card reveal" data-type="special">
+        <div class="vi-election-badge vi-badge-special">Special Election</div>
+        <div class="vi-election-body">
+          <div class="vi-election-main">
+            <div class="vi-election-date-block">
+              <div class="vi-date-month">APR</div>
+              <div class="vi-date-day">1</div>
+              <div class="vi-date-year">2026</div>
+            </div>
+            <div class="vi-election-info">
+              <h3>State House — 5th Essex District</h3>
+              <p class="vi-election-meta">Special Election · Essex County</p>
+              <p class="vi-election-desc">Fill the vacant seat in the 5th Essex Representative District, covering communities on the North Shore.</p>
+              <div class="vi-deadline-row">
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <strong>Register by:</strong> Mar 21, 2026
+                </div>
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <strong>Polls open:</strong> 7 am – 8 pm
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi-election-actions">
+            <a href="https://www.sec.state.ma.us/divisions/elections/recent-updates/upcoming-elections.htm" target="_blank" rel="noopener" class="vi-action-btn">Election Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- State Primary -->
+      <div class="vi-election-card vi-election-card--featured reveal" data-type="primary">
+        <div class="vi-election-badge vi-badge-primary">State Primary</div>
+        <div class="vi-election-body">
+          <div class="vi-election-main">
+            <div class="vi-election-date-block vi-date-featured">
+              <div class="vi-date-month">SEP</div>
+              <div class="vi-date-day">1</div>
+              <div class="vi-date-year">2026</div>
+            </div>
+            <div class="vi-election-info">
+              <h3>Massachusetts State Primary</h3>
+              <p class="vi-election-meta">Primary Election · All registered voters · Statewide</p>
+              <p class="vi-election-desc">Democratic and Republican primaries for U.S. Senate, all 9 U.S. House seats, all 160 State House seats, all 40 State Senate seats, and statewide offices including Governor and Attorney General.</p>
+              <div class="vi-offices-on-ballot">
+                <span class="vi-office-chip">U.S. Senate</span>
+                <span class="vi-office-chip">U.S. House (9 seats)</span>
+                <span class="vi-office-chip">State Senate (40 seats)</span>
+                <span class="vi-office-chip">State House (160 seats)</span>
+                <span class="vi-office-chip">Governor</span>
+                <span class="vi-office-chip">Attorney General</span>
+                <span class="vi-office-chip">+ Other Statewide</span>
+              </div>
+              <div class="vi-deadline-row">
+                <div class="vi-deadline vi-deadline--urgent">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <strong>Register by:</strong> Aug 22, 2026
+                </div>
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <strong>Polls open:</strong> 7 am – 8 pm
+                </div>
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                  <strong>Vote by mail deadline:</strong> Sep 3, 2026
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi-election-actions">
+            <a href="https://www.sec.state.ma.us/ovr/" target="_blank" rel="noopener" class="vi-action-btn vi-action-btn--primary">Register to Vote →</a>
+            <a href="https://www.sec.state.ma.us/wheredoivotema/" target="_blank" rel="noopener" class="vi-action-btn">Find Your Polling Place →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- General Election -->
+      <div class="vi-election-card vi-election-card--featured reveal" data-type="general">
+        <div class="vi-election-badge vi-badge-general">General Election</div>
+        <div class="vi-election-body">
+          <div class="vi-election-main">
+            <div class="vi-election-date-block vi-date-featured">
+              <div class="vi-date-month">NOV</div>
+              <div class="vi-date-day">3</div>
+              <div class="vi-date-year">2026</div>
+            </div>
+            <div class="vi-election-info">
+              <h3>Massachusetts General Election</h3>
+              <p class="vi-election-meta">General Election · All registered voters · Statewide</p>
+              <p class="vi-election-desc">The main statewide election of 2026. All U.S. House seats, U.S. Senate, State Legislature, Governor, and other statewide offices are on the ballot. This is an election year for all Massachusetts residents.</p>
+              <div class="vi-offices-on-ballot">
+                <span class="vi-office-chip">U.S. Senate</span>
+                <span class="vi-office-chip">U.S. House (9 seats)</span>
+                <span class="vi-office-chip">Governor</span>
+                <span class="vi-office-chip">Lt. Governor</span>
+                <span class="vi-office-chip">Attorney General</span>
+                <span class="vi-office-chip">State Legislature</span>
+                <span class="vi-office-chip">Ballot Questions</span>
+              </div>
+              <div class="vi-deadline-row">
+                <div class="vi-deadline vi-deadline--urgent">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <strong>Register by:</strong> Oct 24, 2026
+                </div>
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <strong>Polls open:</strong> 7 am – 8 pm
+                </div>
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                  <strong>Vote by mail app deadline:</strong> Oct 29, 2026
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi-election-actions">
+            <a href="https://www.sec.state.ma.us/ovr/" target="_blank" rel="noopener" class="vi-action-btn vi-action-btn--primary">Register to Vote →</a>
+            <a href="https://www.sec.state.ma.us/wheredoivotema/" target="_blank" rel="noopener" class="vi-action-btn">Find Your Polling Place →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Town Elections note -->
+      <div class="vi-election-card reveal" data-type="local">
+        <div class="vi-election-badge vi-badge-local">Town / Local</div>
+        <div class="vi-election-body">
+          <div class="vi-election-main">
+            <div class="vi-election-date-block">
+              <div class="vi-date-month">VARIES</div>
+              <div class="vi-date-day">—</div>
+              <div class="vi-date-year">2026</div>
+            </div>
+            <div class="vi-election-info">
+              <h3>Town &amp; Municipal Elections</h3>
+              <p class="vi-election-meta">Local Elections · Date varies by municipality</p>
+              <p class="vi-election-desc">Massachusetts's 351 cities and towns hold their own local elections on varying dates throughout the year. Town elections may include Select Board members, School Committee, mayor, city council, town meeting members, and local ballot questions. Check with your city or town clerk for your specific election date and candidate list.</p>
+              <div class="vi-deadline-row">
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <strong>Register by:</strong> 10 days before your local election
+                </div>
+                <div class="vi-deadline">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <strong>Polls open:</strong> 7 am – 8 pm (most towns)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vi-election-actions">
+            <a href="https://www.sec.state.ma.us/CalendarWeb/Pages/MonthWeekCalendar.aspx" target="_blank" rel="noopener" class="vi-action-btn">MA Elections Calendar →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════
+       HOW TO REGISTER
+  ══════════════════════ -->
+  <section id="register" class="vi-section reveal">
+
+    <div class="vi-section-header">
+      <span class="vi-badge vi-badge-green">Registration</span>
+      <h2>How to Register</h2>
+      <div class="vi-divider"></div>
+    </div>
+
+    <div class="vi-reg-eligibility reveal">
+      <h3>Are you eligible?</h3>
+      <div class="vi-eligibility-grid">
+        <div class="vi-eligibility-item vi-eligible">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          U.S. Citizen
+        </div>
+        <div class="vi-eligibility-item vi-eligible">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Massachusetts resident
+        </div>
+        <div class="vi-eligibility-item vi-eligible">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          18 years old on or before Election Day
+        </div>
+        <div class="vi-eligibility-item vi-eligible">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Not currently incarcerated for a felony
+        </div>
+        <div class="vi-eligibility-item vi-preregister">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          16–17 year-olds can <strong>pre-register</strong> now
+        </div>
+      </div>
+    </div>
+
+    <div class="vi-reg-methods reveal">
+      <div class="vi-reg-card">
+        <div class="vi-reg-icon vi-icon-online">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h3>Online</h3>
+        <p>Fastest option. You need a valid MA driver's license, learner's permit, or state ID with a signature on file at the RMV.</p>
+        <p class="vi-reg-deadline">Deadline: 11:59 pm on the registration deadline date</p>
+        <a href="https://www.sec.state.ma.us/ovr/" target="_blank" rel="noopener" class="vi-action-btn vi-action-btn--primary">Register Online →</a>
+      </div>
+
+      <div class="vi-reg-card">
+        <div class="vi-reg-icon vi-icon-mail">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3>By Mail</h3>
+        <p>Print, fill out, sign, and mail the form to your city or town clerk. Must be <strong>postmarked</strong> by the registration deadline.</p>
+        <p class="vi-reg-deadline">Deadline: Postmarked 10 days before election</p>
+        <a href="https://www.sec.state.ma.us/divisions/elections/voter-resources/registering-to-vote.htm" target="_blank" rel="noopener" class="vi-action-btn">Download Form →</a>
+      </div>
+
+      <div class="vi-reg-card">
+        <div class="vi-reg-icon vi-icon-person">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>In Person</h3>
+        <p>Visit your local city or town clerk's office. If you're a newly naturalized citizen after the deadline, you may register in person up to 4 pm the day before the election.</p>
+        <p class="vi-reg-deadline">Deadline: 10 days before election (4 pm)</p>
+        <a href="https://www.sec.state.ma.us/divisions/elections/voter-resources/registering-to-vote.htm" target="_blank" rel="noopener" class="vi-action-btn">Find Your Clerk →</a>
+      </div>
+
+      <div class="vi-reg-card">
+        <div class="vi-reg-icon vi-icon-auto">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3>Automatic Registration</h3>
+        <p>Massachusetts automatically registers eligible voters when they interact with the RMV, MassHealth, or the Health Connector — no extra steps needed.</p>
+        <p class="vi-reg-deadline">Happens automatically at RMV, MassHealth &amp; Health Connector</p>
+        <a href="https://www.mass.gov/info-details/automatic-voter-registration" target="_blank" rel="noopener" class="vi-action-btn">Learn More →</a>
+      </div>
+    </div>
+
+    <!-- Key deadlines callout -->
+    <div class="vi-deadlines-box reveal">
+      <h3>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        2026 Registration Deadlines
+      </h3>
+      <div class="vi-deadlines-grid">
+        <div class="vi-deadline-item">
+          <div class="vi-dl-event">Special Primary — 1st Middlesex Senate</div>
+          <div class="vi-dl-date">Feb 21, 2026</div>
+        </div>
+        <div class="vi-deadline-item">
+          <div class="vi-dl-event">Special Election — 5th Essex House</div>
+          <div class="vi-dl-date">Mar 21, 2026</div>
+        </div>
+        <div class="vi-deadline-item vi-dl-highlight">
+          <div class="vi-dl-event">State Primary</div>
+          <div class="vi-dl-date">Aug 22, 2026</div>
+        </div>
+        <div class="vi-deadline-item vi-dl-highlight">
+          <div class="vi-dl-event">General Election</div>
+          <div class="vi-dl-date">Oct 24, 2026</div>
+        </div>
+      </div>
+      <p class="vi-deadlines-note">The deadline is always 10 days before any election or town meeting. Unenrolled voters may choose any party's primary ballot on Election Day.</p>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════
+       POLLING & VOTING
+  ══════════════════════ -->
+  <section id="polling" class="vi-section reveal">
+
+    <div class="vi-section-header">
+      <span class="vi-badge vi-badge-local">Polling</span>
+      <h2>Polling Locations &amp; Voting Hours</h2>
+      <div class="vi-divider"></div>
+    </div>
+
+    <div class="vi-polling-lookup reveal">
+      <div class="vi-polling-lookup-inner">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A227" stroke-width="1.5">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        <div>
+          <h3>Find Your Polling Location</h3>
+          <p>Your polling place is assigned based on your registered address and may change between elections. Always confirm your location before Election Day.</p>
+        </div>
+        <a href="https://www.sec.state.ma.us/wheredoivotema/" target="_blank" rel="noopener" class="vi-btn vi-btn-primary">Find Polling Place →</a>
+      </div>
+    </div>
+
+    <div class="vi-info-cards reveal">
+      <div class="vi-info-card">
+        <div class="vi-info-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Polling Hours</h3>
+        <p>Polls are open <strong>7:00 am to 8:00 pm</strong> on Election Day for all state and federal elections. If you are in line by 8:00 pm, you are entitled to vote.</p>
+      </div>
+      <div class="vi-info-card">
+        <div class="vi-info-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        </div>
+        <h3>What to Bring</h3>
+        <p>First-time voters may be asked for ID. Accepted forms include a current MA driver's license, state ID, utility bill, bank statement, or any government document showing your name and address.</p>
+      </div>
+      <div class="vi-info-card">
+        <div class="vi-info-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        </div>
+        <h3>How Voting Works</h3>
+        <p>Massachusetts uses optical-scan paper ballots. You fill in the oval next to your choices with a pen or marker, then feed the ballot into a scanner. Results are auditable and verifiable.</p>
+      </div>
+      <div class="vi-info-card">
+        <div class="vi-info-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3>Accessibility</h3>
+        <p>All Massachusetts polling places are required to be accessible to voters with disabilities. Accessible voting machines and assistance are available at every location. Contact your local clerk for accommodations.</p>
+      </div>
+      <div class="vi-info-card">
+        <div class="vi-info-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h3>Provisional Ballots</h3>
+        <p>If your name is not on the voter list, you can cast a provisional ballot. Election officials will verify your eligibility after the election. Call 1-800-462-VOTE (8683) to check if your ballot was counted.</p>
+      </div>
+      <div class="vi-info-card">
+        <div class="vi-info-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Early Voting</h3>
+        <p>Massachusetts offers in-person early voting at designated locations in every city and town in the weeks before state primary and general elections. Check your local city or town clerk for early voting dates and locations.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════
+       CANDIDATES
+  ══════════════════════ -->
+  <section id="candidates" class="vi-section reveal">
+
+    <div class="vi-section-header">
+      <span class="vi-badge vi-badge-federal">Candidates</span>
+      <h2>Who's Running in 2026</h2>
+      <div class="vi-divider"></div>
+    </div>
+
+    <p class="vi-section-intro">Below are the major races confirmed for 2026. Candidate lists are updated as filings are confirmed. CivicNow presents candidates from all parties without endorsement.</p>
+
+    <!-- U.S. Senate Race -->
+    <div class="vi-race-block reveal">
+      <div class="vi-race-header">
+        <span class="vi-race-badge vi-badge-federal">Federal</span>
+        <h3>U.S. Senate — Massachusetts</h3>
+        <span class="vi-race-date">Primary: Sep 1 · General: Nov 3, 2026</span>
+      </div>
+      <div class="vi-candidate-grid">
+
+        <div class="vi-race-party-col">
+          <div class="vi-party-label vi-party-dem">Democratic Primary</div>
+          <div class="vi-candidate-card">
+            <div class="vi-cand-name">Ed Markey</div>
+            <div class="vi-cand-title">Incumbent U.S. Senator (2013–present)</div>
+            <div class="vi-cand-note">Running for third full term. Author of the Green New Deal resolution.</div>
+            <a href="https://www.markey.senate.gov" target="_blank" rel="noopener" class="vi-cand-link">markey.senate.gov →</a>
+          </div>
+          <div class="vi-candidate-card">
+            <div class="vi-cand-name">Seth Moulton</div>
+            <div class="vi-cand-title">U.S. Representative, MA-6 (2015–present)</div>
+            <div class="vi-cand-note">Primary challenger to Markey. Marine veteran, former presidential candidate.</div>
+            <a href="https://moulton.house.gov" target="_blank" rel="noopener" class="vi-cand-link">moulton.house.gov →</a>
+          </div>
+          <div class="vi-candidate-card vi-cand-other">
+            <div class="vi-cand-name">+ Additional candidates</div>
+            <div class="vi-cand-note">Additional Democratic candidates may appear on the ballot. Check with the Secretary of State for the complete certified candidate list.</div>
+          </div>
+        </div>
+
+        <div class="vi-race-party-col">
+          <div class="vi-party-label vi-party-rep">Republican Primary</div>
+          <div class="vi-candidate-card">
+            <div class="vi-cand-name">Charlie Baker</div>
+            <div class="vi-cand-title">Former Governor of Massachusetts (2015–2023), current NCAA President</div>
+            <div class="vi-cand-note">Potential Republican candidate. Has been discussed but has not formally declared as of early 2026.</div>
+          </div>
+          <div class="vi-candidate-card vi-cand-other">
+            <div class="vi-cand-name">Additional candidates TBD</div>
+            <div class="vi-cand-note">Republican and Independent filings continue through the summer. See the official candidate list for the most current information.</div>
+            <a href="https://www.sec.state.ma.us/divisions/elections/recent-updates/candidate-lists.htm" target="_blank" rel="noopener" class="vi-cand-link">Official Candidate List →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- U.S. House Races -->
+    <div class="vi-race-block reveal">
+      <div class="vi-race-header">
+        <span class="vi-race-badge vi-badge-federal">Federal</span>
+        <h3>U.S. House of Representatives — All 9 Massachusetts Districts</h3>
+        <span class="vi-race-date">Primary: Sep 1 · General: Nov 3, 2026</span>
+      </div>
+
+      <div class="vi-house-grid">
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-01 · Western MA</div>
+          <div class="vi-district-incumbent">Richard Neal (D) — Incumbent</div>
+          <div class="vi-district-area">Springfield, Pittsfield, Holyoke, Northampton area</div>
+        </div>
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-02 · Central MA</div>
+          <div class="vi-district-incumbent">Jim McGovern (D) — Incumbent</div>
+          <div class="vi-district-area">Worcester, Fitchburg, Leominster area</div>
+        </div>
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-03 · Northeast</div>
+          <div class="vi-district-incumbent">Lori Trahan (D) — Incumbent</div>
+          <div class="vi-district-area">Lowell, Lawrence, Haverhill area</div>
+        </div>
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-04 · Metro South</div>
+          <div class="vi-district-incumbent">Jake Auchincloss (D) — Incumbent</div>
+          <div class="vi-district-area">Newton, Attleboro, Fall River area</div>
+        </div>
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-05 · MetroWest</div>
+          <div class="vi-district-incumbent">Katherine Clark (D) — Incumbent</div>
+          <div class="vi-district-area">Framingham, Waltham, Lexington area</div>
+        </div>
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-06 · North Shore</div>
+          <div class="vi-district-incumbent">Open Seat — Seth Moulton running for Senate</div>
+          <div class="vi-district-area">Salem, Gloucester, Beverly, Lynn area</div>
+        </div>
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-07 · Boston / Cambridge</div>
+          <div class="vi-district-incumbent">Ayanna Pressley (D) — Incumbent</div>
+          <div class="vi-district-area">Boston, Cambridge, Somerville area</div>
+        </div>
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-08 · South Shore</div>
+          <div class="vi-district-incumbent">Stephen Lynch (D) — Incumbent</div>
+          <div class="vi-district-area">Quincy, Brockton, Plymouth area</div>
+        </div>
+        <div class="vi-house-district">
+          <div class="vi-district-label">MA-09 · South Coast / Cape</div>
+          <div class="vi-district-incumbent">William Keating (D) — Incumbent</div>
+          <div class="vi-district-area">New Bedford, Cape Cod, Islands area</div>
+        </div>
+      </div>
+
+      <div class="vi-candidates-cta">
+        <p>For certified candidate lists, nomination papers, and filing deadlines, visit the official Massachusetts Elections Division.</p>
+        <a href="https://www.sec.state.ma.us/divisions/elections/recent-updates/candidate-lists.htm" target="_blank" rel="noopener" class="vi-action-btn vi-action-btn--primary">Official Candidate Lists →</a>
+        <a href="https://ballotpedia.org/Massachusetts_elections,_2026" target="_blank" rel="noopener" class="vi-action-btn">Ballotpedia 2026 Guide →</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════
+       VOTE BY MAIL
+  ══════════════════════ -->
+  <section id="votebymail" class="vi-section reveal">
+
+    <div class="vi-section-header">
+      <span class="vi-badge vi-badge-green">Mail Voting</span>
+      <h2>Vote by Mail</h2>
+      <div class="vi-divider"></div>
+    </div>
+
+    <div class="vi-vbm-intro reveal">
+      <div class="vi-vbm-intro-text">
+        <p>Massachusetts offers <strong>unrestricted vote-by-mail</strong> for all registered voters in state primaries and general elections — no excuse required. The state mails applications to all registered voters approximately 45 days before each election.</p>
+      </div>
+    </div>
+
+    <div class="vi-steps reveal">
+      <div class="vi-step">
+        <div class="vi-step-num">1</div>
+        <div class="vi-step-body">
+          <h4>Request Your Ballot</h4>
+          <p>Apply online, by mail, or in person at your city or town clerk's office. Applications are mailed to all registered voters before major elections — or apply any time through the Secretary of State's website.</p>
+          <a href="https://www.sec.state.ma.us/divisions/elections/voter-resources/vote-by-mail.htm" target="_blank" rel="noopener" class="vi-cand-link">Apply for a Mail Ballot →</a>
+        </div>
+      </div>
+      <div class="vi-step">
+        <div class="vi-step-num">2</div>
+        <div class="vi-step-body">
+          <h4>Complete &amp; Return Your Ballot</h4>
+          <p>Mark your choices, seal in the provided envelopes, and return by the deadline. You can mail it, drop it in an official drop box, or return it to your city or town clerk in person. All mail ballots must be received by 8:00 pm on Election Day.</p>
+        </div>
+      </div>
+      <div class="vi-step">
+        <div class="vi-step-num">3</div>
+        <div class="vi-step-body">
+          <h4>Track Your Ballot</h4>
+          <p>After returning your ballot, you can track its status using the Secretary of State's online ballot tracker to confirm it was received and counted.</p>
+          <a href="https://www.sec.state.ma.us/WhereDoIVoteMA/TrackBallot" target="_blank" rel="noopener" class="vi-cand-link">Track Your Ballot →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="vi-vbm-deadlines reveal">
+      <h3>Vote-by-Mail Deadlines</h3>
+      <table class="vi-vbm-table">
+        <thead>
+          <tr>
+            <th>Election</th>
+            <th>Application Deadline</th>
+            <th>Ballot Return Deadline</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Special Primary — 1st Middlesex Senate (Mar 3)</td>
+            <td>Feb 24, 2026</td>
+            <td>8 pm, Mar 3, 2026</td>
+          </tr>
+          <tr class="vi-row-highlight">
+            <td>State Primary (Sep 1)</td>
+            <td>Sep 3, 2026</td>
+            <td>8 pm, Sep 1, 2026</td>
+          </tr>
+          <tr class="vi-row-highlight">
+            <td>General Election (Nov 3)</td>
+            <td>Oct 29, 2026</td>
+            <td>8 pm, Nov 3, 2026</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="vi-table-note">Note: Unenrolled (independent) voters must specify which party's primary ballot they want on their mail ballot application.</p>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════
+       RESOURCES
+  ══════════════════════ -->
+  <section id="resources" class="vi-section reveal">
+
+    <div class="vi-section-header">
+      <span class="vi-badge vi-badge-statewide">Resources</span>
+      <h2>Official Resources</h2>
+      <div class="vi-divider"></div>
+    </div>
+
+    <div class="vi-resources-grid reveal">
+      <a href="https://www.sec.state.ma.us/divisions/elections/elections.htm" target="_blank" rel="noopener" class="vi-resource-card">
+        <div class="vi-resource-icon">🏛</div>
+        <div class="vi-resource-body">
+          <h4>MA Elections Division</h4>
+          <p>Official state elections office. Candidate lists, election results, voter registration, and ballot question information.</p>
+          <span class="vi-resource-url">sec.state.ma.us</span>
+        </div>
+      </a>
+      <a href="https://www.sec.state.ma.us/ovr/" target="_blank" rel="noopener" class="vi-resource-card">
+        <div class="vi-resource-icon">📋</div>
+        <div class="vi-resource-body">
+          <h4>Online Voter Registration</h4>
+          <p>Register to vote, update your address, change your party, or check your registration status.</p>
+          <span class="vi-resource-url">sec.state.ma.us/ovr</span>
+        </div>
+      </a>
+      <a href="https://www.sec.state.ma.us/wheredoivotema/" target="_blank" rel="noopener" class="vi-resource-card">
+        <div class="vi-resource-icon">📍</div>
+        <div class="vi-resource-body">
+          <h4>Find My Polling Place</h4>
+          <p>Enter your address to find your assigned polling location, sample ballot, and local election information.</p>
+          <span class="vi-resource-url">sec.state.ma.us/wheredoivotema</span>
+        </div>
+      </a>
+      <a href="https://www.sec.state.ma.us/divisions/elections/recent-updates/upcoming-elections.htm" target="_blank" rel="noopener" class="vi-resource-card">
+        <div class="vi-resource-icon">📅</div>
+        <div class="vi-resource-body">
+          <h4>Upcoming Elections</h4>
+          <p>Complete calendar of all upcoming elections in Massachusetts including special elections, town elections, and deadlines.</p>
+          <span class="vi-resource-url">sec.state.ma.us</span>
+        </div>
+      </a>
+      <a href="https://www.sec.state.ma.us/divisions/elections/recent-updates/candidate-lists.htm" target="_blank" rel="noopener" class="vi-resource-card">
+        <div class="vi-resource-icon">🗳</div>
+        <div class="vi-resource-body">
+          <h4>Official Candidate Lists</h4>
+          <p>Certified lists of all candidates on the ballot for every race in Massachusetts, updated by the Secretary of State.</p>
+          <span class="vi-resource-url">sec.state.ma.us</span>
+        </div>
+      </a>
+      <a href="https://ballotpedia.org/Massachusetts_elections,_2026" target="_blank" rel="noopener" class="vi-resource-card">
+        <div class="vi-resource-icon">📖</div>
+        <div class="vi-resource-body">
+          <h4>Ballotpedia 2026 Guide</h4>
+          <p>Nonpartisan reference covering all 2026 Massachusetts races, candidate profiles, and issue guides.</p>
+          <span class="vi-resource-url">ballotpedia.org</span>
+        </div>
+      </a>
+      <a href="https://www.vote411.org/massachusetts" target="_blank" rel="noopener" class="vi-resource-card">
+        <div class="vi-resource-icon">🤝</div>
+        <div class="vi-resource-body">
+          <h4>VOTE411 — League of Women Voters</h4>
+          <p>Nonpartisan voter guide with candidate answers to policy questions, election dates, and registration tools.</p>
+          <span class="vi-resource-url">vote411.org</span>
+        </div>
+      </a>
+      <a href="https://www.sec.state.ma.us/CalendarWeb/Pages/MonthWeekCalendar.aspx" target="_blank" rel="noopener" class="vi-resource-card">
+        <div class="vi-resource-icon">🗓</div>
+        <div class="vi-resource-body">
+          <h4>MA Election Calendar</h4>
+          <p>Full month-by-month calendar of all election deadlines, nomination papers, early voting periods, and town meeting dates.</p>
+          <span class="vi-resource-url">sec.state.ma.us</span>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p><a href="#">Privacy Policy</a> · <a href="mailto:info@civicnow.com">Contact Us</a></p>
+  <p>© 2026 CivicNow · Massachusetts Civic Engagement Platform · All Rights Reserved</p>
+</footer>
+
+<script>
+/* ── Election filter chips ── */
+function filterElections(btn) {
+  const filter = btn.dataset.filter;
+  document.querySelectorAll('.vi-filter-chip').forEach(b => b.classList.remove('vi-chip-active'));
+  btn.classList.add('vi-chip-active');
+  document.querySelectorAll('.vi-election-card').forEach(card => {
+    card.style.display = (filter === 'all' || card.dataset.type === filter) ? '' : 'none';
+  });
+}
+
+/* ── Scroll reveal ── */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* ── Active quick nav link as you scroll ── */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.vi-quicknav a');
+
+const navObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove('vi-nav-active'));
+      const active = document.querySelector(`.vi-quicknav a[href="#${entry.target.id}"]`);
+      if (active) active.classList.add('vi-nav-active');
+    }
+  });
+}, { threshold: 0.3 });
+
+sections.forEach(s => navObserver.observe(s));
+
+/* ── Back to top ── */
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('backToTop');
+  if (btn) btn.classList.toggle('back-to-top--visible', window.scrollY > 400);
+});
+</script>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+</body>
+</html>

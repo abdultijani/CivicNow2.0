@@ -1,0 +1,1079 @@
+/* ══════════════════════════════════════════
+   VoterInfo.css — loaded after style.css
+   All tokens match FindReps.css exactly
+══════════════════════════════════════════ */
+
+:root {
+  --vi-navy:      #002147;
+  --vi-gold:      #C9A227;
+  --vi-federal:   #1a5bac;
+  --vi-state:     #2a8c5e;
+  --vi-local:     #b94a1d;
+  --vi-sw:        #4a306d;
+  --vi-green:     #1a7a4a;
+  --vi-bg:        #f5f7fa;
+  --vi-white:     #ffffff;
+  --vi-border:    #dde3ed;
+  --vi-muted:     #5a6478;
+  --vi-text:      #1a1a2e;
+  --vi-radius:    12px;
+  --vi-shadow:    0 4px 16px rgba(0,33,71,.1);
+  --vi-shadow-lg: 0 8px 32px rgba(0,33,71,.18);
+}
+
+/* ══════════════════════════
+   SCROLL REVEAL
+══════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .45s ease, transform .45s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ══════════════════════════
+   HERO
+══════════════════════════ */
+.vi-hero {
+  background: linear-gradient(135deg, #002147 0%, #0a3a6b 60%, #1a5bac 100%);
+  color: #fff;
+  padding: 56px 20px 44px;
+}
+
+.vi-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vi-hero-text h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.vi-hero-text p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.8);
+  margin: 0 0 28px;
+  max-width: 600px;
+}
+
+.vi-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.vi-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s;
+  white-space: nowrap;
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+.vi-btn-primary {
+  background: var(--vi-gold);
+  color: #000;
+  border: 2px solid var(--vi-gold);
+}
+
+.vi-btn-primary:hover { background: #e6b82a; border-color: #e6b82a; color: #000; }
+
+.vi-btn-secondary {
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  border: 2px solid rgba(255,255,255,.4);
+}
+
+.vi-btn-secondary:hover { background: rgba(255,255,255,.25); color: #fff; }
+
+.vi-btn-outline {
+  background: transparent;
+  color: rgba(255,255,255,.85);
+  border: 2px solid rgba(255,255,255,.3);
+}
+
+.vi-btn-outline:hover { background: rgba(255,255,255,.1); color: #fff; }
+
+/* Hero stat row */
+.vi-hero-stat-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 12px;
+  padding: 18px 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.vi-stat { flex: 1; min-width: 120px; text-align: center; }
+
+.vi-stat-date {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--vi-gold);
+  line-height: 1.1;
+}
+
+.vi-stat-label {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,.7);
+  margin-top: 3px;
+  line-height: 1.3;
+}
+
+.vi-stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,.2);
+  flex-shrink: 0;
+}
+
+/* ══════════════════════════
+   QUICK NAV
+══════════════════════════ */
+.vi-quicknav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 40px;
+  padding: 14px 16px;
+  background: var(--vi-white);
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  box-shadow: var(--vi-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 80;
+}
+
+.vi-quicknav a {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vi-muted);
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 20px;
+  transition: all .2s;
+  white-space: nowrap;
+}
+
+.vi-quicknav a:hover,
+.vi-quicknav a.vi-nav-active {
+  background: var(--vi-navy);
+  color: #fff;
+}
+
+/* ══════════════════════════
+   SECTION STRUCTURE
+══════════════════════════ */
+.vi-section {
+  margin-bottom: 64px;
+}
+
+.vi-section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.vi-section-header h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0;
+}
+
+.vi-divider {
+  flex: 1;
+  height: 1px;
+  background: var(--vi-border);
+}
+
+.vi-section-intro {
+  color: var(--vi-muted);
+  font-size: 0.92rem;
+  margin: -10px 0 24px;
+  line-height: 1.6;
+}
+
+/* Badges */
+.vi-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.vi-badge-primary   { background: rgba(26,91,172,.12);  color: var(--vi-federal); }
+.vi-badge-general   { background: rgba(0,33,71,.1);     color: var(--vi-navy); }
+.vi-badge-special   { background: rgba(185,74,29,.12);  color: var(--vi-local); }
+.vi-badge-local     { background: rgba(185,74,29,.12);  color: var(--vi-local); }
+.vi-badge-green     { background: rgba(26,122,74,.12);  color: var(--vi-green); }
+.vi-badge-statewide { background: rgba(74,48,109,.12);  color: var(--vi-sw); }
+.vi-badge-federal   { background: rgba(26,91,172,.12);  color: var(--vi-federal); }
+
+/* ══════════════════════════
+   FILTER CHIPS
+══════════════════════════ */
+.vi-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+.vi-filter-chip {
+  padding: 7px 16px;
+  border: 2px solid var(--vi-border);
+  border-radius: 20px;
+  background: var(--vi-white);
+  color: var(--vi-muted);
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s;
+  touch-action: manipulation;
+}
+
+.vi-filter-chip:hover { border-color: var(--vi-navy); color: var(--vi-navy); }
+
+.vi-chip-active {
+  background: var(--vi-navy) !important;
+  color: #fff !important;
+  border-color: var(--vi-navy) !important;
+}
+
+/* ══════════════════════════
+   ELECTION CARDS
+══════════════════════════ */
+.vi-election-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.vi-election-card {
+  background: var(--vi-white);
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  transition: box-shadow .2s;
+}
+
+.vi-election-card:hover {
+  box-shadow: var(--vi-shadow-lg);
+}
+
+.vi-election-card--featured {
+  border-left: 4px solid var(--vi-gold);
+}
+
+.vi-election-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  display: block;
+}
+
+.vi-badge-special { background: rgba(185,74,29,.08); color: var(--vi-local); }
+.vi-badge-primary { background: rgba(26,91,172,.08); color: var(--vi-federal); }
+.vi-badge-general { background: rgba(0,33,71,.07);   color: var(--vi-navy); }
+.vi-badge-local   { background: rgba(42,140,94,.08); color: var(--vi-state); }
+
+.vi-election-body {
+  padding: 16px 18px 18px;
+}
+
+.vi-election-main {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+/* Date block */
+.vi-election-date-block {
+  background: var(--vi-bg);
+  border: 1px solid var(--vi-border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-align: center;
+  flex-shrink: 0;
+  min-width: 60px;
+}
+
+.vi-date-featured {
+  background: var(--vi-navy);
+  border-color: var(--vi-navy);
+  color: #fff;
+}
+
+.vi-date-month {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--vi-muted);
+  line-height: 1;
+}
+
+.vi-date-featured .vi-date-month { color: rgba(255,255,255,.7); }
+
+.vi-date-day {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  line-height: 1;
+  margin: 2px 0;
+}
+
+.vi-date-featured .vi-date-day { color: var(--vi-gold); }
+
+.vi-date-year {
+  font-size: 0.65rem;
+  color: var(--vi-muted);
+  line-height: 1;
+}
+
+.vi-date-featured .vi-date-year { color: rgba(255,255,255,.6); }
+
+/* Election info */
+.vi-election-info { flex: 1; min-width: 0; }
+
+.vi-election-info h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0 0 4px;
+}
+
+.vi-election-meta {
+  font-size: 0.78rem;
+  color: var(--vi-muted);
+  margin: 0 0 8px;
+}
+
+.vi-election-desc {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+/* Office chips */
+.vi-offices-on-ballot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.vi-office-chip {
+  font-size: 0.68rem;
+  font-weight: 600;
+  background: rgba(26,91,172,.08);
+  color: var(--vi-federal);
+  border: 1px solid rgba(26,91,172,.18);
+  border-radius: 20px;
+  padding: 2px 9px;
+}
+
+/* Deadlines row */
+.vi-deadline-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.vi-deadline {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--vi-muted);
+}
+
+.vi-deadline svg { flex-shrink: 0; opacity: .7; }
+
+.vi-deadline--urgent { color: #b91c1c; font-weight: 600; }
+.vi-deadline--urgent svg { opacity: 1; }
+
+/* Election actions */
+.vi-election-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--vi-border);
+}
+
+.vi-action-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--vi-border);
+  color: var(--vi-navy);
+  background: var(--vi-bg);
+  transition: all .2s;
+  min-height: 40px;
+  touch-action: manipulation;
+}
+
+.vi-action-btn:hover { background: var(--vi-navy); color: #fff; border-color: var(--vi-navy); }
+.vi-action-btn:active { background: var(--vi-navy); color: #fff; }
+
+.vi-action-btn--primary {
+  background: var(--vi-navy);
+  color: #fff;
+  border-color: var(--vi-navy);
+}
+
+.vi-action-btn--primary:hover { background: var(--vi-gold); color: #000; border-color: var(--vi-gold); }
+
+/* ══════════════════════════
+   REGISTRATION
+══════════════════════════ */
+.vi-reg-eligibility {
+  background: var(--vi-white);
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  padding: 20px 22px;
+  margin-bottom: 24px;
+}
+
+.vi-reg-eligibility h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0 0 14px;
+}
+
+.vi-eligibility-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.vi-eligibility-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 8px;
+}
+
+.vi-eligible {
+  background: rgba(26,122,74,.08);
+  color: var(--vi-green);
+}
+
+.vi-eligible svg { stroke: var(--vi-green); }
+
+.vi-preregister {
+  background: rgba(26,91,172,.07);
+  color: var(--vi-federal);
+}
+
+/* Registration method cards */
+.vi-reg-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.vi-reg-card {
+  background: var(--vi-white);
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+  transition: box-shadow .2s;
+}
+
+.vi-reg-card:hover { box-shadow: var(--vi-shadow); }
+
+.vi-reg-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vi-icon-online   { background: rgba(26,91,172,.1);  color: var(--vi-federal); }
+.vi-icon-mail     { background: rgba(42,140,94,.1);  color: var(--vi-state); }
+.vi-icon-person   { background: rgba(74,48,109,.1);  color: var(--vi-sw); }
+.vi-icon-auto     { background: rgba(201,162,39,.12); color: #7a5500; }
+
+.vi-reg-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0;
+}
+
+.vi-reg-card p {
+  font-size: 0.84rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+
+.vi-reg-deadline {
+  font-size: 0.75rem !important;
+  color: var(--vi-muted) !important;
+  background: var(--vi-bg);
+  padding: 6px 10px;
+  border-radius: 6px;
+  border-left: 3px solid var(--vi-gold);
+}
+
+/* Deadlines callout box */
+.vi-deadlines-box {
+  background: var(--vi-navy);
+  color: #fff;
+  border-radius: var(--vi-radius);
+  padding: 24px 26px;
+}
+
+.vi-deadlines-box h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vi-gold);
+  margin: 0 0 18px;
+}
+
+.vi-deadlines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.vi-deadline-item {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.vi-dl-highlight {
+  background: rgba(201,162,39,.15);
+  border-color: rgba(201,162,39,.3);
+}
+
+.vi-dl-event {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,.75);
+  margin-bottom: 4px;
+}
+
+.vi-dl-date {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.vi-dl-highlight .vi-dl-date { color: var(--vi-gold); }
+
+.vi-deadlines-note {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,.6);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* ══════════════════════════
+   POLLING INFO CARDS
+══════════════════════════ */
+.vi-polling-lookup {
+  background: linear-gradient(135deg, #002147, #0a3a6b);
+  border-radius: var(--vi-radius);
+  padding: 22px 24px;
+  margin-bottom: 24px;
+}
+
+.vi-polling-lookup-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.vi-polling-lookup-inner svg { flex-shrink: 0; }
+
+.vi-polling-lookup-inner h3 {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.vi-polling-lookup-inner p {
+  color: rgba(255,255,255,.75);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.vi-polling-lookup-inner > div { flex: 1; min-width: 200px; }
+
+.vi-info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.vi-info-card {
+  background: var(--vi-white);
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  padding: 18px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+
+.vi-info-card-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(0,33,71,.07);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  color: var(--vi-navy);
+}
+
+.vi-info-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0 0 7px;
+}
+
+.vi-info-card p {
+  font-size: 0.84rem;
+  color: #444;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ══════════════════════════
+   CANDIDATES
+══════════════════════════ */
+.vi-race-block {
+  background: var(--vi-white);
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+
+.vi-race-header {
+  background: var(--vi-bg);
+  border-bottom: 1px solid var(--vi-border);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.vi-race-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.vi-race-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0;
+  flex: 1;
+}
+
+.vi-race-date {
+  font-size: 0.75rem;
+  color: var(--vi-muted);
+  white-space: nowrap;
+}
+
+.vi-candidate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 18px;
+  gap: 16px;
+}
+
+.vi-race-party-col { display: flex; flex-direction: column; gap: 10px; }
+
+.vi-party-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.vi-party-dem { background: rgba(26,91,172,.1); color: var(--vi-federal); }
+.vi-party-rep { background: rgba(185,28,28,.1); color: #b91c1c; }
+
+.vi-candidate-card {
+  background: var(--vi-bg);
+  border: 1px solid var(--vi-border);
+  border-radius: 8px;
+  padding: 13px 15px;
+}
+
+.vi-cand-other { opacity: 0.75; }
+
+.vi-cand-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin-bottom: 2px;
+}
+
+.vi-cand-title {
+  font-size: 0.75rem;
+  color: var(--vi-muted);
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.vi-cand-note {
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.vi-cand-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--vi-federal);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.vi-cand-link:hover { text-decoration: underline; }
+
+/* House grid */
+.vi-house-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+  padding: 18px;
+  padding-bottom: 0;
+}
+
+.vi-house-district {
+  background: var(--vi-bg);
+  border: 1px solid var(--vi-border);
+  border-left: 3px solid var(--vi-federal);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.vi-district-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--vi-federal);
+  margin-bottom: 4px;
+}
+
+.vi-district-incumbent {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--vi-navy);
+  margin-bottom: 2px;
+}
+
+.vi-district-area {
+  font-size: 0.75rem;
+  color: var(--vi-muted);
+}
+
+.vi-candidates-cta {
+  padding: 18px;
+  border-top: 1px solid var(--vi-border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.vi-candidates-cta p {
+  font-size: 0.82rem;
+  color: var(--vi-muted);
+  margin: 0;
+  flex: 1;
+  min-width: 180px;
+  line-height: 1.4;
+}
+
+/* ══════════════════════════
+   VOTE BY MAIL
+══════════════════════════ */
+.vi-vbm-intro {
+  background: rgba(26,91,172,.05);
+  border: 1px solid rgba(26,91,172,.15);
+  border-radius: var(--vi-radius);
+  padding: 18px 20px;
+  margin-bottom: 24px;
+}
+
+.vi-vbm-intro p {
+  font-size: 0.9rem;
+  color: var(--vi-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Steps */
+.vi-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 28px;
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  overflow: hidden;
+  background: var(--vi-white);
+}
+
+.vi-step {
+  display: flex;
+  gap: 18px;
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--vi-border);
+  align-items: flex-start;
+}
+
+.vi-step:last-child { border-bottom: none; }
+
+.vi-step-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--vi-navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.vi-step-body { flex: 1; }
+
+.vi-step-body h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0 0 6px;
+}
+
+.vi-step-body p {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.55;
+  margin: 0 0 8px;
+}
+
+/* VBM deadlines table */
+.vi-vbm-deadlines {
+  background: var(--vi-white);
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  padding: 20px 22px;
+  overflow-x: auto;
+}
+
+.vi-vbm-deadlines h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0 0 16px;
+}
+
+.vi-vbm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+
+.vi-vbm-table th {
+  background: var(--vi-bg);
+  color: var(--vi-muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--vi-border);
+}
+
+.vi-vbm-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--vi-border);
+  color: var(--vi-text);
+  vertical-align: top;
+}
+
+.vi-vbm-table tr:last-child td { border-bottom: none; }
+
+.vi-row-highlight td {
+  background: rgba(0,33,71,.02);
+  font-weight: 600;
+}
+
+.vi-table-note {
+  font-size: 0.75rem;
+  color: var(--vi-muted);
+  margin: 12px 0 0;
+  line-height: 1.55;
+}
+
+/* ══════════════════════════
+   RESOURCES
+══════════════════════════ */
+.vi-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.vi-resource-card {
+  background: var(--vi-white);
+  border: 1px solid var(--vi-border);
+  border-radius: var(--vi-radius);
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  text-decoration: none;
+  transition: box-shadow .2s, border-color .2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+
+.vi-resource-card:hover {
+  box-shadow: var(--vi-shadow);
+  border-color: var(--vi-navy);
+}
+
+.vi-resource-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.vi-resource-body { flex: 1; }
+
+.vi-resource-body h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--vi-navy);
+  margin: 0 0 5px;
+}
+
+.vi-resource-body p {
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+
+.vi-resource-url {
+  font-size: 0.72rem;
+  color: var(--vi-federal);
+  font-weight: 600;
+}
+
+/* ══════════════════════════
+   MOBILE
+══════════════════════════ */
+@media (max-width: 600px) {
+  .vi-hero { padding: 36px 16px 28px; }
+  .vi-hero-text h1 { font-size: 1.5rem; }
+  .vi-hero-stat-row { padding: 14px 16px; }
+  .vi-stat-date { font-size: 1.4rem; }
+  .vi-stat-divider { display: none; }
+
+  .vi-quicknav { top: 0; gap: 5px; }
+  .vi-quicknav a { font-size: 0.75rem; padding: 5px 9px; }
+
+  .vi-election-main { flex-direction: column; gap: 12px; }
+  .vi-election-date-block { display: flex; align-items: center; gap: 8px; padding: 8px 12px; }
+  .vi-date-day { font-size: 1.3rem; margin: 0; }
+
+  .vi-candidate-grid { grid-template-columns: 1fr; }
+  .vi-polling-lookup-inner { flex-direction: column; gap: 12px; }
+  .vi-polling-lookup-inner .vi-btn { width: 100%; justify-content: center; }
+
+  .vi-vbm-table { font-size: 0.76rem; }
+  .vi-vbm-table th, .vi-vbm-table td { padding: 8px; }
+}
+
+@media (min-width: 769px) {
+  .vi-quicknav { top: 90px; }
+  .vi-step { gap: 24px; }
+}

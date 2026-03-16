@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicNow — Know Who Represents You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="64x64" href="favicon-64.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <a href="index.html">
+      <div class="logo"><img src="wavcon.png" alt="CivicNow" class="logo-img" /></div>
+    </a>
+    <nav class="main-nav">
+      <a href="FindReps.html"><div class="nav-box">Find Representatives</div></a>
+      <a href="VoterInfo.html"><div class="nav-box">Voter Information</div></a>
+      <a href="About.html"><div class="nav-box">About</div></a>
+      <a href="FAQs.html"><div class="nav-box">FAQs</div></a>
+    </nav>
+  </div>
+</header>
+
+
+
+<section class="home-hero">
+  <div class="home-hero-inner">
+    <span class="home-hero-eyebrow">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Massachusetts Civic Engagement
+    </span>
+    <h1 class="home-hero-title">Know Who<br><span class="home-hero-accent">Represents You.</span></h1>
+    <p class="home-hero-sub">Find every elected official who represents you — from your local Select Board to the U.S. Senate — in seconds.</p>
+    <div class="home-search-wrap">
+      <div class="home-search-inner">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="home-search-icon">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        <input type="text" id="homeAddressInput" placeholder="Enter your city, address, or ZIP…" autocomplete="street-address" />
+        <button onclick="goToReps()">Find My Reps</button>
+      </div>
+      <p class="home-search-hint">Try "Dedham", "02027", or "1 Main St Boston MA"</p>
+    </div>
+    <div class="home-hero-stats">
+      <div class="home-stat">
+        <div class="home-stat-num">351</div>
+        <div class="home-stat-label">MA Cities &amp; Towns</div>
+      </div>
+      <div class="home-stat">
+        <div class="home-stat-num">312</div>
+        <div class="home-stat-label">Officials Tracked</div>
+      </div>
+      <div class="home-stat">
+        <div class="home-stat-num">9</div>
+        <div class="home-stat-label">Congressional Districts</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="how-section">
+    <div class="how-header">
+      <span class="how-eyebrow">Simple by design</span>
+      <h2>How CivicNow Works</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-num">1</div>
+        <div class="how-icon-wrap"><img src="one.jpeg" alt="Enter your address" /></div>
+        <div class="how-card-text">
+          <h3>Enter Your Address</h3>
+          <p>Type any Massachusetts address, city name, or ZIP code — we'll find your district instantly.</p>
+        </div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-num">2</div>
+        <div class="how-icon-wrap"><img src="two.jpeg" alt="See your representatives" /></div>
+        <div class="how-card-text">
+          <h3>See Your Representatives</h3>
+          <p>Instantly view every elected official who represents you — from city hall to Capitol Hill.</p>
+        </div>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-num">3</div>
+        <div class="how-icon-wrap"><img src="three.jpeg" alt="Contact and engage" /></div>
+        <div class="how-card-text">
+          <h3>Contact &amp; Engage</h3>
+          <p>Get direct phone numbers, emails, websites, and social media links for every official.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="levels-section">
+    <div class="how-header">
+      <span class="how-eyebrow">Complete coverage</span>
+      <h2>Every Level of Government</h2>
+    </div>
+    <div class="levels-grid">
+      <div class="level-card level-card--local reveal">
+        <div class="level-card-icon">🏛</div>
+        <h3>Local</h3>
+        <p>Mayors, Select Boards, City Councils, and Town Administrators for all 351 Massachusetts municipalities.</p>
+      </div>
+      <div class="level-card level-card--state reveal">
+        <div class="level-card-icon">🏛</div>
+        <h3>State</h3>
+        <p>Your Massachusetts State Representative and State Senator from the 160 House and 40 Senate districts.</p>
+      </div>
+      <div class="level-card level-card--statewide reveal">
+        <div class="level-card-icon">⭐</div>
+        <h3>Statewide</h3>
+        <p>Governor, Lt. Governor, Attorney General, Secretary of State, Treasurer — representing all residents.</p>
+      </div>
+      <div class="level-card level-card--federal reveal">
+        <div class="level-card-icon">🦅</div>
+        <h3>Federal</h3>
+        <p>Your U.S. House Representative across 9 congressional districts, plus both Massachusetts U.S. Senators.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner reveal">
+    <div class="cta-banner-inner">
+      <div class="cta-text">
+        <h2>Ready to find your representatives?</h2>
+        <p>It takes less than 10 seconds. No account required.</p>
+      </div>
+      <a href="FindReps.html" class="cta-btn">Get Started →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="wavcon.png" alt="CivicNow" class="logo-img" />
+      <p>Making civic engagement simple, transparent, and accessible for every Massachusetts resident.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="FindReps.html">Find Representatives</a>
+        <a href="VoterInfo.html">Voter Information</a>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <a href="About.html">Our Mission</a>
+        <a href="FAQs.html">FAQs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:info@civicnow.com">info@civicnow.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CivicNow • Massachusetts Civic Engagement Platform • All Rights Reserved</p>
+    <p><a href="#">Privacy Policy</a> · <a href="mailto:info@civicnow.com">Contact Us</a></p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+  function goToReps() {
+    const addr = document.getElementById('homeAddressInput').value.trim();
+    if (!addr) {
+      const input = document.getElementById('homeAddressInput');
+      input.focus();
+      input.style.boxShadow = '0 0 0 3px rgba(201,162,39,.6)';
+      setTimeout(() => input.style.boxShadow = '', 2000);
+      return;
+    }
+    window.location.href = 'FindReps.html?address=' + encodeURIComponent(addr);
+  }
+
+  document.getElementById('homeAddressInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') goToReps();
+  });
+
+  window.addEventListener('scroll', function() {
+    document.getElementById('backToTop').classList.toggle('back-to-top--visible', window.scrollY > 400);
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('active'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
