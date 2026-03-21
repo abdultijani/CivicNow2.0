@@ -712,6 +712,13 @@
 
 .fr-no-results.visible { display: block; }
 
+/* Dim filter chips when no-results is active */
+.fr-filter-chips--disabled .fr-chip {
+  opacity: 0.38;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .fr-disclaimer {
   background: rgba(201,162,39,.07);
   border: 1px solid rgba(201,162,39,.3);
@@ -1156,3 +1163,195 @@
   .fr-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .fr-role { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
+
+/* ══════════════════════════════════════════
+   BIO / BACKGROUND SECTION IN MODAL
+══════════════════════════════════════════ */
+.fr-modal-bio-summary {
+  font-size: 0.88rem;
+  color: #333;
+  line-height: 1.65;
+  margin: 0 0 10px;
+}
+
+.fr-modal-bio-full {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.7;
+  border-top: 1px solid var(--fr-border);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+
+.fr-modal-bio-full p {
+  margin: 0 0 12px;
+}
+
+.fr-modal-bio-full p:last-child { margin-bottom: 0; }
+
+.fr-modal-bio-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: rgba(0,33,71,.05);
+  border: 1px solid var(--fr-border);
+  border-radius: 20px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--fr-navy);
+  cursor: pointer;
+  transition: all .15s;
+}
+
+.fr-modal-bio-toggle:hover {
+  background: var(--fr-navy);
+  color: #fff;
+  border-color: var(--fr-navy);
+}
+
+/* ══════════════════════════════════════════
+   NO RESULTS — UPGRADED
+══════════════════════════════════════════ */
+.fr-no-results {
+  text-align: center;
+  padding: 48px 20px;
+  color: var(--fr-muted);
+  display: none;
+}
+
+.fr-no-results.visible { display: block; }
+
+.fr-no-results-icon {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+.fr-no-results h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.3rem;
+  color: var(--fr-navy);
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.fr-no-results p {
+  font-size: 0.9rem;
+  color: var(--fr-muted);
+  max-width: 480px;
+  margin: 0 auto 8px;
+  line-height: 1.6;
+}
+
+.fr-no-results-zips {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--fr-navy);
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* ══════════════════════════════════════════
+   SOURCES SECTION IN MODAL
+══════════════════════════════════════════ */
+.fr-modal-sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.fr-source-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.fr-source-icon {
+  flex-shrink: 0;
+  color: var(--fr-muted);
+  margin-top: 3px;
+}
+
+.fr-source-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.fr-source-label {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--fr-federal);
+  text-decoration: none;
+}
+
+.fr-source-label:hover {
+  text-decoration: underline;
+  color: #0d3572;
+}
+
+.fr-source-url {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 0.72rem;
+  color: var(--fr-muted);
+  word-break: break-all;
+}
+
+/* ── City sidebar / dropdown disabled during invalid search ── */
+.fr-city-sidebar--disabled {
+  opacity: 0.38;
+  pointer-events: none;
+  cursor: not-allowed;
+  user-select: none;
+  transition: opacity .2s;
+}
+
+/* ── No-results reset button ── */
+.fr-no-results-reset {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+  padding: 11px 24px;
+  background: var(--fr-navy);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s;
+}
+
+.fr-no-results-reset:hover {
+  background: var(--fr-federal);
+}
+
+/* ── Council member list formatting in bio ── */
+.fr-modal-bio-full p {
+  word-break: break-word;
+}
+
+.fr-modal-bio-full p:has(> strong),
+.fr-modal-bio-full p strong {
+  display: block;
+}
+
+/* ── Search validation error message ── */
+.fr-search-error {
+  display: none;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #e53e3e;
+  padding: 6px 4px 0;
+  animation: fr-shake .35s ease;
+}
+
+.fr-search-error.visible { display: block; }

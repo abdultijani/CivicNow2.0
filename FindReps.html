@@ -56,6 +56,9 @@
       </div>
       <button class="fr-search-btn" id="searchBtn">Find</button>
     </div>
+    <div class="fr-search-error" id="searchError">
+      Please enter an address, zip code, town, or city in Massachusetts
+    </div>
     <div class="fr-filter-chips">
       <button class="fr-chip" data-level="federal"   onclick="toggleFilter(this)">Federal</button>
       <button class="fr-chip" data-level="state"     onclick="toggleFilter(this)">State</button>
@@ -113,7 +116,7 @@
   <div class="fr-content">
 
   <!-- LOCAL -->
-  <div class="fr-section-label fr-reveal" id="sec-local">
+  <div class="fr-section-label" id="sec-local">
     <span class="fr-badge fr-badge-local">Local</span>
     <h2>Town / City Government</h2>
     <div class="fr-divider"></div>
@@ -121,21 +124,21 @@
   <div class="fr-grid" id="grid-local"></div>
 
   <!-- STATE -->
-  <div class="fr-section-label fr-reveal" id="sec-state-reps">
+  <div class="fr-section-label" id="sec-state-reps">
     <span class="fr-badge fr-badge-state">State</span>
     <h2>State Representatives</h2>
     <div class="fr-divider"></div>
   </div>
   <div class="fr-grid" id="grid-state-reps"></div>
 
-  <div class="fr-section-label fr-reveal" id="sec-state-senators">
+  <div class="fr-section-label" id="sec-state-senators">
     <span class="fr-badge fr-badge-state">State</span>
     <h2>State Senators</h2>
     <div class="fr-divider"></div>
   </div>
   <div class="fr-grid" id="grid-state-senators"></div>
 
-  <div class="fr-section-label fr-reveal" id="sec-statewide">
+  <div class="fr-section-label" id="sec-statewide">
     <span class="fr-badge fr-badge-statewide">Statewide</span>
     <h2>Statewide Officials</h2>
     <div class="fr-divider"></div>
@@ -143,21 +146,21 @@
   <div class="fr-grid" id="grid-statewide"></div>
 
   <!-- FEDERAL -->
-  <div class="fr-section-label fr-reveal" id="sec-house">
+  <div class="fr-section-label" id="sec-house">
     <span class="fr-badge fr-badge-federal">Federal</span>
     <h2>U.S. House Representative</h2>
     <div class="fr-divider"></div>
   </div>
   <div class="fr-grid" id="grid-house"></div>
 
-  <div class="fr-section-label fr-reveal" id="sec-senators">
+  <div class="fr-section-label" id="sec-senators">
     <span class="fr-badge fr-badge-federal">Federal</span>
     <h2>U.S. Senators</h2>
     <div class="fr-divider"></div>
   </div>
   <div class="fr-grid" id="grid-senators"></div>
 
-  <div class="fr-section-label fr-reveal" id="sec-president">
+  <div class="fr-section-label" id="sec-president">
     <span class="fr-badge fr-badge-federal">Federal</span>
     <h2>President &amp; Vice President</h2>
     <div class="fr-divider"></div>
@@ -165,7 +168,13 @@
   <div class="fr-grid" id="grid-president"></div>
 
   <div class="fr-no-results" id="noResults">
-    No representatives found for that address. Try a different city name or ZIP code.
+    <div class="fr-no-results-icon">📍</div>
+    <h3>Information for "<span id="noResultsQuery"></span>" is not available.</h3>
+    <p>CivicNow currently provides complete representative information for only <strong>Waltham</strong>, <strong>Quincy</strong>, and <strong>Needham</strong>, Massachusetts.</p>
+    <p>Try searching for one of these cities, or enter a ZIP code:<br>
+      <span class="fr-no-results-zips">Waltham: 02451–02456 &nbsp;·&nbsp; Quincy: 02169–02171 &nbsp;·&nbsp; Needham: 02492</span>
+    </p>
+    <button class="fr-no-results-reset" onclick="clearSearch()">✕ Clear search &amp; reset</button>
   </div>
 
   <div class="fr-disclaimer">
@@ -223,6 +232,20 @@
       <div class="fr-modal-section">
         <div class="fr-modal-section-title">Office Information</div>
         <div id="modalInfoRows"></div>
+      </div>
+
+      <!-- Biography / Background -->
+      <div class="fr-modal-section" id="modalBioSection">
+        <div class="fr-modal-section-title">About</div>
+        <p id="modalBioText" class="fr-modal-bio-summary"></p>
+        <div id="modalBioFull" class="fr-modal-bio-full"></div>
+        <button id="modalBioToggle" class="fr-modal-bio-toggle">Read full profile ↓</button>
+      </div>
+
+      <!-- Sources -->
+      <div class="fr-modal-section" id="modalSourcesSection">
+        <div class="fr-modal-section-title">Sources</div>
+        <div id="modalSourcesList" class="fr-modal-sources-list"></div>
       </div>
 
       <!-- Committees -->
@@ -344,7 +367,7 @@ function buildCard(rep) {
     : `<button class="fr-card-view-btn">View Full Profile →</button>`;
 
   const card = document.createElement('div');
-  card.className = 'fr-card fr-reveal' + (sb ? ' fr-card-sb' : '');
+  card.className = 'fr-card' + (sb ? ' fr-card-sb' : '');
   card.dataset.level      = level;
   card.dataset.districtId = rep.districtId || '';
   card.dataset.repKey     = rep._key || '';
@@ -470,8 +493,10 @@ function renderAll(db) {
     if (d.additionalLocals) {
       d.additionalLocals.forEach((rep, i) => {
         const key = 'local-add-' + d.id + '-' + i;
-        registerRep({ ...rep, level: rep.level || 'local', districtId: d.id }, key);
-        queue('grid-local', buildCard(repRegistry[key]));
+        const level = rep.level || 'local';
+        registerRep({ ...rep, level, districtId: d.id }, key);
+        const gridId = level === 'state' ? 'grid-state-reps' : 'grid-local';
+        queue(gridId, buildCard(repRegistry[key]));
       });
     }
   });
@@ -520,16 +545,16 @@ function openProfile(key) {
   const avatarEl = document.getElementById('modalAvatar');
   const sb = isSelectBoard(rep);
 
-  if (sb) {
-    // Civic building icon for Select Boards
+  if (rep.photo) {
+    avatarEl.innerHTML = `<img src="${rep.photo}" alt="${rep.name}"
+      style="width:100%;height:100%;object-fit:cover;border-radius:10px;"
+      onerror="this.parentElement.innerHTML='<span style=\\'font-size:1.8rem;font-weight:700;\\'>${initials}</span>'">`;
+  } else if (sb) {
+    // Civic building icon for Select Boards with no photo
     avatarEl.innerHTML = `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="1.5">
       <path d="M3 21h18M4 21V10l8-7 8 7v11M9 21v-6h6v6"/>
       <path d="M12 3v4"/>
     </svg>`;
-  } else if (rep.photo) {
-    avatarEl.innerHTML = `<img src="${rep.photo}" alt="${rep.name}"
-      style="width:100%;height:100%;object-fit:cover;border-radius:10px;"
-      onerror="this.parentElement.innerHTML='<span style=\\'font-size:1.8rem;font-weight:700;\\'>${initials}</span>'">`;
   } else {
     avatarEl.innerHTML = `<span style="font-size:1.8rem;font-weight:700;">${initials}</span>`;
   }
@@ -620,16 +645,86 @@ function openProfile(key) {
     ['District',  rep.district || rep.city || '—'],
     ['Office',    rep.office   || '—'],
     ['In Office', rep.since    ? `Since ${rep.since}` : '—'],
-    ['Background', rep.background || '—']
   ];
   rows.forEach(([label, value]) => {
-    if (value === '—' && label === 'Background') return;
+    if (value === '—') return;
     infoRows.innerHTML += `
       <div class="fr-info-row">
         <div class="fr-info-label">${label}</div>
         <div class="fr-info-value">${value}</div>
       </div>`;
   });
+
+  // Background / Bio section with read-more
+  const bioSection = document.getElementById('modalBioSection');
+  const bioText    = document.getElementById('modalBioText');
+  const bioFull    = document.getElementById('modalBioFull');
+  const bioToggle  = document.getElementById('modalBioToggle');
+
+  if (rep.background || rep.backgroundFull) {
+    bioSection.style.display = '';
+    bioText.textContent = rep.background || rep.backgroundFull?.substring(0, 300) + '…';
+
+    // Always start collapsed when opening a profile
+    bioFull.style.display = 'none';
+    bioFull.innerHTML = '';
+
+    if (rep.backgroundFull && rep.backgroundFull !== rep.background) {
+      const linkify = text => text
+        // Phone numbers → tap-to-call
+        .replace(/(\(?\d{3}\)?[\s.\-]\d{3}[\s.\-]\d{4})/g,
+          '<a href="tel:$1" style="color:inherit;white-space:nowrap;">$1</a>')
+        // Emails → mailto
+        .replace(/([a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,})/g,
+          '<a href="mailto:$1" style="color:var(--fr-federal);word-break:break-all;">$1</a>');
+
+      bioFull.innerHTML = rep.backgroundFull
+        .split('\n\n')
+        .filter(p => p.trim())
+        .map(p => `<p>${linkify(p.trim())}</p>`)
+        .join('');
+      bioToggle.style.display = '';
+      bioToggle.textContent = 'Read full profile ↓';
+      bioToggle.onclick = function() {
+        const isOpen = bioFull.style.display !== 'none';
+        bioFull.style.display = isOpen ? 'none' : '';
+        bioToggle.textContent = isOpen ? 'Read full profile ↓' : 'Show less ↑';
+        // Scroll toggle into view when expanding
+        if (!isOpen) bioToggle.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      };
+    } else {
+      bioToggle.style.display = 'none';
+    }
+  } else {
+    bioSection.style.display = 'none';
+    bioFull.innerHTML = '';
+    bioToggle.style.display = 'none';
+  }
+
+  // Sources
+  const sourcesSection = document.getElementById('modalSourcesSection');
+  const sourcesList    = document.getElementById('modalSourcesList');
+  sourcesList.innerHTML = '';
+
+  if (rep.sources && rep.sources.length) {
+    sourcesSection.style.display = '';
+    rep.sources.forEach(src => {
+      const row = document.createElement('div');
+      row.className = 'fr-source-row';
+      row.innerHTML = `
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="fr-source-icon">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+          <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        <div class="fr-source-text">
+          <a href="${src.url}" target="_blank" rel="noopener noreferrer" class="fr-source-label">${src.label}</a>
+          <span class="fr-source-url">${src.url}</span>
+        </div>`;
+      sourcesList.appendChild(row);
+    });
+  } else {
+    sourcesSection.style.display = 'none';
+  }
 
   // Committees
   const commSection = document.getElementById('modalCommitteesSection');
@@ -721,7 +816,7 @@ function buildZipCityMap(db) {
   // Generated by scanning all local officials for city+ZIP correlations
   const map = {};
   // We embed a curated ZIP→city list covering all towns in our keyword lists
-  const zipToCity = {"01001":"Agawam","01002":"Amherst","01003":"Amherst","01005":"Barre","01007":"Belchertown","01008":"Blandford","01009":"Chester","01010":"Brimfield","01011":"Chester","01012":"Chesterfield","01013":"Chicopee","01014":"Chicopee","01020":"Chicopee","01021":"Chicopee","01022":"Chicopee","01028":"East Longmeadow","01030":"Feeding Hills","01033":"Granby","01034":"Granville","01035":"Hadley","01036":"Hampden","01038":"Hatfield","01039":"Haydenville","01040":"Holyoke","01041":"Holyoke","01050":"Huntington","01053":"Leeds","01054":"Leverett","01056":"Ludlow","01057":"Monson","01060":"Northampton","01061":"Northampton","01062":"Florence","01063":"Northampton","01070":"Plainfield","01071":"Russell","01072":"Shutesbury","01073":"Southampton","01074":"South Barre","01075":"South Hadley","01077":"Southwick","01080":"Three Rivers","01082":"Ware","01083":"Warren","01085":"Westfield","01086":"Westfield","01088":"West Hatfield","01089":"West Springfield","01090":"West Springfield","01092":"West Warren","01093":"Whately","01094":"Wheelwright","01095":"Wilbraham","01096":"Williamsburg","01097":"Westhampton","01098":"Worthington","01101":"Springfield","01102":"Springfield","01103":"Springfield","01104":"Springfield","01105":"Springfield","01106":"Longmeadow","01107":"Springfield","01108":"Springfield","01109":"Springfield","01111":"Springfield","01115":"Springfield","01116":"Longmeadow","01118":"Springfield","01119":"Springfield","01128":"Springfield","01129":"Springfield","01133":"Springfield","01138":"Springfield","01139":"Springfield","01144":"Springfield","01151":"Springfield","01152":"Springfield","01199":"Springfield","01201":"Pittsfield","01202":"Pittsfield","01203":"Pittsfield","01220":"Adams","01222":"Ashley Falls","01223":"Becket","01224":"Berkshire","01225":"Cheshire","01226":"Dalton","01229":"Glendale","01230":"Great Barrington","01235":"Hinsdale","01236":"Housatonic","01237":"Lanesborough","01238":"Lee","01240":"Lenox","01242":"Lenoxdale","01243":"Middlefield","01244":"Mill River","01245":"Monterey","01247":"North Adams","01252":"North Egremont","01253":"Otis","01254":"Richmond","01255":"Sandisfield","01256":"Savoy","01257":"Sheffield","01258":"South Egremont","01259":"Southfield","01260":"South Lee","01262":"Stockbridge","01263":"Stockbridge","01264":"Tyringham","01266":"West Stockbridge","01267":"Williamstown","01270":"Windsor","01301":"Greenfield","01302":"Greenfield","01330":"Ashfield","01331":"Athol","01337":"Bernardston","01338":"Buckland","01339":"Charlemont","01340":"Colrain","01341":"Conway","01342":"Deerfield","01343":"Drury","01344":"Erving","01346":"Heath","01347":"Lake Pleasant","01349":"Millers Falls","01350":"Monroe Bridge","01351":"Montague","01354":"Gill","01355":"New Salem","01360":"Northfield","01364":"Orange","01366":"Petersham","01367":"Rowe","01368":"Royalston","01370":"Shelburne Falls","01373":"South Deerfield","01375":"Sunderland","01376":"Turners Falls","01378":"Warwick","01379":"Wendell","01380":"Wendell Depot","01420":"Fitchburg","01430":"Ashburnham","01431":"Ashby","01432":"Ayer","01434":"Devens","01436":"Baldwinville","01438":"East Templeton","01440":"Gardner","01441":"West Gardner","01450":"Groton","01451":"Harvard","01452":"Hubbardston","01453":"Leominster","01460":"Littleton","01462":"Lunenburg","01463":"Pepperell","01464":"Shirley","01467":"Still River","01468":"Templeton","01469":"Townsend","01470":"Groton","01472":"West Groton","01473":"Westminster","01474":"West Townsend","01475":"Winchendon","01477":"Winchendon Springs","01501":"Auburn","01503":"Berlin","01504":"Blackstone","01505":"Boylston","01506":"Charlton","01507":"Charlton City","01508":"Charlton Depot","01510":"Clinton","01515":"East Brookfield","01516":"Douglas","01518":"Fiskdale","01519":"Grafton","01520":"Holden","01521":"Holland","01522":"Jefferson","01523":"Lancaster","01524":"Leicester","01525":"Manchaug","01526":"Millbury","01527":"Millbury","01529":"Millville","01531":"New Braintree","01532":"Northborough","01534":"Northbridge","01535":"North Brookfield","01536":"North Grafton","01537":"North Oxford","01540":"Oxford","01541":"Princeton","01542":"Rochdale","01543":"Rutland","01545":"Shrewsbury","01546":"Shrewsbury","01550":"Southbridge","01560":"South Grafton","01561":"South Lancaster","01562":"Spencer","01564":"Sterling","01566":"Sturbridge","01568":"Upton","01569":"Uxbridge","01570":"Webster","01571":"Dudley","01581":"Westborough","01582":"Westborough","01583":"West Boylston","01585":"West Brookfield","01586":"West Millbury","01588":"Whitinsville","01590":"Sutton","01601":"Worcester","01602":"Worcester","01603":"Worcester","01604":"Worcester","01605":"Worcester","01606":"Worcester","01607":"Worcester","01608":"Worcester","01609":"Worcester","01610":"Worcester","01611":"Cherry Valley","01612":"Paxton","01613":"Worcester","01614":"Worcester","01615":"Worcester","01653":"Worcester","01654":"Worcester","01655":"Worcester","01701":"Framingham","01702":"Framingham","01703":"Framingham","01704":"Framingham","01705":"Framingham","01718":"Village of Nagog Woods","01719":"Boxborough","01720":"Acton","01721":"Ashland","01730":"Bedford","01731":"Hanscom AFB","01741":"Carlisle","01742":"Concord","01745":"Fayville","01746":"Holliston","01747":"Hopedale","01748":"Hopkinton","01749":"Hudson","01752":"Marlborough","01753":"Marlborough","01754":"Maynard","01756":"Mendon","01757":"Milford","01760":"Natick","01770":"Sherborn","01772":"Southborough","01773":"Lincoln","01775":"Stow","01776":"Sudbury","01778":"Wayland","01780":"Southborough","01784":"Woodville","01801":"Woburn","01803":"Burlington","01810":"Andover","01821":"Billerica","01822":"Billerica","01824":"Chelmsford","01826":"Dracut","01827":"Dunstable","01840":"Lawrence","01841":"Lawrence","01842":"Lawrence","01843":"Lawrence","01844":"Methuen","01845":"North Andover","01850":"Lowell","01851":"Lowell","01852":"Lowell","01853":"Lowell","01854":"Lowell","01860":"Merrimac","01862":"North Billerica","01863":"North Chelmsford","01864":"North Reading","01865":"Nutting Lake","01866":"Pinehurst","01867":"Reading","01876":"Tewksbury","01879":"Tyngsborough","01880":"Wakefield","01885":"West Boxford","01886":"Westford","01887":"Wilmington","01888":"Woburn","01889":"North Reading","01890":"Winchester","01901":"Lynn","01902":"Lynn","01903":"Lynn","01904":"Lynn","01905":"Lynn","01906":"Saugus","01907":"Swampscott","01908":"Nahant","01910":"Chelsea","01913":"Amesbury","01915":"Beverly","01921":"Boxford","01922":"Byfield","01923":"Danvers","01929":"Essex","01930":"Gloucester","01931":"Gloucester","01936":"Hamilton","01937":"Hathorne","01938":"Ipswich","01940":"Lynnfield","01944":"Manchester","01945":"Marblehead","01949":"Middleton","01950":"Newburyport","01951":"Newbury","01952":"Salisbury","01960":"Peabody","01961":"Peabody","01965":"Prides Crossing","01966":"Rockport","01969":"Rowley","01970":"Salem","01971":"Salem","01982":"South Hamilton","01983":"Topsfield","01984":"Wenham","01985":"West Newbury","02018":"Accord","02019":"Bellingham","02020":"Brant Rock","02021":"Canton","02025":"Cohasset","02026":"Dedham","02027":"Dedham","02030":"Dover","02032":"East Walpole","02035":"Foxborough","02038":"Franklin","02039":"Franklin","02040":"Green Harbor","02041":"Green Harbor","02043":"Hingham","02044":"Hingham","02045":"Hull","02047":"Humarock","02048":"Mansfield","02050":"Marshfield","02051":"Marshfield Hills","02052":"Medfield","02053":"Medway","02054":"Millis","02055":"Marshfield","02056":"Norfolk","02059":"North Marshfield","02060":"North Scituate","02061":"Norwell","02062":"Norwood","02065":"Ocean Bluff","02066":"Scituate","02067":"Sharon","02070":"Sheldonville","02071":"South Walpole","02072":"Stoughton","02081":"Walpole","02090":"Westwood","02093":"Wrentham","02095":"Wrentham","02096":"Wrentham","02101":"Boston","02102":"Boston","02103":"Boston","02104":"Boston","02105":"Boston","02106":"Boston","02107":"Boston","02108":"Boston","02109":"Boston","02110":"Boston","02111":"Boston","02112":"Boston","02113":"Boston","02114":"Boston","02115":"Boston","02116":"Boston","02117":"Boston","02118":"Boston","02119":"Boston","02120":"Boston","02121":"Boston","02122":"Boston","02123":"Boston","02124":"Boston","02125":"Boston","02126":"Boston","02127":"Boston","02128":"Boston","02129":"Boston","02130":"Jamaica Plain","02131":"Roslindale","02132":"West Roxbury","02133":"Boston","02134":"Allston","02135":"Brighton","02136":"Hyde Park","02137":"Readville","02138":"Cambridge","02139":"Cambridge","02140":"Cambridge","02141":"Cambridge","02142":"Cambridge","02143":"Somerville","02144":"Somerville","02145":"Somerville","02148":"Malden","02149":"Everett","02150":"Chelsea","02151":"Revere","02152":"Winthrop","02153":"Somerville","02155":"Medford","02163":"Boston","02169":"Quincy","02170":"Quincy","02171":"Quincy","02176":"Melrose","02180":"Stoneham","02184":"Braintree","02185":"Braintree","02186":"Milton","02187":"Milton","02188":"Weymouth","02189":"Weymouth","02190":"Weymouth","02191":"North Weymouth","02199":"Boston","02201":"Boston","02203":"Boston","02204":"Boston","02205":"Boston","02206":"Boston","02207":"Boston","02208":"Boston","02209":"Boston","02210":"Boston","02215":"Boston","02217":"Boston","02222":"Boston","02228":"East Boston","02238":"Cambridge","02241":"Boston","02266":"Boston","02269":"Quincy","02283":"Boston","02284":"Boston","02293":"Boston","02297":"Boston","02298":"Boston","02301":"Brockton","02302":"Brockton","02303":"Brockton","02304":"Brockton","02305":"Brockton","02322":"Avon","02324":"Bridgewater","02325":"Bridgewater","02327":"Bryantville","02330":"Carver","02331":"Carver","02332":"Duxbury","02333":"East Bridgewater","02334":"East Bridgewater","02337":"Elmwood","02338":"Halifax","02339":"Hanover","02340":"Hanson","02341":"Hanson","02343":"Holbrook","02344":"Middleborough","02345":"Manomet","02346":"Middleborough","02347":"Lakeville","02348":"Lakeville","02349":"Middleborough","02350":"Abington","02351":"Abington","02355":"East Bridgewater","02356":"Norton","02357":"Norton","02358":"Old Colony","02359":"Pembroke","02360":"Plymouth","02361":"Plymouth","02362":"Plymouth","02364":"Kingston","02366":"Plympton","02367":"Plympton","02368":"Randolph","02370":"Rockland","02375":"South Easton","02379":"West Bridgewater","02381":"White Island Shores","02382":"Whitman","02420":"Lexington","02421":"Lexington","02445":"Brookline","02446":"Brookline","02447":"Brookline","02451":"Waltham","02452":"Waltham","02453":"Waltham","02454":"Waltham","02455":"North Waltham","02456":"Waltham","02457":"Southborough","02458":"Newton","02459":"Newton","02460":"Newton","02461":"Newton Highlands","02462":"Newton Lower Falls","02464":"Newton Upper Falls","02465":"West Newton","02466":"Auburndale","02467":"Chestnut Hill","02468":"Waban","02471":"Watertown","02472":"Watertown","02474":"Arlington","02476":"Arlington","02478":"Belmont","02481":"Wellesley Hills","02482":"Wellesley","02492":"Needham","02493":"Weston","02494":"Needham Heights","02532":"Buzzards Bay","02534":"Cataumet","02535":"Chilmark","02536":"East Falmouth","02537":"East Sandwich","02538":"East Wareham","02539":"Edgartown","02540":"Falmouth","02541":"Falmouth","02542":"Otis AFB","02543":"Woods Hole","02552":"Menemsha","02554":"Nantucket","02556":"North Falmouth","02557":"Oak Bluffs","02558":"Onset","02559":"Pocasset","02560":"Sagamore","02561":"Sagamore Beach","02562":"Sandwich","02563":"Sandwich","02564":"Siasconset","02568":"Vineyard Haven","02571":"Wareham","02572":"West Barnstable","02574":"West Falmouth","02575":"West Tisbury","02576":"West Wareham","02601":"Hyannis","02630":"Barnstable","02631":"Brewster","02632":"Centerville","02633":"Chatham","02634":"Centerville","02635":"Cotuit","02636":"Centerville","02637":"Cummaquid","02638":"Dennis","02639":"Dennis Port","02640":"East Dennis","02641":"East Harwich","02642":"Eastham","02643":"East Orleans","02644":"Forestdale","02645":"Harwich","02646":"Harwich Port","02647":"Hyannis Port","02648":"Marstons Mills","02649":"Mashpee","02650":"North Chatham","02651":"North Eastham","02652":"North Truro","02653":"Orleans","02655":"Osterville","02657":"Provincetown","02659":"South Chatham","02660":"South Dennis","02661":"South Harwich","02662":"South Orleans","02663":"South Wellfleet","02664":"South Yarmouth","02666":"Truro","02667":"Wellfleet","02668":"West Barnstable","02669":"West Chatham","02670":"West Dennis","02671":"West Harwich","02672":"West Hyannisport","02673":"West Yarmouth","02675":"Yarmouth Port","02702":"Assonet","02703":"Attleboro","02712":"Fiskdale","02713":"Cuttyhunk","02714":"Dartmouth","02715":"Dighton","02717":"East Freetown","02718":"East Taunton","02719":"Fairhaven","02720":"Fall River","02721":"Fall River","02722":"Fall River","02723":"Fall River","02724":"Fall River","02725":"Somerset","02726":"Somerset","02740":"New Bedford","02741":"New Bedford","02742":"New Bedford","02743":"Acushnet","02744":"New Bedford","02745":"New Bedford","02746":"New Bedford","02747":"North Dartmouth","02748":"South Dartmouth","02760":"North Attleborough","02762":"Plainville","02763":"Attleboro Falls","02764":"North Attleborough","02766":"Norton","02767":"Raynham","02768":"Raynham","02769":"Rehoboth","02771":"Seekonk","02777":"Swansea","02779":"Berkley","02780":"Taunton","02790":"Westport","02791":"Westport"};
+  const zipToCity = {"02169":"Quincy","02170":"Quincy","02171":"Quincy","02451":"Waltham","02452":"Waltham","02453":"Waltham","02454":"Waltham","02455":"Waltham","02456":"Waltham","02492":"Needham","02494":"Needham"};
 
   window._zipCityMap = zipToCity;
   return zipToCity;
@@ -753,27 +848,83 @@ function applyDistrictFilter(districtId, matchedCity) {
         } else {
           show = cardCity === city;
         }
+      } else if (level === 'state') {
+        if (cardCity && city) {
+          show = cardCity === city;
+        } else {
+          show = !cardCity;
+        }
       } else {
         show = true;
       }
     }
 
     card.style.display = show ? '' : 'none';
+    // Ensure visible cards have their reveal class applied
+    if (show) card.classList.add('fr-reveal--visible');
   });
 
-  // Hide section labels whose grids are entirely empty
+  // Show/hide section labels based on whether any cards are visible
   document.querySelectorAll('.fr-grid').forEach(grid => {
     const label    = grid.previousElementSibling;
     const hasCards = Array.from(grid.children).some(c => c.style.display !== 'none');
-    if (label) label.style.display = hasCards ? '' : 'none';
+    if (label) {
+      label.style.display = hasCards ? '' : 'none';
+      // Ensure label is visible (may not have been scrolled into view yet)
+      if (hasCards) label.classList.add('fr-reveal--visible');
+    }
     grid.style.display = hasCards ? '' : 'none';
   });
 }
 
 function clearDistrictFilter() {
   flushAllPending();
-  document.querySelectorAll('.fr-card').forEach(c => c.style.display = '');
-  document.querySelectorAll('.fr-grid, .fr-section-label').forEach(el => el.style.display = '');
+  document.querySelectorAll('.fr-card').forEach(c => {
+    c.style.display = '';
+    c.classList.add('fr-reveal--visible');
+  });
+  document.querySelectorAll('.fr-grid, .fr-section-label').forEach(el => {
+    el.style.display = '';
+    el.classList.add('fr-reveal--visible');
+  });
+}
+
+function isValidSearchInput(q) {
+  if (q.length < 2) return false;
+
+  // Reject anything with non-address characters
+  if (/[^a-zA-Z0-9\s,.\-'#\/]/.test(q)) return false;
+
+  // 5-digit ZIP: must be in Massachusetts range (01xxx or 02xxx)
+  if (/^\d{5}$/.test(q)) return /^0[12]/.test(q);
+
+  // Pure numbers (not a ZIP) → invalid
+  if (/^\d+$/.test(q)) return false;
+
+  // Must contain at least one letter
+  if (!/[a-zA-Z]/.test(q)) return false;
+
+  const lower = q.toLowerCase();
+
+  // Explicit MA indicators in the string → valid
+  const maIndicators = [',ma', ', ma', ' ma ', ' ma,', 'massachusetts', ' mass '];
+  if (maIndicators.some(t => lower.includes(t))) return true;
+
+  // Address format (starts with number + street) → accept as potentially MA
+  // User will get "not yet available" if it resolves outside our scope
+  if (/^\d+\s+[a-zA-Z]/.test(q)) return true;
+
+  // Plain city/town name (letters, spaces, hyphens, apostrophes only) → accept
+  // MA has 351 cities and towns — we can't enumerate them all; FindReps handles scope
+  if (/^[a-zA-Z\s\-']+$/.test(q)) return true;
+
+  return false;
+}
+
+function isMAValidationError(q) {
+  // Specifically catches non-MA ZIPs (outside 01xxx–02xxx)
+  if (/^\d{5}$/.test(q) && !/^0[12]/.test(q)) return true;
+  return false;
 }
 
 function searchReps(addressOverride) {
@@ -781,15 +932,37 @@ function searchReps(addressOverride) {
   const query = (addressOverride || input.value || '').trim();
 
   if (!query) {
-    // Shake the input and show inline error
     input.classList.add('fr-input-error');
-    input.placeholder = 'Please enter a city, address, or ZIP code…';
+    document.getElementById('searchError').classList.add('visible');
     input.focus();
     setTimeout(() => {
       input.classList.remove('fr-input-error');
-      input.placeholder = 'Enter address, city, or ZIP code…';
-    }, 2000);
+      document.getElementById('searchError').classList.remove('visible');
+    }, 3000);
     return;
+  }
+
+  // Validate input — must be a Massachusetts address, ZIP, city, or town
+  if (!isValidSearchInput(query)) {
+    input.classList.add('fr-input-error');
+    document.getElementById('searchError').classList.add('visible');
+    input.focus();
+    setTimeout(() => {
+      input.classList.remove('fr-input-error');
+      document.getElementById('searchError').classList.remove('visible');
+    }, 3000);
+    return;
+  }
+
+  // If a previous invalid search is showing, reset that state first
+  document.getElementById('searchError').classList.remove('visible');
+  if (document.getElementById('noResults').classList.contains('visible')) {
+    document.getElementById('noResults').classList.remove('visible');
+    document.querySelector('.fr-filter-chips')?.classList.remove('fr-filter-chips--disabled');
+    document.getElementById('frCitySidebar')?.classList.remove('fr-city-sidebar--disabled');
+    document.getElementById('frCityDropdownWrap')?.classList.remove('fr-city-sidebar--disabled');
+    const dd = document.getElementById('frCityDropdown');
+    if (dd) dd.disabled = false;
   }
 
   if (addressOverride) input.value = addressOverride;
@@ -810,6 +983,14 @@ function searchReps(addressOverride) {
     matchedCity   = null;
     document.getElementById('matchBanner').classList.remove('visible');
     document.getElementById('noResults').classList.add('visible');
+    // Show the user's query in the no-results message
+    document.getElementById('noResultsQuery').textContent = query.trim();
+    // Disable filter chips and city browse
+    document.querySelector('.fr-filter-chips')?.classList.add('fr-filter-chips--disabled');
+    document.getElementById('frCitySidebar')?.classList.add('fr-city-sidebar--disabled');
+    document.getElementById('frCityDropdownWrap')?.classList.add('fr-city-sidebar--disabled');
+    const dd = document.getElementById('frCityDropdown');
+    if (dd) dd.disabled = true;
     // Hide all cards and section labels
     document.querySelectorAll('.fr-card').forEach(c => c.style.display = 'none');
     document.querySelectorAll('.fr-grid, .fr-section-label').forEach(el => el.style.display = 'none');
@@ -819,21 +1000,37 @@ function searchReps(addressOverride) {
 function clearSearch() {
   matchedDistId = null;
   matchedCity   = null;
-  clearDistrictFilter();
+  activeFilter  = null;
+  document.querySelectorAll('.fr-chip').forEach(b => b.classList.remove('fr-chip-active'));
   document.getElementById('matchBanner').classList.remove('visible');
   document.getElementById('noResults').classList.remove('visible');
   document.getElementById('addressInput').value = '';
-  if (activeFilter) {
-    document.querySelectorAll('.fr-card').forEach(card => {
-      card.style.display = card.dataset.level === activeFilter ? '' : 'none';
-    });
-  }
+  // Re-enable filter chips and city browse
+  document.querySelector('.fr-filter-chips')?.classList.remove('fr-filter-chips--disabled');
+  document.getElementById('frCitySidebar')?.classList.remove('fr-city-sidebar--disabled');
+  document.getElementById('frCityDropdownWrap')?.classList.remove('fr-city-sidebar--disabled');
+  const dd = document.getElementById('frCityDropdown');
+  if (dd) dd.disabled = false;
+
+  // Restore default: only statewide + president visible
+  document.querySelectorAll('.fr-card').forEach(card => {
+    const cid = card.dataset.districtId;
+    card.style.display = (cid === 'statewide' || cid === 'all') ? '' : 'none';
+  });
+  document.querySelectorAll('.fr-grid').forEach(grid => {
+    const label = grid.previousElementSibling;
+    const hasCards = Array.from(grid.children).some(c => c.style.display !== 'none');
+    if (label) label.style.display = hasCards ? '' : 'none';
+    grid.style.display = hasCards ? '' : 'none';
+  });
 }
 
 /* ══════════════════════════
    LEVEL FILTER CHIPS
 ══════════════════════════ */
 function toggleFilter(btn) {
+  // Do nothing if no-results is currently displayed
+  if (document.getElementById('noResults').classList.contains('visible')) return;
   const level = btn.dataset.level;
   if (activeFilter === level) {
     activeFilter = null;
@@ -855,8 +1052,12 @@ function toggleFilter(btn) {
       // Must match the level filter first
       if (cardLvl !== level) { card.style.display = 'none'; return; }
 
-      // No active search — show all cards of this level
-      if (!matchedDistId) { card.style.display = ''; return; }
+      // No active search — only show statewide/all cards (same as default load state)
+      if (!matchedDistId) {
+        const isGlobal = (cid === 'statewide' || cid === 'all');
+        card.style.display = isGlobal ? '' : 'none';
+        return;
+      }
 
       // Active search: apply same district + city logic as applyDistrictFilter
       let show = false;
@@ -865,6 +1066,12 @@ function toggleFilter(btn) {
       } else if (cid === matchedDistId) {
         if (cardLvl === 'local') {
           show = !city || cardCity === city;
+        } else if (cardLvl === 'state') {
+          if (cardCity && city) {
+            show = cardCity === city;
+          } else {
+            show = !cardCity;
+          }
         } else {
           show = true;
         }
@@ -1013,6 +1220,8 @@ function buildCitySidebar(db) {
         a.dataset.city = city;
         a.addEventListener('click', e => {
           e.preventDefault();
+          // Do nothing if no-results is showing
+          if (document.getElementById('noResults').classList.contains('visible')) return;
           document.getElementById('addressInput').value = city;
           searchReps(city);
           document.querySelectorAll('.fr-sidebar-city').forEach(el =>
@@ -1067,6 +1276,11 @@ function buildCitySidebar(db) {
     dropdown.addEventListener('change', () => {
       const city = dropdown.value;
       if (!city) return;
+      // Do nothing if no-results is showing
+      if (document.getElementById('noResults').classList.contains('visible')) {
+        dropdown.value = '';
+        return;
+      }
       document.getElementById('addressInput').value = city;
       searchReps(city);
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1086,7 +1300,24 @@ async function init() {
     buildZipCityMap(db);
     renderAll(db);
     buildCitySidebar(db);
-    setupRevealObserver();
+
+    // Flush all cards immediately
+    flushAllPending();
+
+    // By default: hide all district-specific cards, show only statewide + president
+    document.querySelectorAll('.fr-card').forEach(card => {
+      const cid = card.dataset.districtId;
+      const isGlobal = (cid === 'statewide' || cid === 'all');
+      card.style.display = isGlobal ? '' : 'none';
+    });
+
+    // Show/hide section labels based on visible cards
+    document.querySelectorAll('.fr-grid').forEach(grid => {
+      const label = grid.previousElementSibling;
+      const hasCards = Array.from(grid.children).some(c => c.style.display !== 'none');
+      if (label) label.style.display = hasCards ? '' : 'none';
+      grid.style.display = hasCards ? '' : 'none';
+    });
 
     const params = new URLSearchParams(window.location.search);
     const addr   = params.get('address') || params.get('q');

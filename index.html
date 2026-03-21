@@ -30,7 +30,6 @@
 </header>
 
 
-
 <section class="home-hero">
   <div class="home-hero-inner">
     <span class="home-hero-eyebrow">
@@ -45,9 +44,10 @@
           <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
         </svg>
         <input type="text" id="homeAddressInput" placeholder="Enter your city, address, or ZIP…" autocomplete="street-address" />
-        <button onclick="goToReps()">Find My Reps</button>
+        <button onclick="goToReps()">Find My Representatives</button>
       </div>
-      <p class="home-search-hint">Try "Dedham", "02027", or "1 Main St Boston MA"</p>
+      <p class="home-search-error" id="homeSearchError">Please enter an address, zip code, town, or city in Massachusetts</p>
+      <p class="home-search-hint">Try "Quincy", "02184", or "610 Main St, Waltham, MA 02452"</p>
     </div>
     <div class="home-hero-stats">
       <div class="home-stat">
@@ -75,7 +75,7 @@
     </div>
     <div class="how-grid">
       <div class="how-card reveal">
-        <div class="how-num">1</div>
+        <div class="how-num">01</div>
         <div class="how-icon-wrap"><img src="one.jpeg" alt="Enter your address" /></div>
         <div class="how-card-text">
           <h3>Enter Your Address</h3>
@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="how-card reveal">
-        <div class="how-num">2</div>
+        <div class="how-num">02</div>
         <div class="how-icon-wrap"><img src="two.jpeg" alt="See your representatives" /></div>
         <div class="how-card-text">
           <h3>See Your Representatives</h3>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="how-card reveal">
-        <div class="how-num">3</div>
+        <div class="how-num">03</div>
         <div class="how-icon-wrap"><img src="three.jpeg" alt="Contact and engage" /></div>
         <div class="how-card-text">
           <h3>Contact &amp; Engage</h3>
@@ -142,10 +142,16 @@
 
 </main>
 
+
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="wavcon.png" alt="CivicNow" class="logo-img" />
+
+      <a href="index.html">
+      <div class="logo"><img src="wavcon.png" alt="CivicNow" class="footer-logo" /></div>
+      </a>
+
       <p>Making civic engagement simple, transparent, and accessible for every Massachusetts resident.</p>
     </div>
     <div class="footer-links">
@@ -176,15 +182,35 @@
 </button>
 
 <script>
+  function isValidSearchInput(q) {
+    if (q.length < 2) return false;
+    if (/[^a-zA-Z0-9\s,.\-'#\/]/.test(q)) return false;
+    if (/^\d{5}$/.test(q)) return /^0[12]/.test(q);
+    if (/^\d+$/.test(q)) return false;
+    if (!/[a-zA-Z]/.test(q)) return false;
+    const lower = q.toLowerCase();
+    const maIndicators = [',ma', ', ma', ' ma ', ' ma,', 'massachusetts', ' mass '];
+    if (maIndicators.some(t => lower.includes(t))) return true;
+    if (/^\d+\s+[a-zA-Z]/.test(q)) return true;
+    if (/^[a-zA-Z\s\-']+$/.test(q)) return true;
+    return false;
+  }
+
   function goToReps() {
-    const addr = document.getElementById('homeAddressInput').value.trim();
-    if (!addr) {
-      const input = document.getElementById('homeAddressInput');
+    const input = document.getElementById('homeAddressInput');
+    const addr  = input.value.trim();
+
+    if (!addr || !isValidSearchInput(addr)) {
+      input.classList.add('home-input-error');
+      document.getElementById('homeSearchError').classList.add('visible');
       input.focus();
-      input.style.boxShadow = '0 0 0 3px rgba(201,162,39,.6)';
-      setTimeout(() => input.style.boxShadow = '', 2000);
+      setTimeout(() => {
+        input.classList.remove('home-input-error');
+        document.getElementById('homeSearchError').classList.remove('visible');
+      }, 3000);
       return;
     }
+
     window.location.href = 'FindReps.html?address=' + encodeURIComponent(addr);
   }
 

@@ -283,6 +283,20 @@ header {
   outline: none;
   background: transparent;
   min-width: 0;
+  transition: box-shadow .2s;
+}
+
+.home-input-error {
+  animation: home-shake .35s ease;
+  box-shadow: 0 0 0 3px rgba(229,62,62,.5) inset !important;
+}
+
+@keyframes home-shake {
+  0%,100% { transform: translateX(0); }
+  20%      { transform: translateX(-6px); }
+  40%      { transform: translateX(6px); }
+  60%      { transform: translateX(-4px); }
+  80%      { transform: translateX(4px); }
 }
 
 .home-search-inner button {
@@ -1048,3 +1062,16 @@ details[open] summary::after { content: "−"; }
   --fr-shadow:    0 2px 12px rgba(0,33,71,.08);
   --fr-shadow-lg: 0 8px 28px rgba(0,33,71,.16);
 }
+
+/* ── Homepage search error message ── */
+.home-search-error {
+  display: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffaaaa;
+  margin: 6px 0 0;
+  animation: home-shake .35s ease;
+}
+
+.home-search-error.visible { display: block; }
