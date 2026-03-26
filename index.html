@@ -49,20 +49,22 @@
       <p class="home-search-error" id="homeSearchError">Please enter an address, zip code, town, or city in Massachusetts</p>
       <p class="home-search-hint">Try "Quincy", "02184", or "610 Main St, Waltham, MA 02452"</p>
     </div>
-    <div class="home-hero-stats">
-      <div class="home-stat">
-        <div class="home-stat-num">3</div>
-        <div class="home-stat-label">MA Cities Covered</div>
-      </div>
-      <div class="home-stat">
-        <div class="home-stat-num">29</div>
-        <div class="home-stat-label">Officials Tracked</div>
-      </div>
-      <div class="home-stat">
-        <div class="home-stat-num">4</div>
-        <div class="home-stat-label">Levels of Government</div>
-      </div>
-    </div>
+
+<div class="home-hero-stats">
+  <div class="home-stat">
+    <div class="home-stat-num" data-target="3">0</div>
+    <div class="home-stat-label">MA Cities Covered</div>
+  </div>
+  <div class="home-stat">
+    <div class="home-stat-num" data-target="29">0</div>
+    <div class="home-stat-label">Officials Tracked</div>
+  </div>
+  <div class="home-stat">
+    <div class="home-stat-num" data-target="4">0</div>
+    <div class="home-stat-label">Levels of Government</div>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -235,7 +237,9 @@
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 
-   // Animate a single counter on homepage
+
+
+  // Animate a single counter on homepage
 function animateCounter(el, duration = 1200) {
   const target = +el.getAttribute('data-target');
   const startTime = performance.now();

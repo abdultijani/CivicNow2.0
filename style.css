@@ -262,6 +262,7 @@ header {
   overflow: hidden;
   box-shadow: 0 12px 40px rgba(0,0,0,.28), 0 0 0 1px rgba(255,255,255,.08);
   position: relative;
+  
 }
 
 .home-search-icon {
@@ -523,7 +524,7 @@ header {
   flex-shrink: 0;
 }
 
-.cta-btn:hover { background: var(--gold-lt); transform: translateY(-2px); opacity: 1.9; transform: scale(1.14); }
+.cta-btn:hover { background: var(--gold-lt); transform: translateY(-2px); opacity: 1.9; transform: scale(1.14);}
 
 @media (max-width: 600px) {
   .cta-banner { padding: 36px 22px; }
@@ -697,7 +698,6 @@ header {
 
 .footer-logo { height: 62px; width: auto; opacity: .88; filter: brightness(1.08);   transition: opacity .2s, transform .2s; filter: drop-shadow(0 1px 4px rgba(0,0,0,.25));}
 .footer-logo:hover { opacity: 1.9; transform: scale(1.24); }
-
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1224,6 +1224,10 @@ body.privacy-policy {
   color: inherit;
   display: block;
 }
+
+
+
+
 
 /* Counter base on homepage */
 .home-stat-num {
