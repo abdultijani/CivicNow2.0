@@ -1077,3 +1077,17 @@
   .vi-quicknav { top: 90px; }
   .vi-step { gap: 24px; }
 }
+
+
+/* blinking cursor on About page */
+.typewriter::after {
+  content:" ";
+  margin-left: 4px;
+  animation: blink 2s infinite;
+  
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
