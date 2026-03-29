@@ -1270,3 +1270,41 @@ body.privacy-policy {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
+
+
+/* survey on homepage */
+.cta-button {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 900;
+  text-decoration: none;
+  
+  background: linear-gradient(45deg, #ff003c, #ff8c00, #ffd700);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: gradientMove 3s ease infinite, glow 1.5s ease-in-out infinite alternate, shake 2s infinite;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px rgba(255,0,60,0.7); }
+  to { text-shadow: 0 0 20px rgba(255,140,0,1); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1px); }
+  50% { transform: translateX(1px); }
+  75% { transform: translateX(-1px); }
+}
