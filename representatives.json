@@ -392,27 +392,32 @@
           ]
         },
         "representative": {
-          "name": "Denise Garlick",
+          "name": "Joshua Tarsky",
           "title": "State Representative",
           "party": "Democratic",
           "level": "state",
           "district": "13th Norfolk District",
-          "phone": "(617) 722-2070",
-          "email": "Denise.Garlick@mahouse.gov",
-          "website": "https://malegislature.gov/Legislators/Profile/DEG1",
-          "office": "24 Beacon Street, Boston, MA 02133",
-          "since": "2011",
+          "phone": "(617) 722-2460",
+          "email": "Joshua.Tarsky@mahouse.gov",
+          "website": "https://www.staterepjoshuatarsky.com",
+          "office": "24 Beacon Street, Room 33, Boston, MA 02133",
+          "since": "2023",
           "nextElection": "2026",
           "committees": [
-            "Health Care Financing",
-            "Elder Affairs"
+            "Environment, Natural Resources & Agriculture",
+            "Housing"
           ],
-          "background": "Denise Garlick is the Massachusetts State Representative for the 13th Norfolk District, representing Needham and portions of surrounding communities. A former nurse and health policy expert, she has served since 2011 and is a leader on health care and elder care legislation.",
-          "photo": "https://malegislature.gov/Legislators/Profile/DEG1/headshot",
+          "background": "Joshua Tarsky is the Massachusetts State Representative for the 13th Norfolk District, representing Needham and surrounding communities. First elected in 2022, he focuses on environmental policy, housing, and community development.",
+          "photo": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Joshua_Tarsky.png",
+          "backgroundFull": "Joshua Tarsky is the Massachusetts State Representative for the 13th Norfolk District, which covers Needham and portions of surrounding communities. He was first elected in November 2022 and began serving in January 2023.\n\nIn the Massachusetts House, Tarsky serves on the Committee on Environment, Natural Resources & Agriculture and the Committee on Housing. He focuses on climate and environmental policy, housing affordability, and constituent services for Needham residents.\n\nFor Needham residents, Rep. Tarsky's office assists with state agency matters including the Registry of Motor Vehicles, MassHealth, the Department of Unemployment Assistance, and state permitting processes. Residents can reach his office directly at (617) 722-2460 or by email at Joshua.Tarsky@mahouse.gov.",
           "sources": [
             {
               "label": "Official Profile \u2014 malegislature.gov",
-              "url": "https://malegislature.gov/Legislators/Profile/DEG1"
+              "url": "https://malegislature.gov/Legislators/Profile/J_T1"
+            },
+            {
+              "label": "Ballotpedia \u2014 Joshua Tarsky",
+              "url": "https://ballotpedia.org/Joshua_Tarsky"
             }
           ]
         }
