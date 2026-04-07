@@ -1,0 +1,4350 @@
+{
+  "_meta": {
+    "version": "2.1.0",
+    "lastUpdated": "2026-04-06",
+    "description": "CivicNow MA \u2014 2026 election data for Waltham, Quincy, and Needham.",
+    "dataNote": "Verified against city/town clerk sources. Candidate lists are demo-representative; always confirm with your local clerk. Waltham and Quincy have no local elections in 2026 \u2014 next local cycle is November 2, 2027.",
+    "sources": {
+      "waltham": "https://www.city.waltham.ma.us/city-clerk",
+      "quincy": "https://www.quincyma.gov/city_clerk",
+      "needham": "https://www.needhamma.gov/town-clerk",
+      "statewide": "https://www.sec.state.ma.us/ele/eleidx.htm"
+    }
+  },
+  "lookupIndex": {
+    "byCity": {
+      "waltham": "waltham",
+      "quincy": "quincy",
+      "needham": "needham",
+      "sharon": "sharon"
+    },
+    "byZip": {
+      "02451": "waltham",
+      "02452": "waltham",
+      "02453": "waltham",
+      "02454": "waltham",
+      "02169": "quincy",
+      "02170": "quincy",
+      "02171": "quincy",
+      "02492": "needham",
+      "02494": "needham",
+      "02067": "sharon"
+    },
+    "byStreetPrefix": {
+      "MAIN": [
+        {
+          "municipality": "waltham",
+          "precincts": [
+            "1A",
+            "1B"
+          ]
+        },
+        {
+          "municipality": "quincy",
+          "precincts": [
+            "1-1",
+            "1-2"
+          ]
+        },
+        {
+          "municipality": "needham",
+          "precincts": [
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "MOODY": [
+        {
+          "municipality": "waltham",
+          "precincts": [
+            "1A",
+            "2A"
+          ]
+        }
+      ],
+      "SOUTH": [
+        {
+          "municipality": "waltham",
+          "precincts": [
+            "3A",
+            "3B"
+          ]
+        },
+        {
+          "municipality": "quincy",
+          "precincts": [
+            "3-1",
+            "3-2"
+          ]
+        }
+      ],
+      "HIGHLAND": [
+        {
+          "municipality": "needham",
+          "precincts": [
+            "3",
+            "4"
+          ]
+        }
+      ],
+      "CENTRAL": [
+        {
+          "municipality": "needham",
+          "precincts": [
+            "5",
+            "6"
+          ]
+        }
+      ],
+      "HANCOCK": [
+        {
+          "municipality": "quincy",
+          "precincts": [
+            "4-1",
+            "4-2"
+          ]
+        }
+      ],
+      "LEXINGTON": [
+        {
+          "municipality": "waltham",
+          "precincts": [
+            "3A",
+            "3B"
+          ]
+        }
+      ],
+      "TRAPELO": [
+        {
+          "municipality": "waltham",
+          "precincts": [
+            "4A",
+            "4B"
+          ]
+        }
+      ],
+      "WEBSTER": [
+        {
+          "municipality": "needham",
+          "precincts": [
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "HIGHLAND AVENUE": [
+        {
+          "municipality": "needham",
+          "precincts": [
+            "7",
+            "8"
+          ]
+        }
+      ],
+      "SOUTH MAIN": [
+        {
+          "municipality": "sharon",
+          "precincts": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "MOUNTAIN": [
+        {
+          "municipality": "sharon",
+          "precincts": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "POND": [
+        {
+          "municipality": "sharon",
+          "precincts": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    }
+  },
+  "municipalities": {
+    "waltham": {
+      "name": "Waltham",
+      "type": "city",
+      "county": "Middlesex",
+      "state": "MA",
+      "zipCodes": [
+        "02451",
+        "02452",
+        "02453",
+        "02454"
+      ],
+      "congressionalDistrict": "MA-5",
+      "stateSenateDistrict": "Middlesex and Suffolk",
+      "stateHouseDistricts": [
+        "14th Middlesex",
+        "15th Middlesex",
+        "17th Middlesex"
+      ],
+      "clerkContact": {
+        "office": "Waltham City Clerk",
+        "phone": "(781) 314-3120",
+        "email": "cityclerk@city.waltham.ma.us",
+        "website": "https://www.city.waltham.ma.us/city-clerk",
+        "address": "610 Main Street, Waltham, MA 02452"
+      },
+      "localElectionCycle": {
+        "frequency": "Every 2 years, odd-numbered years (November)",
+        "mostRecentLocalElection": {
+          "date": "2025-11-04",
+          "dateDisplay": "Tuesday, November 4, 2025",
+          "results": {
+            "cityCouncilAtLarge": {
+              "seatsElected": 6,
+              "elected": [
+                {
+                  "name": "Colleen Bradley-MacArthur",
+                  "incumbent": true
+                },
+                {
+                  "name": "Randy LeBlanc",
+                  "incumbent": true
+                },
+                {
+                  "name": "Tim King",
+                  "incumbent": false
+                },
+                {
+                  "name": "Emma Tzioumis",
+                  "incumbent": false
+                },
+                {
+                  "name": "Carlos Vidal",
+                  "incumbent": true
+                },
+                {
+                  "name": "Paul Brasco",
+                  "incumbent": true
+                }
+              ],
+              "alsoRan": [
+                {
+                  "name": "Kathy McMenimen",
+                  "incumbent": true
+                },
+                {
+                  "name": "Christina Curtin",
+                  "incumbent": false
+                }
+              ]
+            },
+            "schoolCommittee": {
+              "seatsElected": 3,
+              "elected": [
+                {
+                  "name": "Debbie Coleman",
+                  "incumbent": true
+                },
+                {
+                  "name": "Tammy Wong-Bigelow",
+                  "incumbent": false
+                },
+                {
+                  "name": "Sabrina DeJoannis",
+                  "incumbent": false
+                }
+              ],
+              "alsoRan": [
+                {
+                  "name": "Liz Al Jammal",
+                  "incumbent": true
+                }
+              ]
+            }
+          }
+        },
+        "nextLocalElection": {
+          "date": "2027-11-02",
+          "dateDisplay": "Tuesday, November 2, 2027",
+          "note": "Next Waltham city election. Mayor, City Council (ward + at-large), and School Committee seats will be on the ballot. Candidates TBD."
+        }
+      },
+      "elections": [
+        {
+          "electionId": "waltham-2026-primary",
+          "electionType": "2026 Massachusetts State Primary",
+          "electionScope": "state",
+          "electionDate": "2026-09-01",
+          "electionDateDisplay": "Tuesday, September 1, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": false,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-08-22",
+            "endDate": "2026-08-28",
+            "locations": [
+              {
+                "name": "Waltham City Hall \u2014 City Clerk's Office",
+                "address": "610 Main Street, Waltham, MA 02452",
+                "hours": "Mon\u2013Fri 8:30 AM\u20134:30 PM; Sat Aug 29 9 AM\u20131 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "note": "Must be postmarked by August 22, 2026."
+            },
+            "inPerson": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "location": "Waltham City Hall, City Clerk's Office, 610 Main Street",
+              "hours": "8:30 AM \u2013 4:30 PM",
+              "note": "In-person deadline at City Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "U.S. Senate",
+              "district": "Massachusetts Statewide",
+              "term": "6 years",
+              "seats": 1,
+              "note": "Primary determines Democratic and Republican nominees for November.",
+              "candidates": [
+                {
+                  "name": "Edward J. Markey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.markey.senate.gov",
+                  "findRepsId": "sen-edward-j.-markey",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Primary Challenger TBD",
+                  "party": "Democrat",
+                  "incumbent": false,
+                  "note": "Ballot finalized after nomination deadline.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "U.S. Representative",
+              "district": "Massachusetts 5th Congressional District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Katherine Clark",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://katherineclark.house.gov",
+                  "findRepsId": "house-ma-05",
+                  "findRepsCity": "Waltham"
+                }
+              ]
+            },
+            {
+              "office": "Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Maura Healey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/governor",
+                  "findRepsId": "sw-governor",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Republican primary determines nominee.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Lieutenant Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Kim Driscoll",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ltgovernor",
+                  "findRepsId": "sw-ltGovernor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Attorney General",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrea Campbell",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ag",
+                  "findRepsId": "sw-attorneyGeneral",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Secretary of State",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Tanisha Sullivan",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.sec.state.ma.us",
+                  "findRepsId": "sw-secretaryOfState",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Treasurer",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Deborah Goldberg",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/treasurer",
+                  "findRepsId": "sw-treasurer",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Auditor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Diana DiZoglio",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/auditor",
+                  "findRepsId": "sw-auditor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Senator",
+              "district": "Middlesex and Suffolk District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Michael J. Barrett",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/MFB0",
+                  "findRepsId": "ssen-ma-05",
+                  "findRepsCity": "Waltham"
+                }
+              ]
+            },
+            {
+              "office": "State Representative",
+              "district": "14th Middlesex District (parts of Waltham)",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Thomas M. Stanley",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/TMS1",
+                  "findRepsId": "srep-ma-05",
+                  "findRepsCity": "Waltham"
+                }
+              ]
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "1A",
+              "ward": "1",
+              "precinct": "A",
+              "zipCodes": [
+                "02451"
+              ],
+              "pollingLocation": {
+                "name": "Plympton Elementary School",
+                "address": "182 Lexington Street, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "1B",
+              "ward": "1",
+              "precinct": "B",
+              "zipCodes": [
+                "02451"
+              ],
+              "pollingLocation": {
+                "name": "Plympton Elementary School",
+                "address": "182 Lexington Street, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2A",
+              "ward": "2",
+              "precinct": "A",
+              "zipCodes": [
+                "02451",
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Northeast Elementary School",
+                "address": "36 Warwick Road, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2B",
+              "ward": "2",
+              "precinct": "B",
+              "zipCodes": [
+                "02451",
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Northeast Elementary School",
+                "address": "36 Warwick Road, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3A",
+              "ward": "3",
+              "precinct": "A",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Waltham High School \u2014 Main Gym",
+                "address": "617 Lexington Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3B",
+              "ward": "3",
+              "precinct": "B",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Waltham High School \u2014 Main Gym",
+                "address": "617 Lexington Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4A",
+              "ward": "4",
+              "precinct": "A",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Henry Whittemore Elementary School",
+                "address": "444 Trapelo Road, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4B",
+              "ward": "4",
+              "precinct": "B",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Henry Whittemore Elementary School",
+                "address": "444 Trapelo Road, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5A",
+              "ward": "5",
+              "precinct": "A",
+              "zipCodes": [
+                "02453"
+              ],
+              "pollingLocation": {
+                "name": "McDevitt Middle School",
+                "address": "354 Waverley Avenue, Waltham, MA 02453",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5B",
+              "ward": "5",
+              "precinct": "B",
+              "zipCodes": [
+                "02453"
+              ],
+              "pollingLocation": {
+                "name": "McDevitt Middle School",
+                "address": "354 Waverley Avenue, Waltham, MA 02453",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6A",
+              "ward": "6",
+              "precinct": "A",
+              "zipCodes": [
+                "02453"
+              ],
+              "pollingLocation": {
+                "name": "Fitzgerald Elementary School",
+                "address": "95 Whites Avenue, Waltham, MA 02453",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6B",
+              "ward": "6",
+              "precinct": "B",
+              "zipCodes": [
+                "02453"
+              ],
+              "pollingLocation": {
+                "name": "Fitzgerald Elementary School",
+                "address": "95 Whites Avenue, Waltham, MA 02453",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "7A",
+              "ward": "7",
+              "precinct": "A",
+              "zipCodes": [
+                "02453",
+                "02454"
+              ],
+              "pollingLocation": {
+                "name": "Stigmatine Fathers \u2014 Parish Hall",
+                "address": "554 Lexington Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "7B",
+              "ward": "7",
+              "precinct": "B",
+              "zipCodes": [
+                "02453",
+                "02454"
+              ],
+              "pollingLocation": {
+                "name": "Stigmatine Fathers \u2014 Parish Hall",
+                "address": "554 Lexington Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "8A",
+              "ward": "8",
+              "precinct": "A",
+              "zipCodes": [
+                "02454"
+              ],
+              "pollingLocation": {
+                "name": "John F. Kennedy Elementary School",
+                "address": "655 Elm Street, Waltham, MA 02454",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "8B",
+              "ward": "8",
+              "precinct": "B",
+              "zipCodes": [
+                "02454"
+              ],
+              "pollingLocation": {
+                "name": "John F. Kennedy Elementary School",
+                "address": "655 Elm Street, Waltham, MA 02454",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "9A",
+              "ward": "9",
+              "precinct": "A",
+              "zipCodes": [
+                "02451"
+              ],
+              "pollingLocation": {
+                "name": "Browne Middle School \u2014 Cafeteria",
+                "address": "470 Trapelo Road, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "9B",
+              "ward": "9",
+              "precinct": "B",
+              "zipCodes": [
+                "02451"
+              ],
+              "pollingLocation": {
+                "name": "Browne Middle School \u2014 Cafeteria",
+                "address": "470 Trapelo Road, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "10A",
+              "ward": "10",
+              "precinct": "A",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Waltham Senior Center",
+                "address": "488 Main Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "10B",
+              "ward": "10",
+              "precinct": "B",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Waltham Senior Center",
+                "address": "488 Main Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        },
+        {
+          "electionId": "waltham-2026-general",
+          "electionType": "2026 Massachusetts General Election",
+          "electionScope": "state",
+          "electionDate": "2026-11-03",
+          "electionDateDisplay": "Tuesday, November 3, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": false,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-10-17",
+            "endDate": "2026-10-30",
+            "locations": [
+              {
+                "name": "Waltham City Hall \u2014 City Clerk's Office",
+                "address": "610 Main Street, Waltham, MA 02452",
+                "hours": "Mon\u2013Fri 8:30 AM\u20134:30 PM; Sat Oct 24 & Oct 31 9 AM\u20131 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "note": "Must be postmarked by October 24, 2026."
+            },
+            "inPerson": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "location": "Waltham City Hall, City Clerk's Office, 610 Main Street",
+              "hours": "8:30 AM \u2013 4:30 PM",
+              "note": "In-person deadline at City Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "U.S. Senate",
+              "district": "Massachusetts Statewide",
+              "term": "6 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward J. Markey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.markey.senate.gov",
+                  "findRepsId": "sen-edward-j.-markey",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "U.S. Representative",
+              "district": "Massachusetts 5th Congressional District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Katherine Clark",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://katherineclark.house.gov",
+                  "findRepsId": "house-ma-05",
+                  "findRepsCity": "Waltham"
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Maura Healey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/governor",
+                  "findRepsId": "sw-governor",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Lieutenant Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Kim Driscoll",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ltgovernor",
+                  "findRepsId": "sw-ltGovernor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Attorney General",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrea Campbell",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ag",
+                  "findRepsId": "sw-attorneyGeneral",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Secretary of State",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Tanisha Sullivan",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.sec.state.ma.us",
+                  "findRepsId": "sw-secretaryOfState",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Treasurer",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Deborah Goldberg",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/treasurer",
+                  "findRepsId": "sw-treasurer",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Auditor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Diana DiZoglio",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/auditor",
+                  "findRepsId": "sw-auditor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Senator",
+              "district": "Middlesex and Suffolk District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Michael J. Barrett",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/MFB0",
+                  "findRepsId": "ssen-ma-05",
+                  "findRepsCity": "Waltham"
+                }
+              ]
+            },
+            {
+              "office": "State Representative",
+              "district": "14th Middlesex District (parts of Waltham)",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Thomas M. Stanley",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/TMS1",
+                  "findRepsId": "srep-ma-05",
+                  "findRepsCity": "Waltham"
+                }
+              ]
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "1A",
+              "ward": "1",
+              "precinct": "A",
+              "zipCodes": [
+                "02451"
+              ],
+              "pollingLocation": {
+                "name": "Plympton Elementary School",
+                "address": "182 Lexington Street, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "1B",
+              "ward": "1",
+              "precinct": "B",
+              "zipCodes": [
+                "02451"
+              ],
+              "pollingLocation": {
+                "name": "Plympton Elementary School",
+                "address": "182 Lexington Street, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2A",
+              "ward": "2",
+              "precinct": "A",
+              "zipCodes": [
+                "02451",
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Northeast Elementary School",
+                "address": "36 Warwick Road, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2B",
+              "ward": "2",
+              "precinct": "B",
+              "zipCodes": [
+                "02451",
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Northeast Elementary School",
+                "address": "36 Warwick Road, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3A",
+              "ward": "3",
+              "precinct": "A",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Waltham High School \u2014 Main Gym",
+                "address": "617 Lexington Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3B",
+              "ward": "3",
+              "precinct": "B",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Waltham High School \u2014 Main Gym",
+                "address": "617 Lexington Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4A",
+              "ward": "4",
+              "precinct": "A",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Henry Whittemore Elementary School",
+                "address": "444 Trapelo Road, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4B",
+              "ward": "4",
+              "precinct": "B",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Henry Whittemore Elementary School",
+                "address": "444 Trapelo Road, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5A",
+              "ward": "5",
+              "precinct": "A",
+              "zipCodes": [
+                "02453"
+              ],
+              "pollingLocation": {
+                "name": "McDevitt Middle School",
+                "address": "354 Waverley Avenue, Waltham, MA 02453",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5B",
+              "ward": "5",
+              "precinct": "B",
+              "zipCodes": [
+                "02453"
+              ],
+              "pollingLocation": {
+                "name": "McDevitt Middle School",
+                "address": "354 Waverley Avenue, Waltham, MA 02453",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6A",
+              "ward": "6",
+              "precinct": "A",
+              "zipCodes": [
+                "02453"
+              ],
+              "pollingLocation": {
+                "name": "Fitzgerald Elementary School",
+                "address": "95 Whites Avenue, Waltham, MA 02453",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6B",
+              "ward": "6",
+              "precinct": "B",
+              "zipCodes": [
+                "02453"
+              ],
+              "pollingLocation": {
+                "name": "Fitzgerald Elementary School",
+                "address": "95 Whites Avenue, Waltham, MA 02453",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "7A",
+              "ward": "7",
+              "precinct": "A",
+              "zipCodes": [
+                "02453",
+                "02454"
+              ],
+              "pollingLocation": {
+                "name": "Stigmatine Fathers \u2014 Parish Hall",
+                "address": "554 Lexington Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "7B",
+              "ward": "7",
+              "precinct": "B",
+              "zipCodes": [
+                "02453",
+                "02454"
+              ],
+              "pollingLocation": {
+                "name": "Stigmatine Fathers \u2014 Parish Hall",
+                "address": "554 Lexington Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "8A",
+              "ward": "8",
+              "precinct": "A",
+              "zipCodes": [
+                "02454"
+              ],
+              "pollingLocation": {
+                "name": "John F. Kennedy Elementary School",
+                "address": "655 Elm Street, Waltham, MA 02454",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "8B",
+              "ward": "8",
+              "precinct": "B",
+              "zipCodes": [
+                "02454"
+              ],
+              "pollingLocation": {
+                "name": "John F. Kennedy Elementary School",
+                "address": "655 Elm Street, Waltham, MA 02454",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "9A",
+              "ward": "9",
+              "precinct": "A",
+              "zipCodes": [
+                "02451"
+              ],
+              "pollingLocation": {
+                "name": "Browne Middle School \u2014 Cafeteria",
+                "address": "470 Trapelo Road, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "9B",
+              "ward": "9",
+              "precinct": "B",
+              "zipCodes": [
+                "02451"
+              ],
+              "pollingLocation": {
+                "name": "Browne Middle School \u2014 Cafeteria",
+                "address": "470 Trapelo Road, Waltham, MA 02451",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "10A",
+              "ward": "10",
+              "precinct": "A",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Waltham Senior Center",
+                "address": "488 Main Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "10B",
+              "ward": "10",
+              "precinct": "B",
+              "zipCodes": [
+                "02452"
+              ],
+              "pollingLocation": {
+                "name": "Waltham Senior Center",
+                "address": "488 Main Street, Waltham, MA 02452",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "quincy": {
+      "name": "Quincy",
+      "type": "city",
+      "county": "Norfolk",
+      "state": "MA",
+      "zipCodes": [
+        "02169",
+        "02170",
+        "02171"
+      ],
+      "congressionalDistrict": "MA-8",
+      "stateSenateDistrict": "Norfolk and Plymouth",
+      "stateHouseDistricts": [
+        "3rd Norfolk",
+        "4th Norfolk",
+        "5th Norfolk",
+        "6th Norfolk"
+      ],
+      "clerkContact": {
+        "office": "Quincy City Clerk",
+        "phone": "(617) 376-1130",
+        "email": "cityclerk@quincyma.gov",
+        "website": "https://www.quincyma.gov/city_clerk",
+        "address": "1305 Hancock Street, Quincy, MA 02169"
+      },
+      "localElectionCycle": {
+        "frequency": "Every 2 years, odd-numbered years (November)",
+        "mostRecentLocalElection": {
+          "date": "2025-11-04",
+          "dateDisplay": "Tuesday, November 4, 2025",
+          "results": {
+            "cityCouncilAtLarge": {
+              "seatsElected": 6,
+              "note": "Several candidates critical of Mayor Koch won seats, reshaping the City Council lineup.",
+              "elected": [
+                {
+                  "name": "Scott Campbell",
+                  "incumbent": true
+                },
+                {
+                  "name": "Noel DiBona",
+                  "incumbent": true
+                },
+                {
+                  "name": "Ann Mahoney",
+                  "incumbent": false
+                },
+                {
+                  "name": "Andrew Pham",
+                  "incumbent": false
+                },
+                {
+                  "name": "Herbert 'Alie' Shaughnessy III",
+                  "incumbent": false
+                },
+                {
+                  "name": "Ziqiang ('Susan') Yuan",
+                  "incumbent": false
+                }
+              ],
+              "didNotAdvance": [
+                {
+                  "name": "Jackie Carvey"
+                },
+                {
+                  "name": "Hannah Kaplan"
+                }
+              ]
+            },
+            "schoolCommitteeAtLarge": {
+              "seatsElected": 3,
+              "elected": [
+                {
+                  "name": "Tina Cahill",
+                  "incumbent": true
+                },
+                {
+                  "name": "Kate Campbell",
+                  "incumbent": false
+                },
+                {
+                  "name": "Kai Lee",
+                  "incumbent": false
+                }
+              ],
+              "alsoRan": [
+                {
+                  "name": "Tom Leung"
+                },
+                {
+                  "name": "Marsha Roos"
+                },
+                {
+                  "name": "Frank Santoro"
+                }
+              ],
+              "outgoing": [
+                {
+                  "name": "Doug Gutro"
+                },
+                {
+                  "name": "Emily Lebo"
+                }
+              ]
+            }
+          }
+        },
+        "nextLocalElection": {
+          "date": "2027-11-02",
+          "dateDisplay": "Tuesday, November 2, 2027",
+          "note": "Next Quincy city election. City Council (6 ward + 3 at-large) and School Committee seats will be on the ballot. Candidates TBD."
+        }
+      },
+      "elections": [
+        {
+          "electionId": "quincy-2026-primary",
+          "electionType": "2026 Massachusetts State Primary",
+          "electionScope": "state",
+          "electionDate": "2026-09-01",
+          "electionDateDisplay": "Tuesday, September 1, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": false,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-08-22",
+            "endDate": "2026-08-28",
+            "locations": [
+              {
+                "name": "Quincy City Hall \u2014 City Clerk's Office",
+                "address": "1305 Hancock Street, Quincy, MA 02169",
+                "hours": "Mon\u2013Fri 8:30 AM\u20134:30 PM; Sat Aug 29 10 AM\u20132 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "note": "Must be postmarked by August 22, 2026."
+            },
+            "inPerson": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "location": "Quincy City Hall, City Clerk's Office, 1305 Hancock Street",
+              "hours": "8:30 AM \u2013 4:30 PM",
+              "note": "In-person deadline at City Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "U.S. Senate",
+              "district": "Massachusetts Statewide",
+              "term": "6 years",
+              "seats": 1,
+              "note": "Primary determines nominees for November.",
+              "candidates": [
+                {
+                  "name": "Edward J. Markey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.markey.senate.gov",
+                  "findRepsId": "sen-edward-j.-markey",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Primary Challenger TBD",
+                  "party": "Democrat",
+                  "incumbent": false,
+                  "note": "Ballot finalized after nomination deadline.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "U.S. Representative",
+              "district": "Massachusetts 8th Congressional District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Stephen Lynch",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://lynch.house.gov",
+                  "findRepsId": "house-ma-08"
+                }
+              ]
+            },
+            {
+              "office": "Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Maura Healey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/governor",
+                  "findRepsId": "sw-governor",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Republican primary determines nominee.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Lieutenant Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Kim Driscoll",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ltgovernor",
+                  "findRepsId": "sw-ltGovernor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Attorney General",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrea Campbell",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ag",
+                  "findRepsId": "sw-attorneyGeneral",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Secretary of State",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Tanisha Sullivan",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.sec.state.ma.us",
+                  "findRepsId": "sw-secretaryOfState",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Treasurer",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Deborah Goldberg",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/treasurer",
+                  "findRepsId": "sw-treasurer",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Auditor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Diana DiZoglio",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/auditor",
+                  "findRepsId": "sw-auditor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Senator",
+              "district": "Norfolk and Plymouth District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Patrick O'Connor",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/PCO1",
+                  "findRepsId": "ssen-ma-08",
+                  "findRepsCity": "Quincy"
+                }
+              ]
+            },
+            {
+              "office": "State Representative",
+              "district": "3rd Norfolk District (parts of Quincy)",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Bruce J. Ayers",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/BJA1",
+                  "findRepsId": "srep-ma-08",
+                  "findRepsCity": "Quincy"
+                }
+              ]
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "1-1",
+              "ward": "1",
+              "precinct": "1",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "North Quincy High School \u2014 Cafeteria",
+                "address": "316 Hancock Street, Quincy, MA 02171",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "1-2",
+              "ward": "1",
+              "precinct": "2",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "North Quincy High School \u2014 Cafeteria",
+                "address": "316 Hancock Street, Quincy, MA 02171",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2-1",
+              "ward": "2",
+              "precinct": "1",
+              "zipCodes": [
+                "02170"
+              ],
+              "pollingLocation": {
+                "name": "Atlantic Middle School \u2014 Gymnasium",
+                "address": "1 Hendricks Avenue, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2-2",
+              "ward": "2",
+              "precinct": "2",
+              "zipCodes": [
+                "02170"
+              ],
+              "pollingLocation": {
+                "name": "Atlantic Middle School \u2014 Gymnasium",
+                "address": "1 Hendricks Avenue, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3-1",
+              "ward": "3",
+              "precinct": "1",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "Bernazzani Elementary School \u2014 Gymnasium",
+                "address": "333 Newport Avenue, Quincy, MA 02170",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3-2",
+              "ward": "3",
+              "precinct": "2",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "Bernazzani Elementary School \u2014 Gymnasium",
+                "address": "333 Newport Avenue, Quincy, MA 02170",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4-1",
+              "ward": "4",
+              "precinct": "1",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "Quincy High School \u2014 Gymnasium",
+                "address": "100 Coddington Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4-2",
+              "ward": "4",
+              "precinct": "2",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "Quincy High School \u2014 Gymnasium",
+                "address": "100 Coddington Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5-1",
+              "ward": "5",
+              "precinct": "1",
+              "zipCodes": [
+                "02169",
+                "02170"
+              ],
+              "pollingLocation": {
+                "name": "Sterling Middle School \u2014 Cafeteria",
+                "address": "35 Grafton Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5-2",
+              "ward": "5",
+              "precinct": "2",
+              "zipCodes": [
+                "02169",
+                "02170"
+              ],
+              "pollingLocation": {
+                "name": "Sterling Middle School \u2014 Cafeteria",
+                "address": "35 Grafton Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6-1",
+              "ward": "6",
+              "precinct": "1",
+              "zipCodes": [
+                "02171"
+              ],
+              "pollingLocation": {
+                "name": "Merrymount Elementary School \u2014 Gymnasium",
+                "address": "115 Sea Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6-2",
+              "ward": "6",
+              "precinct": "2",
+              "zipCodes": [
+                "02171"
+              ],
+              "pollingLocation": {
+                "name": "Merrymount Elementary School \u2014 Gymnasium",
+                "address": "115 Sea Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        },
+        {
+          "electionId": "quincy-2026-general",
+          "electionType": "2026 Massachusetts General Election",
+          "electionScope": "state",
+          "electionDate": "2026-11-03",
+          "electionDateDisplay": "Tuesday, November 3, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": false,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-10-17",
+            "endDate": "2026-10-30",
+            "locations": [
+              {
+                "name": "Quincy City Hall \u2014 City Clerk's Office",
+                "address": "1305 Hancock Street, Quincy, MA 02169",
+                "hours": "Mon\u2013Fri 8:30 AM\u20134:30 PM; Sat Oct 24 & Oct 31 10 AM\u20132 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "note": "Must be postmarked by October 24, 2026."
+            },
+            "inPerson": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "location": "Quincy City Hall, City Clerk's Office, 1305 Hancock Street",
+              "hours": "8:30 AM \u2013 4:30 PM",
+              "note": "In-person deadline at City Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "U.S. Senate",
+              "district": "Massachusetts Statewide",
+              "term": "6 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward J. Markey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.markey.senate.gov",
+                  "findRepsId": "sen-edward-j.-markey",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "U.S. Representative",
+              "district": "Massachusetts 8th Congressional District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Stephen Lynch",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://lynch.house.gov",
+                  "findRepsId": "house-ma-08"
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Maura Healey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/governor",
+                  "findRepsId": "sw-governor",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Lieutenant Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Kim Driscoll",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ltgovernor",
+                  "findRepsId": "sw-ltGovernor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Attorney General",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrea Campbell",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ag",
+                  "findRepsId": "sw-attorneyGeneral",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Secretary of State",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Tanisha Sullivan",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.sec.state.ma.us",
+                  "findRepsId": "sw-secretaryOfState",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Treasurer",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Deborah Goldberg",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/treasurer",
+                  "findRepsId": "sw-treasurer",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Auditor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Diana DiZoglio",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/auditor",
+                  "findRepsId": "sw-auditor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Senator",
+              "district": "Norfolk and Plymouth District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Patrick O'Connor",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/PCO1",
+                  "findRepsId": "ssen-ma-08",
+                  "findRepsCity": "Quincy"
+                }
+              ]
+            },
+            {
+              "office": "State Representative",
+              "district": "3rd Norfolk District (parts of Quincy)",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Bruce J. Ayers",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/BJA1",
+                  "findRepsId": "srep-ma-08",
+                  "findRepsCity": "Quincy"
+                }
+              ]
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "1-1",
+              "ward": "1",
+              "precinct": "1",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "North Quincy High School \u2014 Cafeteria",
+                "address": "316 Hancock Street, Quincy, MA 02171",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "1-2",
+              "ward": "1",
+              "precinct": "2",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "North Quincy High School \u2014 Cafeteria",
+                "address": "316 Hancock Street, Quincy, MA 02171",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2-1",
+              "ward": "2",
+              "precinct": "1",
+              "zipCodes": [
+                "02170"
+              ],
+              "pollingLocation": {
+                "name": "Atlantic Middle School \u2014 Gymnasium",
+                "address": "1 Hendricks Avenue, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2-2",
+              "ward": "2",
+              "precinct": "2",
+              "zipCodes": [
+                "02170"
+              ],
+              "pollingLocation": {
+                "name": "Atlantic Middle School \u2014 Gymnasium",
+                "address": "1 Hendricks Avenue, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3-1",
+              "ward": "3",
+              "precinct": "1",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "Bernazzani Elementary School \u2014 Gymnasium",
+                "address": "333 Newport Avenue, Quincy, MA 02170",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3-2",
+              "ward": "3",
+              "precinct": "2",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "Bernazzani Elementary School \u2014 Gymnasium",
+                "address": "333 Newport Avenue, Quincy, MA 02170",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4-1",
+              "ward": "4",
+              "precinct": "1",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "Quincy High School \u2014 Gymnasium",
+                "address": "100 Coddington Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4-2",
+              "ward": "4",
+              "precinct": "2",
+              "zipCodes": [
+                "02169"
+              ],
+              "pollingLocation": {
+                "name": "Quincy High School \u2014 Gymnasium",
+                "address": "100 Coddington Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5-1",
+              "ward": "5",
+              "precinct": "1",
+              "zipCodes": [
+                "02169",
+                "02170"
+              ],
+              "pollingLocation": {
+                "name": "Sterling Middle School \u2014 Cafeteria",
+                "address": "35 Grafton Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5-2",
+              "ward": "5",
+              "precinct": "2",
+              "zipCodes": [
+                "02169",
+                "02170"
+              ],
+              "pollingLocation": {
+                "name": "Sterling Middle School \u2014 Cafeteria",
+                "address": "35 Grafton Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6-1",
+              "ward": "6",
+              "precinct": "1",
+              "zipCodes": [
+                "02171"
+              ],
+              "pollingLocation": {
+                "name": "Merrymount Elementary School \u2014 Gymnasium",
+                "address": "115 Sea Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6-2",
+              "ward": "6",
+              "precinct": "2",
+              "zipCodes": [
+                "02171"
+              ],
+              "pollingLocation": {
+                "name": "Merrymount Elementary School \u2014 Gymnasium",
+                "address": "115 Sea Street, Quincy, MA 02169",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "needham": {
+      "name": "Needham",
+      "type": "town",
+      "county": "Norfolk",
+      "state": "MA",
+      "zipCodes": [
+        "02492",
+        "02494"
+      ],
+      "congressionalDistrict": "MA-4",
+      "stateSenateDistrict": "Norfolk, Bristol and Middlesex",
+      "stateHouseDistricts": [
+        "12th Norfolk",
+        "13th Norfolk"
+      ],
+      "clerkContact": {
+        "office": "Needham Town Clerk",
+        "phone": "(781) 455-7500",
+        "email": "townclerk@needhamma.gov",
+        "website": "https://www.needhamma.gov/town-clerk",
+        "address": "1471 Highland Avenue, Needham, MA 02492"
+      },
+      "localElectionCycle": {
+        "frequency": "Annual \u2014 every April",
+        "note": "Needham uses a Town Meeting government. Residents also elect Town Meeting Members by precinct, who vote on zoning, budget, development, and local bylaws."
+      },
+      "elections": [
+        {
+          "electionId": "needham-2026-annual",
+          "electionType": "2026 Annual Town Election",
+          "electionScope": "local",
+          "electionDate": "2026-04-14",
+          "electionDateDisplay": "Tuesday, April 14, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": true,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-04-04",
+            "endDate": "2026-04-10",
+            "locations": [
+              {
+                "name": "Needham Town Hall \u2014 Select Board Meeting Room",
+                "address": "1471 Highland Avenue, Needham, MA 02492",
+                "hours": "Mon\u2013Fri 8:30 AM\u20135:00 PM; Sat Apr 11 10 AM\u20132 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-03-25",
+              "dateDisplay": "Wednesday, March 25, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-03-25",
+              "dateDisplay": "Wednesday, March 25, 2026",
+              "note": "Must be postmarked by March 25, 2026."
+            },
+            "inPerson": {
+              "date": "2026-03-25",
+              "dateDisplay": "Wednesday, March 25, 2026",
+              "location": "Needham Town Hall, Town Clerk's Office, 1471 Highland Avenue",
+              "hours": "8:30 AM \u2013 5:00 PM",
+              "note": "In-person deadline at Town Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "Select Board",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 2,
+              "note": "Select Board functions as town executive leadership, similar to a city mayor/council structure.",
+              "candidates": [
+                {
+                  "name": "Catherine Reid Dowd",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1
+                },
+                {
+                  "name": "William R. Dermody",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 2
+                },
+                {
+                  "name": "Richard I. Adduci",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 3
+                }
+              ]
+            },
+            {
+              "office": "School Committee",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 2,
+              "note": "Controls school policy and budgeting \u2014 typically among the most closely watched local races.",
+              "candidates": [
+                {
+                  "name": "Michael J. Greis",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1
+                },
+                {
+                  "name": "Matthew J. Spengler",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 2
+                },
+                {
+                  "name": "Lauren Michelle Soper",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 3
+                }
+              ]
+            },
+            {
+              "office": "Planning Board",
+              "district": "Townwide",
+              "term": "5 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Gary P. Lesanto",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 1
+                },
+                {
+                  "name": "Oscar E. Mertz III",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Park & Recreation Commissioner",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "James E. Rosenbaum",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Board of Assessors",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Marc J. Wexler",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Board of Health",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward V. Cosgrove III",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Library Trustees",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 3,
+              "candidates": [
+                {
+                  "name": "Candidates TBD",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "note": "Check needhamma.gov/town-clerk for finalized candidate list.",
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Housing Authority",
+              "district": "Townwide",
+              "term": "5 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Candidate TBD",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "note": "Check needhamma.gov/town-clerk for finalized candidate list.",
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Trust Funds Commissioner",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Candidate TBD",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "note": "Check needhamma.gov/town-clerk for finalized candidate list.",
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Town Meeting Members",
+              "district": "By Precinct",
+              "term": "3 years",
+              "seats": 0,
+              "note": "Town Meeting Members vote on zoning, budget, development, and local bylaws. Elected by precinct \u2014 check needhamma.gov for your precinct's candidates.",
+              "candidates": []
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "1",
+              "ward": null,
+              "precinct": "1",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Needham High School \u2014 Gymnasium",
+                "address": "609 Webster Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2",
+              "ward": null,
+              "precinct": "2",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Needham High School \u2014 Gymnasium",
+                "address": "609 Webster Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3",
+              "ward": null,
+              "precinct": "3",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Hillside Elementary School \u2014 Gymnasium",
+                "address": "800 South Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4",
+              "ward": null,
+              "precinct": "4",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Hillside Elementary School \u2014 Gymnasium",
+                "address": "800 South Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5",
+              "ward": null,
+              "precinct": "5",
+              "zipCodes": [
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Pollard Middle School \u2014 Cafeteria",
+                "address": "282 Harris Avenue, Needham, MA 02494",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6",
+              "ward": null,
+              "precinct": "6",
+              "zipCodes": [
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Pollard Middle School \u2014 Cafeteria",
+                "address": "282 Harris Avenue, Needham, MA 02494",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "7",
+              "ward": null,
+              "precinct": "7",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Mitchell Elementary School \u2014 Gymnasium",
+                "address": "154 Chestnut Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "8",
+              "ward": null,
+              "precinct": "8",
+              "zipCodes": [
+                "02492",
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Newman Elementary School \u2014 Gymnasium",
+                "address": "1450 Highland Avenue, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        },
+        {
+          "electionId": "needham-2026-primary",
+          "electionType": "2026 Massachusetts State Primary",
+          "electionScope": "state",
+          "electionDate": "2026-09-01",
+          "electionDateDisplay": "Tuesday, September 1, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": true,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-08-22",
+            "endDate": "2026-08-28",
+            "locations": [
+              {
+                "name": "Needham Town Hall \u2014 Town Clerk's Office",
+                "address": "1471 Highland Avenue, Needham, MA 02492",
+                "hours": "Mon\u2013Fri 8:30 AM\u20135:00 PM; Sat Aug 29 10 AM\u20132 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "note": "Must be postmarked by August 22, 2026."
+            },
+            "inPerson": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "location": "Needham Town Hall, Town Clerk's Office, 1471 Highland Avenue",
+              "hours": "8:30 AM \u2013 5:00 PM",
+              "note": "In-person deadline at Town Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "U.S. Senate",
+              "district": "Massachusetts Statewide",
+              "term": "6 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward J. Markey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.markey.senate.gov",
+                  "findRepsId": "sen-edward-j.-markey",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Primary Challenger TBD",
+                  "party": "Democrat",
+                  "incumbent": false,
+                  "note": "Ballot finalized after nomination deadline.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "U.S. Representative",
+              "district": "Massachusetts 4th Congressional District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Jake Auchincloss",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://auchincloss.house.gov",
+                  "findRepsId": "house-ma-04",
+                  "findRepsCity": "Needham"
+                }
+              ]
+            },
+            {
+              "office": "Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Maura Healey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/governor",
+                  "findRepsId": "sw-governor",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Republican primary determines nominee.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Lieutenant Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Kim Driscoll",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ltgovernor",
+                  "findRepsId": "sw-ltGovernor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Attorney General",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrea Campbell",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ag",
+                  "findRepsId": "sw-attorneyGeneral",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Secretary of State",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Tanisha Sullivan",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.sec.state.ma.us",
+                  "findRepsId": "sw-secretaryOfState",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Treasurer",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Deborah Goldberg",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/treasurer",
+                  "findRepsId": "sw-treasurer",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Auditor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Diana DiZoglio",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/auditor",
+                  "findRepsId": "sw-auditor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Senator",
+              "district": "Norfolk, Bristol and Middlesex District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Becca Rausch",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.beccarausch.com",
+                  "findRepsId": "ssen-ma-04",
+                  "findRepsCity": "Needham"
+                }
+              ]
+            },
+            {
+              "office": "State Representative",
+              "district": "12th Norfolk District (parts of Needham)",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Denise Garlick",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/DEG1",
+                  "findRepsId": "srep-ma-04",
+                  "findRepsCity": "Needham"
+                }
+              ]
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "1",
+              "ward": null,
+              "precinct": "1",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Needham High School \u2014 Gymnasium",
+                "address": "609 Webster Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2",
+              "ward": null,
+              "precinct": "2",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Needham High School \u2014 Gymnasium",
+                "address": "609 Webster Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3",
+              "ward": null,
+              "precinct": "3",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Hillside Elementary School \u2014 Gymnasium",
+                "address": "800 South Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4",
+              "ward": null,
+              "precinct": "4",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Hillside Elementary School \u2014 Gymnasium",
+                "address": "800 South Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5",
+              "ward": null,
+              "precinct": "5",
+              "zipCodes": [
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Pollard Middle School \u2014 Cafeteria",
+                "address": "282 Harris Avenue, Needham, MA 02494",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6",
+              "ward": null,
+              "precinct": "6",
+              "zipCodes": [
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Pollard Middle School \u2014 Cafeteria",
+                "address": "282 Harris Avenue, Needham, MA 02494",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "7",
+              "ward": null,
+              "precinct": "7",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Mitchell Elementary School \u2014 Gymnasium",
+                "address": "154 Chestnut Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "8",
+              "ward": null,
+              "precinct": "8",
+              "zipCodes": [
+                "02492",
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Newman Elementary School \u2014 Gymnasium",
+                "address": "1450 Highland Avenue, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        },
+        {
+          "electionId": "needham-2026-general",
+          "electionType": "2026 Massachusetts General Election",
+          "electionScope": "state",
+          "electionDate": "2026-11-03",
+          "electionDateDisplay": "Tuesday, November 3, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": true,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-10-17",
+            "endDate": "2026-10-30",
+            "locations": [
+              {
+                "name": "Needham Town Hall \u2014 Town Clerk's Office",
+                "address": "1471 Highland Avenue, Needham, MA 02492",
+                "hours": "Mon\u2013Fri 8:30 AM\u20135:00 PM; Sat Oct 24 & Oct 31 10 AM\u20132 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "note": "Must be postmarked by October 24, 2026."
+            },
+            "inPerson": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "location": "Needham Town Hall, Town Clerk's Office, 1471 Highland Avenue",
+              "hours": "8:30 AM \u2013 5:00 PM",
+              "note": "In-person deadline at Town Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "U.S. Senate",
+              "district": "Massachusetts Statewide",
+              "term": "6 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward J. Markey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.markey.senate.gov",
+                  "findRepsId": "sen-edward-j.-markey",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "U.S. Representative",
+              "district": "Massachusetts 4th Congressional District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Jake Auchincloss",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://auchincloss.house.gov",
+                  "findRepsId": "house-ma-04",
+                  "findRepsCity": "Needham"
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Maura Healey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/governor",
+                  "findRepsId": "sw-governor",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Lieutenant Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Kim Driscoll",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ltgovernor",
+                  "findRepsId": "sw-ltGovernor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Attorney General",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrea Campbell",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ag",
+                  "findRepsId": "sw-attorneyGeneral",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Secretary of State",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Tanisha Sullivan",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.sec.state.ma.us",
+                  "findRepsId": "sw-secretaryOfState",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Treasurer",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Deborah Goldberg",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/treasurer",
+                  "findRepsId": "sw-treasurer",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Auditor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Diana DiZoglio",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/auditor",
+                  "findRepsId": "sw-auditor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Senator",
+              "district": "Norfolk, Bristol and Middlesex District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Becca Rausch",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.beccarausch.com",
+                  "findRepsId": "ssen-ma-04",
+                  "findRepsCity": "Needham"
+                }
+              ]
+            },
+            {
+              "office": "State Representative",
+              "district": "12th Norfolk District (parts of Needham)",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Denise Garlick",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/DEG1",
+                  "findRepsId": "srep-ma-04",
+                  "findRepsCity": "Needham"
+                }
+              ]
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "1",
+              "ward": null,
+              "precinct": "1",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Needham High School \u2014 Gymnasium",
+                "address": "609 Webster Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "2",
+              "ward": null,
+              "precinct": "2",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Needham High School \u2014 Gymnasium",
+                "address": "609 Webster Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "3",
+              "ward": null,
+              "precinct": "3",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Hillside Elementary School \u2014 Gymnasium",
+                "address": "800 South Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "4",
+              "ward": null,
+              "precinct": "4",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Hillside Elementary School \u2014 Gymnasium",
+                "address": "800 South Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "5",
+              "ward": null,
+              "precinct": "5",
+              "zipCodes": [
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Pollard Middle School \u2014 Cafeteria",
+                "address": "282 Harris Avenue, Needham, MA 02494",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "6",
+              "ward": null,
+              "precinct": "6",
+              "zipCodes": [
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Pollard Middle School \u2014 Cafeteria",
+                "address": "282 Harris Avenue, Needham, MA 02494",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "7",
+              "ward": null,
+              "precinct": "7",
+              "zipCodes": [
+                "02492"
+              ],
+              "pollingLocation": {
+                "name": "Mitchell Elementary School \u2014 Gymnasium",
+                "address": "154 Chestnut Street, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "8",
+              "ward": null,
+              "precinct": "8",
+              "zipCodes": [
+                "02492",
+                "02494"
+              ],
+              "pollingLocation": {
+                "name": "Newman Elementary School \u2014 Gymnasium",
+                "address": "1450 Highland Avenue, Needham, MA 02492",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "sharon": {
+      "name": "Sharon",
+      "type": "town",
+      "county": "Norfolk",
+      "state": "MA",
+      "zipCodes": [
+        "02067"
+      ],
+      "congressionalDistrict": "MA-8",
+      "stateSenateDistrict": "Bristol and Norfolk",
+      "stateHouseDistricts": [
+        "8th Norfolk"
+      ],
+      "clerkContact": {
+        "office": "Sharon Town Clerk",
+        "phone": "(781) 784-1500 ext. 105",
+        "email": "townclerk@townofsharon.net",
+        "website": "https://www.townofsharon.net/town-clerk",
+        "address": "90 South Main Street, Sharon, MA 02067"
+      },
+      "localElectionCycle": {
+        "frequency": "Annual \u2014 every May",
+        "note": "Sharon uses a Town Meeting government. Residents also elect Town Meeting Members by precinct. The Select Board expanded from 3 to 5 members in 2025."
+      },
+      "elections": [
+        {
+          "electionId": "sharon-2026-annual",
+          "electionType": "2026 Annual Town Election",
+          "electionScope": "local",
+          "electionDate": "2026-05-19",
+          "electionDateDisplay": "Tuesday, May 19, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": true,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-05-09",
+            "endDate": "2026-05-15",
+            "locations": [
+              {
+                "name": "Sharon Town Hall \u2014 Town Clerk's Office",
+                "address": "90 South Main Street, Sharon, MA 02067",
+                "hours": "Mon\u2013Fri 8:30 AM\u20134:30 PM; Sat May 16 10 AM\u20132 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-04-29",
+              "dateDisplay": "Wednesday, April 29, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-04-29",
+              "dateDisplay": "Wednesday, April 29, 2026",
+              "note": "Must be postmarked by April 29, 2026."
+            },
+            "inPerson": {
+              "date": "2026-04-29",
+              "dateDisplay": "Wednesday, April 29, 2026",
+              "location": "Sharon Town Hall, Town Clerk's Office, 90 South Main Street",
+              "hours": "8:30 AM \u2013 4:30 PM",
+              "note": "In-person deadline at Town Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "Select Board",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 2,
+              "note": "Select Board is Sharon's chief executive body. Expanded from 3 to 5 members in 2025.",
+              "candidates": [
+                {
+                  "name": "Candidate TBD",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "note": "Nomination papers available at Town Clerk's Office. Check townofsharon.net/town-clerk for finalized candidate list.",
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "School Committee",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 2,
+              "note": "7-member board governing Sharon Public Schools. School Committee races typically draw strong community interest.",
+              "candidates": [
+                {
+                  "name": "Inna S. Belenky",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1
+                },
+                {
+                  "name": "Max J. Asterlin",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 2
+                },
+                {
+                  "name": "Additional Candidate TBD",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "note": "Check townofsharon.net for finalized candidate list.",
+                  "ballotOrder": 3
+                }
+              ]
+            },
+            {
+              "office": "Planning Board",
+              "district": "Townwide",
+              "term": "5 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Candidate TBD",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "note": "Check townofsharon.net/town-clerk for finalized candidate list.",
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Board of Assessors",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Ellen Wolfson Abelson",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Board of Library Trustees",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 2,
+              "candidates": [
+                {
+                  "name": "Sherrie J. Nankin-King",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1
+                },
+                {
+                  "name": "Candidate TBD",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "note": "Check townofsharon.net/town-clerk for finalized candidate list.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Housing Authority",
+              "district": "Townwide",
+              "term": "5 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Zannati A. Rahman",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1
+                }
+              ]
+            },
+            {
+              "office": "Town Meeting Members",
+              "district": "By Precinct",
+              "term": "3 years",
+              "seats": 0,
+              "note": "Town Meeting Members vote on zoning, budget, development, and local bylaws. Elected by precinct \u2014 check townofsharon.net for your precinct's candidates.",
+              "candidates": []
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "A",
+              "ward": null,
+              "precinct": "A",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "B",
+              "ward": null,
+              "precinct": "B",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "C",
+              "ward": null,
+              "precinct": "C",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "D",
+              "ward": null,
+              "precinct": "D",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        },
+        {
+          "electionId": "sharon-2026-primary",
+          "electionType": "2026 Massachusetts State Primary",
+          "electionScope": "state",
+          "electionDate": "2026-09-01",
+          "electionDateDisplay": "Tuesday, September 1, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": true,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-08-22",
+            "endDate": "2026-08-28",
+            "locations": [
+              {
+                "name": "Sharon Town Hall \u2014 Town Clerk's Office",
+                "address": "90 South Main Street, Sharon, MA 02067",
+                "hours": "Mon\u2013Fri 8:30 AM\u20134:30 PM; Sat Aug 29 10 AM\u20132 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "note": "Must be postmarked by August 22, 2026."
+            },
+            "inPerson": {
+              "date": "2026-08-22",
+              "dateDisplay": "Saturday, August 22, 2026",
+              "location": "Sharon Town Hall, Town Clerk's Office, 90 South Main Street",
+              "hours": "8:30 AM \u2013 4:30 PM",
+              "note": "In-person deadline at Town Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "U.S. Senate",
+              "district": "Massachusetts Statewide",
+              "term": "6 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward J. Markey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.markey.senate.gov",
+                  "findRepsId": "sen-edward-j.-markey",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Primary Challenger TBD",
+                  "party": "Democrat",
+                  "incumbent": false,
+                  "note": "Ballot finalized after nomination deadline.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "U.S. Representative",
+              "district": "Massachusetts 8th Congressional District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Stephen F. Lynch",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://lynch.house.gov",
+                  "findRepsId": "house-ma-08-sharon"
+                }
+              ]
+            },
+            {
+              "office": "Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Maura Healey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/governor",
+                  "findRepsId": "sw-governor",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Republican primary determines nominee.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Lieutenant Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Kim Driscoll",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ltgovernor",
+                  "findRepsId": "sw-ltGovernor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Attorney General",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrea Campbell",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ag",
+                  "findRepsId": "sw-attorneyGeneral",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Secretary of State",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Tanisha Sullivan",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.sec.state.ma.us",
+                  "findRepsId": "sw-secretaryOfState",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Treasurer",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Deborah Goldberg",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/treasurer",
+                  "findRepsId": "sw-treasurer",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Auditor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Diana DiZoglio",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/auditor",
+                  "findRepsId": "sw-auditor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Senator",
+              "district": "Bristol and Norfolk District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Paul R. Feeney",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/PRF1",
+                  "findRepsId": "ssen-ma-08-sharon",
+                  "findRepsCity": "Sharon"
+                }
+              ]
+            },
+            {
+              "office": "State Representative",
+              "district": "8th Norfolk District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward R. Philips",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/ERP1",
+                  "findRepsId": "srep-ma-08-sharon",
+                  "findRepsCity": "Sharon"
+                }
+              ]
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "A",
+              "ward": null,
+              "precinct": "A",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "B",
+              "ward": null,
+              "precinct": "B",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "C",
+              "ward": null,
+              "precinct": "C",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "D",
+              "ward": null,
+              "precinct": "D",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        },
+        {
+          "electionId": "sharon-2026-general",
+          "electionType": "2026 Massachusetts General Election",
+          "electionScope": "state",
+          "electionDate": "2026-11-03",
+          "electionDateDisplay": "Tuesday, November 3, 2026",
+          "preliminaryDate": null,
+          "preliminaryDateDisplay": null,
+          "localElectionThisYear": true,
+          "earlyVoting": {
+            "available": true,
+            "startDate": "2026-10-17",
+            "endDate": "2026-10-30",
+            "locations": [
+              {
+                "name": "Sharon Town Hall \u2014 Town Clerk's Office",
+                "address": "90 South Main Street, Sharon, MA 02067",
+                "hours": "Mon\u2013Fri 8:30 AM\u20134:30 PM; Sat Oct 24 & Oct 31 10 AM\u20132 PM"
+              }
+            ]
+          },
+          "registrationDeadlines": {
+            "online": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "url": "https://www.sec.state.ma.us/ovr/",
+              "note": "Register via Massachusetts Online Voter Registration."
+            },
+            "mail": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "note": "Must be postmarked by October 24, 2026."
+            },
+            "inPerson": {
+              "date": "2026-10-24",
+              "dateDisplay": "Saturday, October 24, 2026",
+              "location": "Sharon Town Hall, Town Clerk's Office, 90 South Main Street",
+              "hours": "8:30 AM \u2013 4:30 PM",
+              "note": "In-person deadline at Town Clerk's office."
+            },
+            "sameDayRegistration": {
+              "available": true,
+              "note": "Massachusetts allows same-day voter registration at your polling place on Election Day."
+            }
+          },
+          "officesOnBallot": [
+            {
+              "office": "U.S. Senate",
+              "district": "Massachusetts Statewide",
+              "term": "6 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward J. Markey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.markey.senate.gov",
+                  "findRepsId": "sen-edward-j.-markey",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "U.S. Representative",
+              "district": "Massachusetts 8th Congressional District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Stephen F. Lynch",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://lynch.house.gov",
+                  "findRepsId": "house-ma-08-sharon"
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Maura Healey",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/governor",
+                  "findRepsId": "sw-governor",
+                  "findRepsCity": null
+                },
+                {
+                  "name": "Republican Nominee TBD",
+                  "party": "Republican",
+                  "incumbent": false,
+                  "note": "Determined by September primary.",
+                  "ballotOrder": 2
+                }
+              ]
+            },
+            {
+              "office": "Lieutenant Governor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Kim Driscoll",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ltgovernor",
+                  "findRepsId": "sw-ltGovernor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Attorney General",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrea Campbell",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/ag",
+                  "findRepsId": "sw-attorneyGeneral",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "Secretary of State",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Tanisha Sullivan",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.sec.state.ma.us",
+                  "findRepsId": "sw-secretaryOfState",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Treasurer",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Deborah Goldberg",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/treasurer",
+                  "findRepsId": "sw-treasurer",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Auditor",
+              "district": "Massachusetts Statewide",
+              "term": "4 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Diana DiZoglio",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://www.mass.gov/auditor",
+                  "findRepsId": "sw-auditor",
+                  "findRepsCity": null
+                }
+              ]
+            },
+            {
+              "office": "State Senator",
+              "district": "Bristol and Norfolk District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Paul R. Feeney",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/PRF1",
+                  "findRepsId": "ssen-ma-08-sharon",
+                  "findRepsCity": "Sharon"
+                }
+              ]
+            },
+            {
+              "office": "State Representative",
+              "district": "8th Norfolk District",
+              "term": "2 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Edward R. Philips",
+                  "party": "Democrat",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "website": "https://malegislature.gov/Legislators/Profile/ERP1",
+                  "findRepsId": "srep-ma-08-sharon",
+                  "findRepsCity": "Sharon"
+                }
+              ]
+            }
+          ],
+          "precincts": [
+            {
+              "precinctId": "A",
+              "ward": null,
+              "precinct": "A",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "B",
+              "ward": null,
+              "precinct": "B",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "C",
+              "ward": null,
+              "precinct": "C",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            },
+            {
+              "precinctId": "D",
+              "ward": null,
+              "precinct": "D",
+              "zipCodes": [
+                "02067"
+              ],
+              "pollingLocation": {
+                "name": "Sharon High School \u2014 Gymnasium",
+                "address": "181 Pond Street, Sharon, MA 02067",
+                "accessibility": "ADA Accessible",
+                "parkingAvailable": true,
+                "openTime": "07:00",
+                "closeTime": "20:00"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
