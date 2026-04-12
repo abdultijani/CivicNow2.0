@@ -89,5 +89,17 @@ CivicNow does not endorse, support, or oppose any candidate or political party.
   <p>© 2026 CivicNow · Massachusetts Civic Engagement Platform · All Rights Reserved</p>
 </footer>
 
+
+<a href="https://forms.gle/4Bf1EDH5tziWiTG28" target="_blank" rel="noopener noreferrer" class="feedback-fab" id="feedbackFab" aria-label="Share feedback">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  <span>Feedback</span>
+</a>
+<script>
+/* ── Feedback FAB scroll trigger ── */
+window.addEventListener('scroll', function() {
+  var fab = document.getElementById('feedbackFab');
+  if (fab) fab.classList.toggle('feedback-fab--visible', window.scrollY > 400);
+});
+</script>
 </body>
 </html>
