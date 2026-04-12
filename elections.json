@@ -3563,15 +3563,24 @@
               "office": "Select Board",
               "district": "Townwide",
               "term": "3 years",
-              "seats": 2,
-              "note": "Select Board is Sharon's chief executive body. Expanded from 3 to 5 members in 2025.",
+              "seats": 1,
+              "note": "Select Board is Sharon's chief executive body.",
               "candidates": [
                 {
-                  "name": "Candidate TBD",
+                  "name": "Hanna Switlekowski",
+                  "party": "Nonpartisan",
+                  "incumbent": true,
+                  "ballotOrder": 1,
+                  "findRepsId": "local-add-ma-08-sharon-1",
+                  "website": "https://www.townofsharon.net/town-administrator-select-board"
+                },
+                {
+                  "name": "Andrew S. Goloboy",
                   "party": "Nonpartisan",
                   "incumbent": false,
-                  "note": "Nomination papers available at Town Clerk's Office. Check townofsharon.net/town-clerk for finalized candidate list.",
-                  "ballotOrder": 1
+                  "ballotOrder": 2,
+                  "findRepsId": "local-add-ma-08-sharon-5",
+                  "website": "https://www.townofsharon.net/town-clerk"
                 }
               ]
             },
@@ -3580,26 +3589,31 @@
               "district": "Townwide",
               "term": "3 years",
               "seats": 2,
-              "note": "7-member board governing Sharon Public Schools. School Committee races typically draw strong community interest.",
+              "note": "7-member board governing Sharon Public Schools.",
               "candidates": [
                 {
-                  "name": "Inna S. Belenky",
+                  "name": "Julie DeFalco Rowe",
                   "party": "Nonpartisan",
                   "incumbent": true,
-                  "ballotOrder": 1
+                  "ballotOrder": 1,
+                  "findRepsId": "local-add-ma-08-sharon-6",
+                  "website": "https://www.sharonschools.net/en-US/school-committee-3119a552"
                 },
                 {
-                  "name": "Max J. Asterlin",
+                  "name": "Adam J. Shain",
                   "party": "Nonpartisan",
-                  "incumbent": false,
-                  "ballotOrder": 2
+                  "incumbent": true,
+                  "ballotOrder": 2,
+                  "findRepsId": "local-add-ma-08-sharon-7",
+                  "website": "https://www.sharonschools.net/en-US/school-committee-3119a552"
                 },
                 {
-                  "name": "Additional Candidate TBD",
+                  "name": "Ryan Matthew Gard",
                   "party": "Nonpartisan",
                   "incumbent": false,
-                  "note": "Check townofsharon.net for finalized candidate list.",
-                  "ballotOrder": 3
+                  "ballotOrder": 3,
+                  "findRepsId": "local-add-ma-08-sharon-8",
+                  "website": "https://www.townofsharon.net/town-clerk"
                 }
               ]
             },
@@ -3610,11 +3624,13 @@
               "seats": 1,
               "candidates": [
                 {
-                  "name": "Candidate TBD",
+                  "name": "Alexander Schneiderman",
                   "party": "Nonpartisan",
-                  "incumbent": false,
-                  "note": "Check townofsharon.net/town-clerk for finalized candidate list.",
-                  "ballotOrder": 1
+                  "incumbent": true,
+                  "note": "Serving via appointment; seeking first elected term.",
+                  "ballotOrder": 1,
+                  "findRepsId": "local-add-ma-08-sharon-9",
+                  "website": "https://www.townofsharon.net/planning-board"
                 }
               ]
             },
@@ -3625,10 +3641,12 @@
               "seats": 1,
               "candidates": [
                 {
-                  "name": "Ellen Wolfson Abelson",
+                  "name": "Anne M. Carney",
                   "party": "Nonpartisan",
-                  "incumbent": true,
-                  "ballotOrder": 1
+                  "incumbent": false,
+                  "ballotOrder": 1,
+                  "findRepsId": "local-add-ma-08-sharon-10",
+                  "website": "https://www.townofsharon.net/assessors"
                 }
               ]
             },
@@ -3639,17 +3657,20 @@
               "seats": 2,
               "candidates": [
                 {
-                  "name": "Sherrie J. Nankin-King",
-                  "party": "Nonpartisan",
-                  "incumbent": true,
-                  "ballotOrder": 1
-                },
-                {
-                  "name": "Candidate TBD",
+                  "name": "Carolyn L. Weeks",
                   "party": "Nonpartisan",
                   "incumbent": false,
-                  "note": "Check townofsharon.net/town-clerk for finalized candidate list.",
-                  "ballotOrder": 2
+                  "ballotOrder": 1,
+                  "findRepsId": "local-add-ma-08-sharon-11",
+                  "website": "https://www.sharonpubliclibrary.org"
+                },
+                {
+                  "name": "Sarah W. Windman",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 2,
+                  "findRepsId": "local-add-ma-08-sharon-12",
+                  "website": "https://www.sharonpubliclibrary.org"
                 }
               ]
             },
@@ -3660,10 +3681,44 @@
               "seats": 1,
               "candidates": [
                 {
-                  "name": "Zannati A. Rahman",
+                  "name": "Susan D. Saunders",
                   "party": "Nonpartisan",
-                  "incumbent": true,
-                  "ballotOrder": 1
+                  "incumbent": false,
+                  "ballotOrder": 1,
+                  "findRepsId": "local-add-ma-08-sharon-13",
+                  "website": "https://www.townofsharon.net/housing-authority"
+                }
+              ]
+            },
+            {
+              "office": "Town Moderator",
+              "district": "Townwide",
+              "term": "1 year",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Andrew Nebenzahl",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 1,
+                  "findRepsId": "local-add-ma-08-sharon-14",
+                  "website": "https://www.townofsharon.net/town-clerk"
+                }
+              ]
+            },
+            {
+              "office": "Town Clerk",
+              "district": "Townwide",
+              "term": "3 years",
+              "seats": 1,
+              "candidates": [
+                {
+                  "name": "Mark F. Hogan",
+                  "party": "Nonpartisan",
+                  "incumbent": false,
+                  "ballotOrder": 1,
+                  "findRepsId": "local-add-ma-08-sharon-15",
+                  "website": "https://www.townofsharon.net/town-clerk"
                 }
               ]
             },
