@@ -1422,7 +1422,7 @@
         "office": "Quincy City Clerk",
         "phone": "(617) 376-1130",
         "email": "cityclerk@quincyma.gov",
-        "website": "https://www.quincyma.gov/city_clerk",
+        "website": "https://www.quincyma.gov/departments/city_clerk/index.php",
         "address": "1305 Hancock Street, Quincy, MA 02169"
       },
       "localElectionCycle": {
@@ -2397,7 +2397,7 @@
         "office": "Needham Town Clerk",
         "phone": "(781) 455-7500",
         "email": "townclerk@needhamma.gov",
-        "website": "https://www.needhamma.gov/town-clerk",
+        "website": "https://www.needhamma.gov/77/Town-Clerk",
         "address": "1471 Highland Avenue, Needham, MA 02492"
       },
       "localElectionCycle": {

@@ -1510,3 +1510,15 @@
   transition: all .18s ease;
 }
 .vi-card-link { transition: all .18s ease; }
+
+/* ── Candidate photo thumbnail on voter info page ── */
+.vi-candidate-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--vi-border);
+  background: #f0f3f8;
+  vertical-align: middle;
+}

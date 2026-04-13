@@ -847,6 +847,50 @@ async function loadElectionsData() {
   const res = await fetch('elections.json');
   if (!res.ok) throw new Error('Failed to load elections.json');
   _electionsData = await res.json();
+
+  // Build photo map from representatives.json for candidate thumbnails
+  if (!window._repsPhotoMap) {
+    try {
+      const rRes = await fetch('representatives.json');
+      if (rRes.ok) {
+        const reps = await rRes.json();
+        const map = {};
+        // Senators: key = 'sen-' + name.lower().replace(' ','-')
+        for (const dist of reps.districts) {
+          for (const s of (dist.federal?.senators || [])) {
+            const k = 'sen-' + s.name.toLowerCase().replace(/\s+/g, '-');
+            if (s.photo) map[k] = s.photo;
+          }
+          // House rep: 'house-' + dist.id
+          if (dist.federal?.representative?.photo)
+            map['house-' + dist.id] = dist.federal.representative.photo;
+          // State senator: 'ssen-' + dist.id
+          if (dist.state?.senator?.photo)
+            map['ssen-' + dist.id] = dist.state.senator.photo;
+          // State rep: 'srep-' + dist.id
+          if (dist.state?.representative?.photo)
+            map['srep-' + dist.id] = dist.state.representative.photo;
+          // Local mayor: 'local-mayor-' + dist.id
+          if (dist.local?.mayor?.photo)
+            map['local-mayor-' + dist.id] = dist.local.mayor.photo;
+          // Local council: 'local-council-' + dist.id
+          if (dist.local?.cityCouncil?.photo)
+            map['local-council-' + dist.id] = dist.local.cityCouncil.photo;
+          // additionalLocals: 'local-add-' + dist.id + '-' + i
+          for (let i = 0; i < (dist.additionalLocals || []).length; i++) {
+            const loc = dist.additionalLocals[i];
+            if (loc.photo) map['local-add-' + dist.id + '-' + i] = loc.photo;
+          }
+        }
+        // Statewide: 'sw-' + key
+        for (const [k, v] of Object.entries(reps.statewide || {})) {
+          if (v.photo) map['sw-' + k] = v.photo;
+        }
+        window._repsPhotoMap = map;
+      }
+    } catch (e) { /* photos optional */ }
+  }
+
   return _electionsData;
 }
 
@@ -1204,8 +1248,16 @@ function renderElectionResults(muniKey, data) {
             } else {
               nameHtml = `<span class="vi-candidate-name">${c.name}</span>`;
             }
+            // Look up photo from representatives data if profile exists
+            const photoHtml = (function() {
+              if (!c.findRepsId || !window._repsPhotoMap) return '';
+              const photo = window._repsPhotoMap[c.findRepsId];
+              if (!photo) return '';
+              return `<img src="${photo}" alt="${c.name}" class="vi-candidate-thumb" onerror="this.style.display='none'">`;
+            })();
             html += `
               <div class="vi-candidate-row">
+                ${photoHtml}
                 ${nameHtml}
                 ${c.party && c.party !== 'Nonpartisan' ? `<span class="vi-candidate-party">${c.party}</span>` : ''}
                 ${c.incumbent ? '<span class="vi-incumbent-badge">Incumbent</span>' : ''}
