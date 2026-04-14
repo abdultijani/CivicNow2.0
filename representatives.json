@@ -1329,31 +1329,6 @@
         }
       },
       "state": {
-        "senator": {
-          "name": "Patrick O'Connor",
-          "title": "State Senator",
-          "party": "Democratic",
-          "level": "state",
-          "district": "Norfolk and Plymouth District",
-          "phone": "(617) 722-1646",
-          "email": "Patrick.OConnor@masenate.gov",
-          "website": "https://malegislature.gov/Legislators/Profile/PCO1",
-          "office": "State House, Room 320, Boston, MA 02133",
-          "since": "2015",
-          "nextElection": "2026",
-          "committees": [
-            "Ways and Means",
-            "Post Audit and Oversight"
-          ],
-          "background": "Patrick O'Connor is the Massachusetts State Senator for the Norfolk and Plymouth District, representing Quincy, Weymouth, Braintree, and surrounding communities. First elected in 2015, he is an experienced legislator serving on the Ways and Means Committee.",
-          "photo": "https://malegislature.gov/Legislators/Profile/PCO1/headshot",
-          "sources": [
-            {
-              "label": "Official Profile \u2014 malegislature.gov",
-              "url": "https://malegislature.gov/Legislators/Profile/PCO1"
-            }
-          ]
-        },
         "representative": {
           "name": "Bruce J. Ayers",
           "title": "State Representative",
@@ -1387,6 +1362,43 @@
               "url": "https://www.quincyma.gov/government/elected_officials/state_delegation.php"
             }
           ]
+        },
+        "senator": {
+          "name": "John F. Keenan",
+          "title": "State Senator",
+          "party": "Democratic",
+          "level": "state",
+          "district": "Norfolk and Plymouth District",
+          "phone": "(617) 722-1494",
+          "email": "John.Keenan@masenate.gov",
+          "website": "https://www.senatorjohnkeenan.com/",
+          "office": "State House, Room 413-F, 24 Beacon Street, Boston, MA 02133",
+          "since": "2011",
+          "nextElection": "2026",
+          "committees": [
+            "Election Laws (Senate Chair)",
+            "Mental Health and Substance Abuse",
+            "Public Health",
+            "Housing"
+          ],
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/8/87/John_Keenan.jpg",
+          "background": "John F. Keenan is the Massachusetts State Senator for the Norfolk and Plymouth District, representing Quincy, Abington, Braintree, Hanover, Holbrook, and Rockland. First elected in 2010, he is a Harvard graduate and Suffolk Law alumnus who previously served on the Quincy City Council. His legislative work focuses on public and behavioral health, election law, and housing.",
+          "backgroundFull": "John F. Keenan has represented the Norfolk and Plymouth District in the Massachusetts State Senate since 2011, serving Quincy, Abington, Braintree, Hanover, Holbrook, and Rockland.\n\nThe fourth of seven children, John was raised in Quincy and attended Quincy Public Schools, graduating from North Quincy High School in 1982. He earned his way through Harvard University working in the athletic department equipment room, graduating with honors in 1986 with a concentration in government. He graduated from Suffolk University Law School in 1989, and in 2019 earned a Master's in Public Administration from the Harvard Kennedy School.\n\nAfter law school, Keenan worked as a litigator, public defender, and attorney combating insurance fraud. He is admitted to practice in all Massachusetts State Courts, the Federal District Court, the Federal First Circuit, and the United States Supreme Court.\n\nBefore his Senate election, Keenan chaired the Quincy Mayor's Commission on Handicapped Affairs and served on the Quincy Zoning Board of Appeals for seven years. From 1997\u20132001 he was Chief of Staff/Executive Secretary under Quincy Mayor Jim Sheets, managing 22 municipal departments. From 2001\u20132010 he served as Executive Director of the Norfolk County Retirement System. He was appointed to the Quincy City Council in 2003, elected Councillor-at-Large in 2004, and chaired its Finance Committee for eight years.\n\nElected to the State Senate in 2010, Keenan currently serves as Senate Chair of the Joint Committee on Election Laws. He has also chaired the Joint Committees on Mental Health and Substance Abuse, Public Health, and Housing, and the Senate Committees on Bonding, Capital Expenditures, Post Audit and Oversight, and Intergovernmental Affairs.\n\nJohn and his wife Jeanne Hopkins reside in Quincy and are the parents of three sons. He is a member of the Ward One Democratic Committee, Quincy Democratic City Committee, and the Harvard Club of Quincy. He coached in the Sacred Heart Youth Basketball Program and enjoys travel and photography.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Official Profile \u2014 malegislature.gov",
+              "url": "https://malegislature.gov/People/Profile/JFK0"
+            },
+            {
+              "label": "Senator John F. Keenan \u2014 senatorjohnkeenan.com",
+              "url": "https://www.senatorjohnkeenan.com/senator-john-f-keenan"
+            }
+          ],
+          "social": {
+            "twitter": "https://x.com/SenJohnFKeenan",
+            "facebook": "https://www.facebook.com/senjohnfkeenan/",
+            "instagram": "https://www.instagram.com/statesenatorjohnfkeenan/"
+          }
         }
       },
       "local": {
@@ -1626,44 +1638,6 @@
         }
       },
       "state": {
-        "senator": {
-          "name": "Paul R. Feeney",
-          "title": "State Senator",
-          "party": "Democratic",
-          "level": "state",
-          "district": "Bristol and Norfolk District",
-          "phone": "(617) 722-1494",
-          "email": "Paul.Feeney@masenate.gov",
-          "website": "https://www.senatorfeeney.com",
-          "office": "State House, Room 413-B, Boston, MA 02133",
-          "since": "2017",
-          "nextElection": "2026",
-          "committees": [
-            "Labor and Workforce Development",
-            "Economic Development"
-          ],
-          "background": "Paul R. Feeney is the Massachusetts State Senator for the Bristol and Norfolk District, representing Sharon along with Attleboro, Foxborough, Mansfield, Norton, and surrounding communities. First elected in a 2017 special election, Feeney is a labor attorney and former union organizer.",
-          "photo": "https://static.wixstatic.com/media/015ff5_5d6f396b7c4249828b545b5df41c8a4b~mv2.jpg/v1/fill/w_710,h_710,al_c,q_85,enc_avif,quality_auto/244075598_281787337096775_1065816103663334885_n-2.jpg",
-          "backgroundFull": "Paul R. Feeney represents the Bristol and Norfolk District in the Massachusetts State Senate, a district covering Sharon, Attleboro, Foxborough, Mansfield, Norton, Plainville, and Walpole.\n\nFeeney won his seat in a competitive 2017 special election, defeating Republican Jacob Ventura. He is a labor attorney by training and was previously an organizer and advocate for working families in the region. He has been re-elected continuously since.\n\nIn the Senate, Feeney focuses on labor and workforce development, economic development, and environmental protection. He has partnered with Rep. Edward Philips on several Sharon-specific legislative initiatives, including bills related to the town's water quality and local governance.\n\nFor Sharon residents, Sen. Feeney holds regular office hours in the district and his staff assists with state agency matters including unemployment, MassHealth, the Registry of Motor Vehicles, and state permit processes.",
-          "sources": [
-            {
-              "label": "Official Profile \u2014 malegislature.gov",
-              "url": "https://malegislature.gov/Legislators/Profile/PRF1"
-            },
-            {
-              "label": "Ballotpedia \u2014 Paul Feeney",
-              "url": "https://ballotpedia.org/Paul_Feeney"
-            },
-            {
-              "label": "About Paul \u2014 senatorfeeney.com",
-              "url": "https://www.senatorfeeney.com/about-paul"
-            }
-          ],
-          "social": {
-            "twitter": "https://x.com/paulfeeneyma",
-            "instagram": "https://www.instagram.com/paulfeeneyma/"
-          }
-        },
         "representative": {
           "name": "Edward R. Philips",
           "title": "State Representative",
@@ -1703,6 +1677,44 @@
               "url": "https://www.tedphilips.com/meet-ted"
             }
           ]
+        },
+        "senator": {
+          "name": "Paul R. Feeney",
+          "title": "State Senator",
+          "party": "Democratic",
+          "level": "state",
+          "district": "Bristol and Norfolk District",
+          "phone": "(617) 722-1494",
+          "email": "Paul.Feeney@masenate.gov",
+          "website": "https://www.senatorfeeney.com",
+          "office": "State House, Room 413-B, Boston, MA 02133",
+          "since": "2017",
+          "nextElection": "2026",
+          "committees": [
+            "Labor and Workforce Development",
+            "Economic Development"
+          ],
+          "background": "Paul R. Feeney is the Massachusetts State Senator for the Bristol and Norfolk District, representing Sharon along with Attleboro, Foxborough, Mansfield, Norton, and surrounding communities. First elected in a 2017 special election, Feeney is a labor attorney and former union organizer.",
+          "photo": "https://static.wixstatic.com/media/015ff5_5d6f396b7c4249828b545b5df41c8a4b~mv2.jpg/v1/fill/w_710,h_710,al_c,q_85,enc_avif,quality_auto/244075598_281787337096775_1065816103663334885_n-2.jpg",
+          "backgroundFull": "Paul R. Feeney represents the Bristol and Norfolk District in the Massachusetts State Senate, a district covering Sharon, Attleboro, Foxborough, Mansfield, Norton, Plainville, and Walpole.\n\nFeeney won his seat in a competitive 2017 special election, defeating Republican Jacob Ventura. He is a labor attorney by training and was previously an organizer and advocate for working families in the region. He has been re-elected continuously since.\n\nIn the Senate, Feeney focuses on labor and workforce development, economic development, and environmental protection. He has partnered with Rep. Edward Philips on several Sharon-specific legislative initiatives, including bills related to the town's water quality and local governance.\n\nFor Sharon residents, Sen. Feeney holds regular office hours in the district and his staff assists with state agency matters including unemployment, MassHealth, the Registry of Motor Vehicles, and state permit processes.",
+          "sources": [
+            {
+              "label": "Official Profile \u2014 malegislature.gov",
+              "url": "https://malegislature.gov/Legislators/Profile/PRF1"
+            },
+            {
+              "label": "Ballotpedia \u2014 Paul Feeney",
+              "url": "https://ballotpedia.org/Paul_Feeney"
+            },
+            {
+              "label": "About Paul \u2014 senatorfeeney.com",
+              "url": "https://www.senatorfeeney.com/about-paul"
+            }
+          ],
+          "social": {
+            "twitter": "https://x.com/paulfeeneyma",
+            "instagram": "https://www.instagram.com/paulfeeneyma/"
+          }
         }
       },
       "local": {

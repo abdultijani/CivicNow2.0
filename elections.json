@@ -1717,13 +1717,12 @@
               "seats": 1,
               "candidates": [
                 {
-                  "name": "Patrick O'Connor",
+                  "name": "John F. Keenan",
                   "party": "Democrat",
                   "incumbent": true,
                   "ballotOrder": 1,
-                  "website": "https://malegislature.gov/Legislators/Profile/PCO1",
                   "findRepsId": "ssen-ma-08",
-                  "findRepsCity": "Quincy"
+                  "website": "https://www.senatorjohnkeenan.com/"
                 }
               ]
             },
@@ -2151,13 +2150,12 @@
               "seats": 1,
               "candidates": [
                 {
-                  "name": "Patrick O'Connor",
+                  "name": "John F. Keenan",
                   "party": "Democrat",
                   "incumbent": true,
                   "ballotOrder": 1,
-                  "website": "https://malegislature.gov/Legislators/Profile/PCO1",
                   "findRepsId": "ssen-ma-08",
-                  "findRepsCity": "Quincy"
+                  "website": "https://www.senatorjohnkeenan.com/"
                 }
               ]
             },

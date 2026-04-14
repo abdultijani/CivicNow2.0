@@ -512,6 +512,7 @@ function renderAll(db) {
 
   // State senators
   db.districts.forEach(d => {
+    if (!d.state.senator) return;
     const key = 'ssen-' + d.id;
     registerRep({ ...d.state.senator, districtId: d.id }, key);
     queue('grid-state-senators', buildCard(repRegistry[key]));
