@@ -4221,22 +4221,22 @@
           },
           "registrationDeadlines": {
             "online": {
-              "date": "2026-04-29",
-              "dateDisplay": "Wednesday, April 29, 2026",
+              "date": "2026-04-24",
+              "dateDisplay": "Friday, April 24, 2026",
               "url": "https://www.sec.state.ma.us/ovr/",
-              "note": "Register via Massachusetts Online Voter Registration."
+              "note": "Register via Massachusetts Online Voter Registration by April 24."
             },
             "mail": {
-              "date": "2026-04-29",
-              "dateDisplay": "Wednesday, April 29, 2026",
-              "note": "Must be postmarked by April 29, 2026."
+              "date": "2026-04-24",
+              "dateDisplay": "Friday, April 24, 2026",
+              "note": "Must be postmarked by April 24, 2026."
             },
             "inPerson": {
-              "date": "2026-04-29",
-              "dateDisplay": "Wednesday, April 29, 2026",
+              "date": "2026-04-24",
+              "dateDisplay": "Friday, April 24, 2026",
               "location": "Sharon Town Hall, Town Clerk's Office, 90 South Main Street",
-              "hours": "8:30 AM \u2013 4:30 PM",
-              "note": "In-person deadline at Town Clerk's office."
+              "hours": "8:30 AM \u2013 5:00 PM",
+              "note": "Town Clerk's Office open until 5:00 PM on April 24 for voter registration only."
             },
             "sameDayRegistration": {
               "available": true,
@@ -4481,7 +4481,13 @@
                 "closeTime": "20:00"
               }
             }
-          ]
+          ],
+          "townMeeting": {
+            "date": "2026-05-04",
+            "dateDisplay": "Monday, May 4, 2026",
+            "note": "Annual Town Meeting precedes the Annual Town Election. Same voter registration deadline of April 24 applies."
+          },
+          "notes": "Registration deadline per Town of Sharon official announcement, April 22, 2026. Annual Town Meeting: May 4, 2026. Annual Town Election: May 19, 2026."
         },
         {
           "electionId": "sharon-2026-primary",

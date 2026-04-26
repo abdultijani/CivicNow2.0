@@ -1082,31 +1082,38 @@ function renderElectionResults(muniKey, data) {
   }
 
   // ── Card 3: Registration Deadlines ──
-  html += `
-    <div class="vi-result-card vi-result-card--deadlines">
-      <div class="vi-rc-label">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-        Registration Deadlines
-      </div>
-      <ul class="vi-rc-deadline-list">
-        <li>
-          <span class="dl-method">Online</span>
-          <span class="dl-date">${reg.online.dateDisplay}</span>
-          <span class="dl-note"><a href="${reg.online.url}" target="_blank" rel="noopener" class="vi-rc-link" style="margin:0;">Register at sec.state.ma.us &#8594;</a></span>
-        </li>
-        <li>
-          <span class="dl-method">Mail</span>
-          <span class="dl-date">${reg.mail.dateDisplay}</span>
-          <span class="dl-note">${reg.mail.note}</span>
-        </li>
-        <li>
-          <span class="dl-method">In Person</span>
-          <span class="dl-date">${reg.inPerson.dateDisplay}</span>
-          <span class="dl-note">${reg.inPerson.location}</span>
-        </li>
-        ${reg.sameDayRegistration?.available ? `<li><span class="dl-method" style="color:#1a7a4a;">Same-Day ✓</span><span class="dl-note">${reg.sameDayRegistration.note}</span></li>` : ''}
-      </ul>
-    </div>`;
+  html += '<div class="vi-result-card vi-result-card--deadlines">' +
+    '<div class="vi-rc-label">' +
+      '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>' +
+      ' Registration Deadlines' +
+    '</div>' +
+    (election.townMeeting ? (
+      '<div class="vi-rc-sub" style="margin-bottom:8px;padding:6px 8px;background:rgba(201,162,39,.08);border-left:3px solid var(--vi-gold);border-radius:3px;">' +
+        '<strong>Annual Town Meeting:</strong> ' + election.townMeeting.dateDisplay + ' &nbsp;·&nbsp; ' +
+        '<strong>Annual Town Election:</strong> ' + election.electionDateDisplay +
+      '</div>'
+    ) : '') +
+    '<ul class="vi-rc-deadline-list">' +
+      '<li>' +
+        '<span class="dl-method">Online</span>' +
+        '<span class="dl-date">' + reg.online.dateDisplay + '</span>' +
+        '<span class="dl-note"><a href="' + reg.online.url + '" target="_blank" rel="noopener" class="vi-rc-link" style="margin:0;">Register at sec.state.ma.us &#8594;</a></span>' +
+      '</li>' +
+      '<li>' +
+        '<span class="dl-method">Mail</span>' +
+        '<span class="dl-date">' + reg.mail.dateDisplay + '</span>' +
+        '<span class="dl-note">' + reg.mail.note + '</span>' +
+      '</li>' +
+      '<li>' +
+        '<span class="dl-method">In Person</span>' +
+        '<span class="dl-date">' + reg.inPerson.dateDisplay + '</span>' +
+        '<span class="dl-note">' + reg.inPerson.location + '</span>' +
+      '</li>' +
+      (reg.sameDayRegistration && reg.sameDayRegistration.available ? (
+        '<li><span class="dl-method" style="color:#1a7a4a;">Same-Day \u2713</span><span class="dl-note">' + reg.sameDayRegistration.note + '</span></li>'
+      ) : '') +
+    '</ul>' +
+  '</div>';
 
   // ── Card 4: Clerk contact ──
   html += `
