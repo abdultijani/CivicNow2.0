@@ -202,70 +202,236 @@
         "mostRecentLocalElection": {
           "date": "2025-11-04",
           "dateDisplay": "Tuesday, November 4, 2025",
-          "results": {
-            "cityCouncilAtLarge": {
-              "seatsElected": 6,
+          "results": [
+            {
+              "office": "City Council \u2014 At-Large",
+              "seats": 6,
+              "term": "2 years",
+              "contested": true,
               "elected": [
                 {
-                  "name": "Colleen Bradley-MacArthur",
-                  "incumbent": true
+                  "name": "Colleen M. Bradley-MacArthur",
+                  "votes": 4243,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-0"
                 },
                 {
-                  "name": "Randy LeBlanc",
-                  "incumbent": true
+                  "name": "Randall LeBlanc",
+                  "votes": 3841,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-2"
                 },
                 {
                   "name": "Tim King",
-                  "incumbent": false
+                  "votes": 3820,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-05-3"
                 },
                 {
                   "name": "Emma Tzioumis",
-                  "incumbent": false
+                  "votes": 3681,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-05-4"
                 },
                 {
-                  "name": "Carlos Vidal",
-                  "incumbent": true
+                  "name": "Carlos A. Vidal",
+                  "votes": 3645,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-5"
                 },
                 {
-                  "name": "Paul Brasco",
-                  "incumbent": true
+                  "name": "Paul J. Brasco",
+                  "votes": 3497,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-1"
                 }
               ],
-              "alsoRan": [
+              "defeated": [
                 {
-                  "name": "Kathy McMenimen",
+                  "name": "Kathleen B. McMenimen",
+                  "votes": 3392,
                   "incumbent": true
                 },
                 {
                   "name": "Christina Curtin",
+                  "votes": 3157,
+                  "incumbent": false
+                },
+                {
+                  "name": "Richard T. Hynes",
+                  "votes": 741,
                   "incumbent": false
                 }
               ]
             },
-            "schoolCommittee": {
-              "seatsElected": 3,
+            {
+              "office": "School Committee",
+              "seats": 3,
+              "term": "4 years",
+              "contested": true,
               "elected": [
                 {
-                  "name": "Debbie Coleman",
+                  "name": "Debra J. Coleman",
+                  "votes": 4363,
                   "incumbent": true
                 },
                 {
                   "name": "Tammy Wong-Bigelow",
+                  "votes": 4213,
                   "incumbent": false
                 },
                 {
-                  "name": "Sabrina DeJoannis",
+                  "name": "Sabrina Shams DeJoannis",
+                  "votes": 3833,
                   "incumbent": false
                 }
               ],
-              "alsoRan": [
+              "defeated": [
                 {
-                  "name": "Liz Al Jammal",
+                  "name": "Elizabeth Anne Aljammal",
+                  "votes": 3249,
                   "incumbent": true
                 }
               ]
+            },
+            {
+              "office": "City Council \u2014 Ward 1",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Anthony LaFauci",
+                  "votes": 786,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-6"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 2",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Caren Ann Dunn",
+                  "votes": 630,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-7"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 3",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "William Hanley",
+                  "votes": 1020,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-8"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 4",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "John J. McLaughlin",
+                  "votes": 577,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-9"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 5",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Joseph Paul LaCava",
+                  "votes": 537,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-10"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 6",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Sean T. Durkee",
+                  "votes": 519,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-11"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 7",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Paul S. Katz",
+                  "votes": 629,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-12"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 8",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Cathyann Harris",
+                  "votes": 604,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-13"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 9",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Robert G. Logan",
+                  "votes": 463,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-05-14"
+                }
+              ],
+              "defeated": []
             }
-          }
+          ],
+          "totalVoters": 7453,
+          "type": "Annual Municipal Election"
         },
         "nextLocalElection": {
           "date": "2027-11-02",
@@ -1430,82 +1596,216 @@
         "mostRecentLocalElection": {
           "date": "2025-11-04",
           "dateDisplay": "Tuesday, November 4, 2025",
-          "results": {
-            "cityCouncilAtLarge": {
-              "seatsElected": 6,
-              "note": "Several candidates critical of Mayor Koch won seats, reshaping the City Council lineup.",
+          "results": [
+            {
+              "office": "City Council \u2014 At-Large",
+              "seats": 3,
+              "term": "2 years",
+              "contested": true,
               "elected": [
                 {
-                  "name": "Scott Campbell",
-                  "incumbent": true
+                  "name": "Anne M. Mahoney",
+                  "votes": 8693,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-3"
                 },
                 {
-                  "name": "Noel DiBona",
-                  "incumbent": true
+                  "name": "Noel T. DiBona",
+                  "votes": 6902,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-08-2"
                 },
                 {
-                  "name": "Ann Mahoney",
-                  "incumbent": false
-                },
-                {
-                  "name": "Andrew Pham",
-                  "incumbent": false
-                },
-                {
-                  "name": "Herbert 'Alie' Shaughnessy III",
-                  "incumbent": false
-                },
-                {
-                  "name": "Ziqiang ('Susan') Yuan",
-                  "incumbent": false
+                  "name": "Ziqiang Susan Yuan",
+                  "votes": 6311,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-4"
                 }
               ],
-              "didNotAdvance": [
+              "defeated": [
                 {
-                  "name": "Jackie Carvey"
+                  "name": "Scott S. Campbell",
+                  "votes": 6145,
+                  "incumbent": true
                 },
                 {
-                  "name": "Hannah Kaplan"
+                  "name": "Andrew Nguyen Pham",
+                  "votes": 5307,
+                  "incumbent": false
+                },
+                {
+                  "name": "Herbert Alie Shaughnessy III",
+                  "votes": 4008,
+                  "incumbent": false
                 }
               ]
             },
-            "schoolCommitteeAtLarge": {
-              "seatsElected": 3,
+            {
+              "office": "School Committee",
+              "seats": 3,
+              "term": "4 years",
+              "contested": true,
               "elected": [
                 {
-                  "name": "Tina Cahill",
-                  "incumbent": true
+                  "name": "Tom Leung",
+                  "votes": 8083,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-14"
                 },
                 {
                   "name": "Kate Campbell",
+                  "votes": 7421,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-13"
+                },
+                {
+                  "name": "Tina M. Cahill",
+                  "votes": 7080,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-08-12"
+                }
+              ],
+              "defeated": [
+                {
+                  "name": "Frank Charles Santoro",
+                  "votes": 4908,
                   "incumbent": false
                 },
                 {
-                  "name": "Kai Lee",
+                  "name": "Marsha A. Roos",
+                  "votes": 4336,
+                  "incumbent": false
+                },
+                {
+                  "name": "Kaiman Lee",
+                  "votes": 3011,
                   "incumbent": false
                 }
-              ],
-              "alsoRan": [
+              ]
+            },
+            {
+              "office": "City Council \u2014 Ward 1",
+              "seats": 1,
+              "term": "2 years",
+              "contested": true,
+              "elected": [
                 {
-                  "name": "Tom Leung"
-                },
-                {
-                  "name": "Marsha Roos"
-                },
-                {
-                  "name": "Frank Santoro"
+                  "name": "David Jacobs",
+                  "votes": 2015,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-5"
                 }
               ],
-              "outgoing": [
+              "defeated": [
                 {
-                  "name": "Doug Gutro"
-                },
+                  "name": "David F. McCarthy",
+                  "votes": 1532,
+                  "incumbent": true
+                }
+              ]
+            },
+            {
+              "office": "City Council \u2014 Ward 2",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
                 {
-                  "name": "Emily Lebo"
+                  "name": "Richard C. Ash",
+                  "votes": 1212,
+                  "incumbent": true,
+                  "findRepsId": "local-add-ma-08-6"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "City Council \u2014 Ward 3",
+              "seats": 1,
+              "term": "2 years",
+              "contested": true,
+              "elected": [
+                {
+                  "name": "Walter Hubley",
+                  "votes": 1339,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-7"
+                }
+              ],
+              "defeated": [
+                {
+                  "name": "Kathleen Edith Thrun",
+                  "votes": 1236,
+                  "incumbent": true
+                }
+              ]
+            },
+            {
+              "office": "City Council \u2014 Ward 4",
+              "seats": 1,
+              "term": "2 years",
+              "contested": true,
+              "elected": [
+                {
+                  "name": "Virginia M. Ryan",
+                  "votes": 1040,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-8"
+                }
+              ],
+              "defeated": [
+                {
+                  "name": "James Devine",
+                  "votes": 995,
+                  "incumbent": true
+                }
+              ]
+            },
+            {
+              "office": "City Council \u2014 Ward 5",
+              "seats": 1,
+              "term": "2 years",
+              "contested": true,
+              "elected": [
+                {
+                  "name": "Maggie McKee",
+                  "votes": 1621,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-9"
+                }
+              ],
+              "defeated": [
+                {
+                  "name": "Daniel James Minton",
+                  "votes": 1048,
+                  "incumbent": true
+                }
+              ]
+            },
+            {
+              "office": "City Council \u2014 Ward 6",
+              "seats": 1,
+              "term": "2 years",
+              "contested": true,
+              "elected": [
+                {
+                  "name": "Deborah Anne Riley",
+                  "votes": 1748,
+                  "incumbent": false,
+                  "findRepsId": "local-add-ma-08-10"
+                }
+              ],
+              "defeated": [
+                {
+                  "name": "William P. Harris",
+                  "votes": 1196,
+                  "incumbent": true
                 }
               ]
             }
-          }
+          ],
+          "totalVoters": 15852,
+          "type": "Annual Municipal Election"
         },
         "nextLocalElection": {
           "date": "2027-11-02",
@@ -2399,8 +2699,395 @@
         "address": "1471 Highland Avenue, Needham, MA 02492"
       },
       "localElectionCycle": {
-        "frequency": "Annual \u2014 every April",
-        "note": "Needham uses a Town Meeting government. Residents also elect Town Meeting Members by precinct, who vote on zoning, budget, development, and local bylaws."
+        "mostRecentLocalElection": {
+          "date": "2026-04-14",
+          "dateDisplay": "April 14, 2026",
+          "type": "Annual Town Election",
+          "totalVoters": 6263,
+          "results": [
+            {
+              "office": "Select Board",
+              "seats": 2,
+              "term": "3 years",
+              "contested": true,
+              "elected": [
+                {
+                  "name": "William R. Dermody",
+                  "votes": 4411,
+                  "findRepsId": "local-add-ma-04-33"
+                },
+                {
+                  "name": "Catherine Reid Dowd",
+                  "votes": 4167,
+                  "findRepsId": "local-add-ma-04-32"
+                }
+              ],
+              "defeated": [
+                {
+                  "name": "Richard J. Adduci",
+                  "votes": 1989
+                }
+              ]
+            },
+            {
+              "office": "School Committee",
+              "seats": 2,
+              "term": "3 years",
+              "contested": true,
+              "elected": [
+                {
+                  "name": "Michael J. Greis",
+                  "votes": 3931,
+                  "findRepsId": "local-add-ma-04-3"
+                },
+                {
+                  "name": "Matthew J. Spengler",
+                  "votes": 3625,
+                  "findRepsId": "local-add-ma-04-6"
+                }
+              ],
+              "defeated": [
+                {
+                  "name": "Lauren Michelle Soper",
+                  "votes": 2625
+                }
+              ]
+            },
+            {
+              "office": "Planning Board",
+              "seats": 1,
+              "term": "5 years",
+              "contested": true,
+              "elected": [
+                {
+                  "name": "Oscar E. Mertz III",
+                  "votes": 3373,
+                  "findRepsId": "local-add-ma-04-12"
+                }
+              ],
+              "defeated": [
+                {
+                  "name": "Gary P. Lesanto",
+                  "votes": 2190
+                }
+              ]
+            },
+            {
+              "office": "Trustee of Needham Public Library",
+              "seats": 3,
+              "term": "3 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Meghan W. Small",
+                  "votes": 4090
+                },
+                {
+                  "name": "Michael D. O'Neal",
+                  "votes": 4061
+                },
+                {
+                  "name": "Erhardt Graeff",
+                  "votes": 3933
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "Board of Health",
+              "seats": 1,
+              "term": "3 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Edward V. Cosgrove III",
+                  "votes": 4307
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "Assessor",
+              "seats": 1,
+              "term": "3 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Marc J. Wexler",
+                  "votes": 4179,
+                  "findRepsId": "local-add-ma-04-16"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "Commissioner of Trust Funds",
+              "seats": 1,
+              "term": "3 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Daniel Burns",
+                  "votes": 4091,
+                  "findRepsId": "local-add-ma-04-22"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "Needham Housing Authority",
+              "seats": 1,
+              "term": "2 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "Amanda Berman",
+                  "votes": 4155,
+                  "findRepsId": "local-add-ma-04-26"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "Park & Recreation Commission",
+              "seats": 1,
+              "term": "3 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "James E. Rosenbaum",
+                  "votes": 4151,
+                  "findRepsId": "local-add-ma-04-21"
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "Trustee of Memorial Park",
+              "seats": 1,
+              "term": "3 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "John S. Gallello",
+                  "votes": 4344
+                }
+              ],
+              "defeated": []
+            },
+            {
+              "office": "Constable",
+              "seats": 1,
+              "term": "3 years",
+              "contested": false,
+              "elected": [
+                {
+                  "name": "John J. Longley",
+                  "votes": 4214
+                }
+              ],
+              "defeated": []
+            }
+          ],
+          "ballot": [
+            {
+              "office": "Select Board",
+              "seats": 2,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "William R. Dermody",
+                  "votes": 4411,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-33"
+                },
+                {
+                  "name": "Catherine Reid Dowd",
+                  "votes": 4167,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-32"
+                },
+                {
+                  "name": "Richard J. Adduci",
+                  "votes": 1989,
+                  "elected": false
+                }
+              ]
+            },
+            {
+              "office": "School Committee",
+              "seats": 2,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "Michael J. Greis",
+                  "votes": 3931,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-3"
+                },
+                {
+                  "name": "Matthew J. Spengler",
+                  "votes": 3625,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-6"
+                },
+                {
+                  "name": "Lauren Michelle Soper",
+                  "votes": 2625,
+                  "elected": false
+                }
+              ]
+            },
+            {
+              "office": "Planning Board",
+              "seats": 1,
+              "term": "5 years",
+              "candidates": [
+                {
+                  "name": "Oscar E. Mertz III",
+                  "votes": 3373,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-12"
+                },
+                {
+                  "name": "Gary P. Lesanto",
+                  "votes": 2190,
+                  "elected": false
+                }
+              ]
+            },
+            {
+              "office": "Assessor",
+              "seats": 1,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "Marc J. Wexler",
+                  "votes": 4179,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-16"
+                }
+              ]
+            },
+            {
+              "office": "Commissioner of Trust Funds",
+              "seats": 1,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "Daniel Burns",
+                  "votes": 4091,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-22"
+                }
+              ]
+            },
+            {
+              "office": "Needham Housing Authority",
+              "seats": 1,
+              "term": "2 years",
+              "candidates": [
+                {
+                  "name": "Amanda Berman",
+                  "votes": 4155,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-26"
+                }
+              ]
+            },
+            {
+              "office": "Park & Recreation Commission",
+              "seats": 1,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "James E. Rosenbaum",
+                  "votes": 4151,
+                  "elected": true,
+                  "findRepsId": "local-add-ma-04-21"
+                }
+              ]
+            },
+            {
+              "office": "Trustee of Needham Public Library",
+              "seats": 3,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "Meghan W. Small",
+                  "votes": 4090,
+                  "elected": true
+                },
+                {
+                  "name": "Michael D. O'Neal",
+                  "votes": 4061,
+                  "elected": true
+                },
+                {
+                  "name": "Erhardt Graeff",
+                  "votes": 3933,
+                  "elected": true
+                }
+              ]
+            },
+            {
+              "office": "Board of Health",
+              "seats": 1,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "Edward V. Cosgrove III",
+                  "votes": 4307,
+                  "elected": true
+                }
+              ]
+            },
+            {
+              "office": "Trustee of Memorial Park",
+              "seats": 1,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "John S. Gallello",
+                  "votes": 4344,
+                  "elected": true
+                }
+              ]
+            },
+            {
+              "office": "Constable",
+              "seats": 2,
+              "term": "3 years",
+              "candidates": [
+                {
+                  "name": "John J. Longley",
+                  "votes": 4214,
+                  "elected": true
+                },
+                {
+                  "name": "Maurice Handel",
+                  "votes": 440,
+                  "elected": false
+                },
+                {
+                  "name": "Brian Soll",
+                  "votes": 21,
+                  "elected": false
+                },
+                {
+                  "name": "Richard Graham",
+                  "votes": 22,
+                  "elected": false
+                },
+                {
+                  "name": "Felix Zemel",
+                  "votes": 6,
+                  "elected": false
+                }
+              ]
+            }
+          ]
+        }
       },
       "elections": [
         {

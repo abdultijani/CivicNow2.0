@@ -989,19 +989,20 @@ function renderElectionResults(muniKey, data) {
           <span class="vi-tl-date">${e.electionDateDisplay.replace('Tuesday, ','')}</span>
           <span class="vi-tl-type">${e.electionType.replace('2026 Massachusetts ','').replace('2026 ','')}</span>
           ${isNext ? '<span class="vi-tl-next-badge">Next Up</span>' : ''}
-          ${isNext ? `
-          <div class="vi-countdown" id="${countdownId}" data-date="${e.electionDate}">
-            <span class="vi-cd-label">Countdown to Election Day</span>
-            <div class="vi-cd-units">
-              <div class="vi-cd-unit"><span class="vi-cd-num" data-unit="d">--</span><span class="vi-cd-sub">days</span></div>
-              <span class="vi-cd-sep">:</span>
-              <div class="vi-cd-unit"><span class="vi-cd-num" data-unit="h">--</span><span class="vi-cd-sub">hrs</span></div>
-              <span class="vi-cd-sep">:</span>
-              <div class="vi-cd-unit"><span class="vi-cd-num" data-unit="m">--</span><span class="vi-cd-sub">min</span></div>
-              <span class="vi-cd-sep">:</span>
-              <div class="vi-cd-unit"><span class="vi-cd-num" data-unit="s">--</span><span class="vi-cd-sub">sec</span></div>
-            </div>
-          </div>` : ''}
+          ${isNext ? (
+            '<div class="vi-countdown" id="' + countdownId + '" data-date="' + e.electionDate + '">' +
+              '<span class="vi-cd-label">Countdown to Election Day</span>' +
+              '<div class="vi-cd-units">' +
+                '<div class="vi-cd-unit"><span class="vi-cd-num" data-unit="d">--</span><span class="vi-cd-sub">days</span></div>' +
+                '<span class="vi-cd-sep">:</span>' +
+                '<div class="vi-cd-unit"><span class="vi-cd-num" data-unit="h">--</span><span class="vi-cd-sub">hrs</span></div>' +
+                '<span class="vi-cd-sep">:</span>' +
+                '<div class="vi-cd-unit"><span class="vi-cd-num" data-unit="m">--</span><span class="vi-cd-sub">min</span></div>' +
+                '<span class="vi-cd-sep">:</span>' +
+                '<div class="vi-cd-unit"><span class="vi-cd-num" data-unit="s">--</span><span class="vi-cd-sub">sec</span></div>' +
+              '</div>' +
+            '</div>'
+          ) : ''}
         </div>`;
     }
     // show next local if no local this year
@@ -1057,12 +1058,10 @@ function renderElectionResults(muniKey, data) {
       </div>
       <div class="vi-rc-main">${election.electionDateDisplay}</div>
       <div class="vi-rc-sub">${election.electionType}</div>
-      ${election.earlyVoting?.available ? `
-      <div class="vi-rc-sub" style="margin-top:8px;color:#1a7a4a;font-weight:600;">
-        ✓ Early voting: ${election.earlyVoting.startDate} – ${election.earlyVoting.endDate}
-      </div>
-      <div class="vi-rc-sub" style="font-size:0.77rem;">${election.earlyVoting.locations[0]?.name} · ${election.earlyVoting.locations[0]?.hours}</div>
-      ` : ''}
+      ${election.earlyVoting?.available ? (
+        '<div class="vi-rc-sub" style="margin-top:8px;color:#1a7a4a;font-weight:600;">✓ Early voting: ' + election.earlyVoting.startDate + ' \u2013 ' + election.earlyVoting.endDate + '</div>' +
+        '<div class="vi-rc-sub" style="font-size:0.77rem;">' + (election.earlyVoting.locations[0]?.name || '') + ' \u00b7 ' + (election.earlyVoting.locations[0]?.hours || '') + '</div>'
+      ) : ''}
     </a>`;
 
   // ── Card 2: Polling Location ──
@@ -1171,73 +1170,126 @@ function renderElectionResults(muniKey, data) {
     '</div>';
   }
 
-  // ── Card 5: 2025 Local Results (Waltham/Quincy only, no local in 2026) ──
-  if (!isLocal && cycle.mostRecentLocalElection) {
+  // ── Card 5: Most Recent Local Election Results (generic renderer) ──
+  if (cycle.mostRecentLocalElection) {
     const rec = cycle.mostRecentLocalElection;
-    html += `
-    <div class="vi-result-card vi-result-card--candidates" style="border-left-color:var(--vi-local);">
-      <div class="vi-rc-label">🏛️ Most Recent ${muni.name} Local Election — ${rec.dateDisplay}</div>
-      <div class="vi-offices-list">`;
+    const contested   = (rec.results || []).filter(r => r.contested);
+    const uncontested = (rec.results || []).filter(r => !r.contested);
 
-    if (rec.results?.cityCouncilAtLarge) {
-      const cc = rec.results.cityCouncilAtLarge;
-      html += `
-        <div class="vi-office-row">
-          <div class="vi-office-row-header">
-            <span class="vi-office-name">City Council — At-Large</span>
-            <span class="vi-office-meta">${cc.seatsElected} seats elected · 2025 results</span>
-          </div>
-          <div class="vi-candidates-list">
-            ${(cc.elected||[]).map(c => `
-              <div class="vi-candidate-row">
-                <span class="vi-candidate-name">✓ ${c.name}</span>
-                ${c.incumbent ? '<span class="vi-incumbent-badge">Incumbent</span>' : '<span style="font-size:.7rem;color:var(--vi-state);font-weight:700;padding:2px 7px;border-radius:20px;background:#e8f8f0;">New</span>'}
-              </div>`).join('')}
-          </div>
-        </div>`;
+    // Helper: build a candidate name — link to FindReps if findRepsId exists
+    var resultName = function(c, muted) {
+      var style = muted ? ' style="opacity:.65;"' : '';
+      if (c.findRepsId) {
+        var url = 'FindReps.html?address=' + encodeURIComponent(muni.name + ', MA') + '&repkey=' + encodeURIComponent(c.findRepsId);
+        return '<a href="' + url + '" class="vi-candidate-link" title="View ' + c.name + '\'s full profile">' +
+          c.name +
+          ' <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:middle;opacity:.6"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
+          '</a>';
+      }
+      return '<span class="vi-candidate-name"' + style + '>' + c.name + '</span>';
     }
 
-    if (rec.results?.schoolCommittee) {
-      const sc = rec.results.schoolCommittee;
-      html += `
-        <div class="vi-office-row">
-          <div class="vi-office-row-header">
-            <span class="vi-office-name">School Committee</span>
-            <span class="vi-office-meta">${sc.seatsElected} seats elected · 2025 results</span>
-          </div>
-          <div class="vi-candidates-list">
-            ${(sc.elected||[]).map(c => `
-              <div class="vi-candidate-row">
-                <span class="vi-candidate-name">✓ ${c.name}</span>
-                ${c.incumbent ? '<span class="vi-incumbent-badge">Incumbent</span>' : '<span style="font-size:.7rem;color:var(--vi-state);font-weight:700;padding:2px 7px;border-radius:20px;background:#e8f8f0;">New</span>'}
-              </div>`).join('')}
-          </div>
-        </div>`;
+    var resultsHtml = '';
+
+    // Contested races — elected + defeated with vote counts + profile links
+    if (contested.length) {
+      resultsHtml += '<div class="vi-results-section-label">Contested Races</div>';
+      for (var ri = 0; ri < contested.length; ri++) {
+        var r = contested[ri];
+        var rowsHtml = '';
+        for (var ci = 0; ci < (r.elected || []).length; ci++) {
+          var c = r.elected[ci];
+          rowsHtml += '<div class="vi-candidate-row vi-result-row--elected">' +
+            '<span class="vi-result-check">✓</span>' +
+            resultName(c, false) +
+            (c.votes != null ? '<span class="vi-result-votes">' + c.votes.toLocaleString() + '</span>' : '') +
+          '</div>';
+        }
+        for (var di = 0; di < (r.defeated || []).length; di++) {
+          var d = r.defeated[di];
+          rowsHtml += '<div class="vi-candidate-row vi-result-row--defeated">' +
+            '<span class="vi-result-check" style="opacity:.3;">✗</span>' +
+            resultName(d, true) +
+            (d.votes != null ? '<span class="vi-result-votes" style="opacity:.65;">' + d.votes.toLocaleString() + '</span>' : '') +
+          '</div>';
+        }
+        resultsHtml += '<div class="vi-office-row">' +
+          '<div class="vi-office-row-header">' +
+            '<span class="vi-office-name">' + r.office + '</span>' +
+            '<span class="vi-office-meta">Elect ' + r.seats + ' · ' + r.term + '</span>' +
+          '</div>' +
+          '<div class="vi-candidates-list">' + rowsHtml + '</div>' +
+        '</div>';
+      }
     }
 
-    if (rec.results?.schoolCommitteeAtLarge) {
-      const sc = rec.results.schoolCommitteeAtLarge;
-      html += `
-        <div class="vi-office-row">
-          <div class="vi-office-row-header">
-            <span class="vi-office-name">School Committee — At-Large</span>
-            <span class="vi-office-meta">${sc.seatsElected} seats elected · 2025 results</span>
-          </div>
-          <div class="vi-candidates-list">
-            ${(sc.elected||[]).map(c => `
-              <div class="vi-candidate-row">
-                <span class="vi-candidate-name">✓ ${c.name}</span>
-                ${c.incumbent ? '<span class="vi-incumbent-badge">Incumbent</span>' : '<span style="font-size:.7rem;color:var(--vi-state);font-weight:700;padding:2px 7px;border-radius:20px;background:#e8f8f0;">New</span>'}
-              </div>`).join('')}
-          </div>
-        </div>`;
+    // Uncontested races — compact, with profile links where available
+    if (uncontested.length) {
+      resultsHtml += '<div class="vi-results-section-label" style="margin-top:10px;">Uncontested</div>';
+      resultsHtml += '<div class="vi-office-row"><div class="vi-candidates-list">';
+      for (var ui = 0; ui < uncontested.length; ui++) {
+        var u = uncontested[ui];
+        var winner = (u.elected || [])[0] || {};
+        resultsHtml += '<div class="vi-candidate-row">' +
+          '<span class="vi-result-check" style="color:var(--vi-gold);">✓</span>' +
+          resultName(winner, false) +
+          '<span class="vi-candidate-party" style="font-style:italic;">' + u.office + '</span>' +
+          '<span class="vi-result-votes">' + (winner.votes || 0).toLocaleString() + '</span>' +
+        '</div>';
+      }
+      resultsHtml += '</div></div>';
     }
 
-    html += `</div>
-      <div style="margin-top:10px;">
-        <span style="font-size:.75rem;color:var(--vi-muted);">Next ${muni.name} city election: <strong>${cycle.nextLocalElection?.dateDisplay}</strong></span>
-      </div>
-    </div>`;
+    // Full ballot tab — all candidates who ran, grouped by office
+    var ballotHtml = '';
+    if (rec.ballot && rec.ballot.length) {
+      for (var bi = 0; bi < rec.ballot.length; bi++) {
+        var bo = rec.ballot[bi];
+        var bRows = '';
+        for (var bci = 0; bci < bo.candidates.length; bci++) {
+          var bc = bo.candidates[bci];
+          var badge = bc.elected
+            ? '<span class="vi-incumbent-badge" style="background:#e8f8f0;color:#16a34a;">Elected ✓</span>'
+            : '<span style="font-size:.68rem;color:var(--vi-muted);padding:2px 7px;">Did not win</span>';
+          bRows += '<div class="vi-candidate-row">' +
+            (bc.findRepsId ? resultName(bc, false) : '<span class="vi-candidate-name"' + (bc.elected ? '' : ' style="opacity:.65;"') + '>' + bc.name + '</span>') +
+            badge +
+            (bc.votes != null ? '<span class="vi-result-votes"' + (bc.elected ? '' : ' style="opacity:.65;"') + '>' + bc.votes.toLocaleString() + '</span>' : '') +
+          '</div>';
+        }
+        ballotHtml += '<div class="vi-office-row">' +
+          '<div class="vi-office-row-header">' +
+            '<span class="vi-office-name">' + bo.office + '</span>' +
+            '<span class="vi-office-meta">Elect ' + bo.seats + ' · ' + bo.term + '</span>' +
+          '</div>' +
+          '<div class="vi-candidates-list">' + bRows + '</div>' +
+        '</div>';
+      }
+    }
+
+    // Tab ID unique per card
+    var tabIdR = 'vi-tab-results-' + muniKey;
+    var tabIdB = 'vi-tab-ballot-' + muniKey;
+
+    html += '<div class="vi-result-card vi-result-card--candidates" style="grid-column:1/-1;border-left-color:var(--vi-local);">' +
+      '<div class="vi-rc-label">🏛️ ' + rec.type + ' — ' + rec.dateDisplay + '</div>' +
+      '<div class="vi-rc-sub" style="margin-bottom:10px;">Total votes cast: ' + (rec.totalVoters || 0).toLocaleString() + ' · Preliminary results</div>' +
+
+      // Tab switcher
+      (ballotHtml ? (
+        '<div class="vi-results-tabs">' +
+          '<button class="vi-rtab vi-rtab--active" onclick="viSwitchTab(\'' + tabIdR + '\',\'' + tabIdB + '\',this)">Winners</button>' +
+          '<button class="vi-rtab" onclick="viSwitchTab(\'' + tabIdB + '\',\'' + tabIdR + '\',this)">Full Ballot</button>' +
+        '</div>'
+      ) : '') +
+
+      '<div id="' + tabIdR + '" class="vi-offices-list">' + resultsHtml + '</div>' +
+      (ballotHtml ? '<div id="' + tabIdB + '" class="vi-offices-list" style="display:none;">' + ballotHtml + '</div>' : '') +
+
+      '<div style="margin-top:10px;font-size:.75rem;color:var(--vi-muted);">' +
+        '<a href="' + clerk.website + '" target="_blank" rel="noopener" class="vi-rc-link" style="margin:0;">Official results &#8594;</a>' +
+      '</div>' +
+    '</div>';
   }
 
   // ── Cards: Offices on Ballot for EVERY upcoming election ──
@@ -1324,6 +1376,14 @@ function sanitizeInput(raw) {
     .replace(/[^\w\s,.\-'#\/]/g, '')   // allow only safe chars
     .trim()
     .slice(0, 200);                    // cap at 200 chars
+}
+
+function viSwitchTab(showId, hideId, btn) {
+  document.getElementById(showId).style.display = '';
+  document.getElementById(hideId).style.display = 'none';
+  var tabs = btn.parentElement.querySelectorAll('.vi-rtab');
+  tabs.forEach(function(t) { t.classList.remove('vi-rtab--active'); });
+  btn.classList.add('vi-rtab--active');
 }
 
 async function runElectionLookup() {

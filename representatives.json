@@ -432,7 +432,7 @@
           "email": "selectboard@needhamma.gov",
           "website": "https://www.needhamma.gov/DocumentCenter/View/23813/Meet-the-Select-Board-2025-2026?bidId=",
           "office": "1471 Highland Avenue, Needham, MA 02492",
-          "background": "The Needham Select Board is the chief executive body of Needham, Massachusetts, consisting of five members elected for staggered three-year terms. The Board sets town policy, approves the annual budget, and appoints the Town Manager, who handles day-to-day administration.",
+          "background": "The Needham Select Board is the five-member chief executive body of town government. Members are elected to staggered three-year terms. Current board (April 2026\u20132027): Heidi Frail (Chair), Joshua Levy (Vice Chair), Kevin Keane (Clerk), Catherine Reid Dowd, and Bill Dermody.",
           "photo": "https://needhamhistory.org/wp-content/uploads/2022/07/Town-Seal-600b.png",
           "members": 5,
           "backgroundFull": "The Needham Select Board is the chief executive body of Needham, Massachusetts \u2014 a prosperous suburban town of approximately 32,000 residents located 12 miles southwest of Boston. The Board consists of five members elected for staggered three-year terms at the Annual Town Election held each April.\n\nAs of 2025, the Board includes members Marianne Cooley, Josh Levy, John Keane, Lakshmi Balachandra (elected April 2021, first person of color to serve on the Board), and Marcus Nelson (elected April 2021). The Board appoints the Town Manager, who serves as Needham's chief administrative officer and is responsible for the day-to-day management of all town departments.\n\nThe Select Board sets town policy on a wide range of issues including land use and zoning, economic development, public safety, and municipal finance. It approves the annual operating budget (presented to Representative Town Meeting for adoption) and capital improvement plan. The Board also issues licenses and permits including liquor licenses, special event permits, and various business operating licenses.\n\nNeedham operates under a Representative Town Meeting form of government, in which 240 elected Town Meeting Members from 10 precincts, plus 14 at-large members, serve as the legislative body. Town Meeting convenes annually (typically in May) and at special sessions as needed. The Select Board and Town Manager present the proposed budget and major policy initiatives to Town Meeting for approval.\n\nThe Board meets regularly twice monthly in the Select Board Chambers at Town Hall, 1471 Highland Avenue. All meetings are open to the public. Residents may address the Board during the public comment period at the start of each meeting, or by contacting the Select Board's Office at 781-455-7500 ext. 71204. Needham has consistently earned high marks for fiscal management, receiving bond rating upgrades and recognition as one of the best-managed towns in Massachusetts.",
@@ -445,6 +445,13 @@
               "label": "Needham Select Board \u2014 Meet the Members (2025\u20132026)",
               "url": "https://www.needhamma.gov/DocumentCenter/View/23813/Meet-the-Select-Board-2025-2026?bidId="
             }
+          ],
+          "currentMembers": [
+            "Heidi Frail",
+            "Joshua Levy",
+            "Kevin Keane",
+            "Catherine Reid Dowd",
+            "Bill Dermody"
           ]
         },
         "cityCouncil": {
@@ -469,7 +476,819 @@
           "photo": "https://needhamhistory.org/wp-content/uploads/2022/07/Town-Seal-600b.png"
         }
       },
-      "additionalLocals": []
+      "additionalLocals": [
+        {
+          "name": "Michael E. O'Brien",
+          "title": "School Committee Member \u2014 Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-0400",
+          "email": "schoolcommittee@needham.k12.ma.us",
+          "website": "https://www.needham.k12.ma.us/district_info/school_committee",
+          "office": "Broadmeadow School, 120 Broadmeadow Road, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2027",
+          "committees": [
+            "Needham School Committee"
+          ],
+          "background": "Michael E. O'Brien is Chair of the Needham School Committee, the seven-member elected body that sets policy and direction for Needham Public Schools. The Committee defines the district's vision and mission, hires and evaluates the Superintendent, and sets the annual school budget.",
+          "backgroundFull": "Michael E. O'Brien serves as Chair of the Needham School Committee, the seven-member elected body responsible for governing Needham Public Schools. His term expires in 2027.\n\nThe School Committee defines the vision and mission of the district, hires and evaluates the Superintendent, sets district goals and policies, and oversees the annual school budget. Meetings are held on the first and third Tuesday of each month at 6:30 p.m. at the Broadmeadow School Performance Center, 120 Broadmeadow Road, and are broadcast live on the Needham Channel.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham School Committee \u2014 needham.k12.ma.us",
+              "url": "https://www.needham.k12.ma.us/district_info/school_committee"
+            }
+          ]
+        },
+        {
+          "name": "Alisa Skatrud",
+          "title": "School Committee Member \u2014 Vice Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-0400",
+          "email": "schoolcommittee@needham.k12.ma.us",
+          "website": "https://www.needham.k12.ma.us/district_info/school_committee",
+          "office": "Broadmeadow School, 120 Broadmeadow Road, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2028",
+          "committees": [
+            "Needham School Committee"
+          ],
+          "background": "Alisa Skatrud is Vice Chair of the Needham School Committee. Her term expires in 2028. The Committee sets policy, hires and evaluates the Superintendent, and oversees the annual school budget for Needham Public Schools.",
+          "backgroundFull": "Alisa Skatrud serves as Vice Chair of the Needham School Committee, with her term expiring in 2028. The School Committee is the seven-member elected policy-making body for Needham Public Schools, responsible for defining the district's mission, hiring and evaluating the Superintendent, and setting the annual budget. Meetings are held the first and third Tuesday of each month at 6:30 p.m. at the Broadmeadow School Performance Center.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham School Committee \u2014 needham.k12.ma.us",
+              "url": "https://www.needham.k12.ma.us/district_info/school_committee"
+            }
+          ]
+        },
+        {
+          "name": "Sri Baqri",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-0400",
+          "email": "schoolcommittee@needham.k12.ma.us",
+          "website": "https://www.needham.k12.ma.us/district_info/school_committee",
+          "office": "Broadmeadow School, 120 Broadmeadow Road, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2028",
+          "committees": [
+            "Needham School Committee"
+          ],
+          "background": "Sri Baqri is a member of the Needham School Committee. His term expires in 2028. The Committee sets policy and direction for Needham Public Schools, including overseeing the Superintendent, school budget, and district goals.",
+          "backgroundFull": "Sri Baqri serves as a member of the Needham School Committee, with his term expiring in 2028. The School Committee is the seven-member elected body governing Needham Public Schools. Members set district vision, evaluate the Superintendent, monitor the annual budget, and review goals to support student success.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham School Committee \u2014 needham.k12.ma.us",
+              "url": "https://www.needham.k12.ma.us/district_info/school_committee"
+            }
+          ]
+        },
+        {
+          "name": "Michael Greis",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-0400",
+          "email": "schoolcommittee@needham.k12.ma.us",
+          "website": "https://www.needham.k12.ma.us/district_info/school_committee",
+          "office": "Broadmeadow School, 120 Broadmeadow Road, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2029",
+          "committees": [
+            "Needham School Committee"
+          ],
+          "background": "Michael Greis is a member of the Needham School Committee, re-elected in the April 14, 2026 Annual Town Election with 3,931 votes. His new term expires in 2029. The Committee sets policy and direction for Needham Public Schools.",
+          "backgroundFull": "Michael Greis serves on the Needham School Committee and was re-elected in the April 14, 2026 Annual Town Election, receiving 3,931 votes. His new term expires in 2029.\n\nThe School Committee is the seven-member elected body that sets policy, hires and evaluates the Superintendent, and oversees the annual budget for Needham Public Schools. Meetings are held on the first and third Tuesday of each month at 6:30 p.m.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham School Committee \u2014 needham.k12.ma.us",
+              "url": "https://www.needham.k12.ma.us/district_info/school_committee"
+            }
+          ]
+        },
+        {
+          "name": "Elizabeth Lee",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-0400",
+          "email": "schoolcommittee@needham.k12.ma.us",
+          "website": "https://www.needham.k12.ma.us/district_info/school_committee",
+          "office": "Broadmeadow School, 120 Broadmeadow Road, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2027",
+          "committees": [
+            "Needham School Committee"
+          ],
+          "background": "Elizabeth Lee is a member of the Needham School Committee. Her term expires in 2027. The Committee sets policy and direction for Needham Public Schools.",
+          "backgroundFull": "Elizabeth Lee serves as a member of the Needham School Committee, with her term expiring in 2027. The School Committee is the seven-member elected body governing Needham Public Schools, responsible for setting district vision, hiring the Superintendent, and overseeing the annual budget.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham School Committee \u2014 needham.k12.ma.us",
+              "url": "https://www.needham.k12.ma.us/district_info/school_committee"
+            }
+          ]
+        },
+        {
+          "name": "Andrea Longo Carter",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-0400",
+          "email": "schoolcommittee@needham.k12.ma.us",
+          "website": "https://www.needham.k12.ma.us/district_info/school_committee",
+          "office": "Broadmeadow School, 120 Broadmeadow Road, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2028",
+          "committees": [
+            "Needham School Committee"
+          ],
+          "background": "Andrea Longo Carter is a member of the Needham School Committee. Her term expires in 2028. The Committee sets policy and direction for Needham Public Schools.",
+          "backgroundFull": "Andrea Longo Carter serves as a member of the Needham School Committee, with her term expiring in 2028. The School Committee is the seven-member elected body responsible for setting policy, evaluating the Superintendent, and overseeing the annual budget for Needham Public Schools.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham School Committee \u2014 needham.k12.ma.us",
+              "url": "https://www.needham.k12.ma.us/district_info/school_committee"
+            }
+          ]
+        },
+        {
+          "name": "Matthew Spengler",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-0400",
+          "email": "schoolcommittee@needham.k12.ma.us",
+          "website": "https://www.needham.k12.ma.us/district_info/school_committee",
+          "office": "Broadmeadow School, 120 Broadmeadow Road, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2029",
+          "committees": [
+            "Needham School Committee"
+          ],
+          "background": "Matthew Spengler is a member of the Needham School Committee, re-elected in the April 14, 2026 Annual Town Election with 3,625 votes. His new term expires in 2029.",
+          "backgroundFull": "Matthew Spengler serves on the Needham School Committee and was re-elected in the April 14, 2026 Annual Town Election, receiving 3,625 votes. His new term expires in 2029.\n\nThe School Committee is the seven-member elected body that sets policy, evaluates the Superintendent, and oversees the annual school budget. Meetings are held the first and third Tuesday of each month at 6:30 p.m.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham School Committee \u2014 needham.k12.ma.us",
+              "url": "https://www.needham.k12.ma.us/district_info/school_committee"
+            }
+          ]
+        },
+        {
+          "name": "Artie Crocker",
+          "title": "Planning Board Member \u2014 Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "planningboard@needhamma.gov",
+          "website": "https://www.needhamma.gov/1114/Planning-Board",
+          "office": "500 Dedham Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2027",
+          "committees": [
+            "Needham Planning Board"
+          ],
+          "background": "Artie Crocker is Chair of the Needham Planning Board. His term expires in April 2027. The Planning Board guides Needham's growth and development, overseeing zoning, subdivision approvals, site plans, and the Town Master Plan.",
+          "backgroundFull": "Artie Crocker serves as Chairperson of the Needham Planning Board, with his term expiring April 2027.\n\nThe Planning Board is the five-member elected body that guides Needham's growth and development under the Subdivision Control Law (M.G.L. Chapter 41) and the Zoning Act (M.G.L. Chapter 40A). The Board reviews and approves subdivision plans, site plans, scenic road applications, and residential compounds; proposes zoning changes to Town Meeting; and maintains the Town's Master Plan.\n\nMeetings are held on the first and third Tuesday of each month at 7:00 p.m. in the Charles River Meeting Room, 500 Dedham Avenue.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Planning Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1114/Planning-Board"
+            }
+          ]
+        },
+        {
+          "name": "Justin McCullen",
+          "title": "Planning Board Member \u2014 Vice Chair & Clerk",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "planningboard@needhamma.gov",
+          "website": "https://www.needhamma.gov/1114/Planning-Board",
+          "office": "500 Dedham Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2029",
+          "committees": [
+            "Needham Planning Board"
+          ],
+          "background": "Justin McCullen is Vice Chairperson and Clerk of the Needham Planning Board. His term expires in April 2029. The Board guides Needham's zoning, subdivision approvals, and land use decisions.",
+          "backgroundFull": "Justin McCullen serves as Vice Chairperson and Clerk of the Needham Planning Board, with his term expiring April 2029.\n\nThe Planning Board oversees zoning, subdivision approvals, site plans, and land use decisions under state law. Members meet on the first and third Tuesday of each month at 7:00 p.m. at 500 Dedham Avenue.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Planning Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1114/Planning-Board"
+            }
+          ]
+        },
+        {
+          "name": "Adam Block",
+          "title": "Planning Board Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "planningboard@needhamma.gov",
+          "website": "https://www.needhamma.gov/1114/Planning-Board",
+          "office": "500 Dedham Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2028",
+          "committees": [
+            "Needham Planning Board"
+          ],
+          "background": "Adam Block is a member of the Needham Planning Board. His term expires in April 2028. The Board guides Needham's zoning, subdivision approvals, and land use decisions.",
+          "backgroundFull": "Adam Block serves on the Needham Planning Board, with his term expiring April 2028. The Board oversees zoning, subdivisions, site plans, and Needham's Master Plan under M.G.L. Chapters 40A and 41.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Planning Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1114/Planning-Board"
+            }
+          ]
+        },
+        {
+          "name": "Natasha Espada",
+          "title": "Planning Board Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "planningboard@needhamma.gov",
+          "website": "https://www.needhamma.gov/1114/Planning-Board",
+          "office": "500 Dedham Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2026",
+          "committees": [
+            "Needham Planning Board"
+          ],
+          "background": "Natasha Espada is a member of the Needham Planning Board whose term expired in April 2026. The Board guides Needham's zoning, subdivision approvals, and land use decisions.",
+          "backgroundFull": "Natasha Espada served on the Needham Planning Board, with her term expiring April 2026. The Board oversees zoning, subdivisions, site plans, and Needham's Master Plan under M.G.L. Chapters 40A and 41.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Planning Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1114/Planning-Board"
+            }
+          ]
+        },
+        {
+          "name": "Eric Greenberg",
+          "title": "Planning Board Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "planningboard@needhamma.gov",
+          "website": "https://www.needhamma.gov/1114/Planning-Board",
+          "office": "500 Dedham Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2030",
+          "committees": [
+            "Needham Planning Board"
+          ],
+          "background": "Eric Greenberg is a member of the Needham Planning Board. His term expires in April 2030. The Board guides Needham's zoning, subdivision approvals, and land use decisions.",
+          "backgroundFull": "Eric Greenberg serves on the Needham Planning Board, with his term expiring April 2030. The Board oversees zoning, subdivisions, site plans, and Needham's Master Plan under M.G.L. Chapters 40A and 41.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Planning Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1114/Planning-Board"
+            }
+          ]
+        },
+        {
+          "name": "Oscar E. Mertz III",
+          "title": "Planning Board Member \u2014 Newly Elected",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "planningboard@needhamma.gov",
+          "website": "https://www.needhamma.gov/1114/Planning-Board",
+          "office": "500 Dedham Avenue, Needham, MA 02492",
+          "since": "2026",
+          "nextElection": "2031",
+          "committees": [
+            "Needham Planning Board"
+          ],
+          "background": "Oscar E. Mertz III was elected to the Needham Planning Board in the April 14, 2026 Annual Town Election with 3,373 votes, defeating Gary P. Lesanto (2,190 votes). He will serve a five-year term.",
+          "backgroundFull": "Oscar E. Mertz III was elected to the Needham Planning Board on April 14, 2026, receiving 3,373 votes in a contested race against Gary P. Lesanto (2,190 votes).\n\nThe Planning Board is the five-member elected body guiding Needham's growth and development under the Subdivision Control Law (M.G.L. Chapter 41) and the Zoning Act (M.G.L. Chapter 40A). Members review subdivision plans, site plans, scenic road applications, and residential compounds; propose zoning changes to Town Meeting; and maintain the Town's Master Plan.\n\nMeetings are held on the first and third Tuesday of each month at 7:00 p.m. in the Charles River Meeting Room, 500 Dedham Avenue.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Planning Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1114/Planning-Board"
+            }
+          ]
+        },
+        {
+          "name": "John Bulian",
+          "title": "Board of Assessors \u2014 Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "assessors@needhamma.gov",
+          "website": "https://www.needhamma.gov/assessors",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": null,
+          "committees": [
+            "Board of Assessors"
+          ],
+          "background": "John Bulian is Chair of the Needham Board of Assessors, the three-member elected body that determines the value of all real estate, personal property, and motor vehicles in Needham for tax purposes.",
+          "backgroundFull": "John Bulian serves as Chairperson of the Needham Board of Assessors. The three-member board \u2014 each member serving a three-year staggered term \u2014 is responsible for determining the value of all real estate, personal property, and motor vehicles in Needham in order to calculate taxes fairly and comply with Massachusetts law.\n\nThe Board manages property valuation, the motor vehicle excise tax, and ensures Needham follows all applicable state tax laws.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Board of Assessors \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/assessors"
+            }
+          ]
+        },
+        {
+          "name": "Michael Niden",
+          "title": "Board of Assessors \u2014 Vice Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "assessors@needhamma.gov",
+          "website": "https://www.needhamma.gov/assessors",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": null,
+          "committees": [
+            "Board of Assessors"
+          ],
+          "background": "Michael Niden is Vice Chair of the Needham Board of Assessors, the three-member elected body that determines property, personal property, and motor vehicle values for Needham tax assessments.",
+          "backgroundFull": "Michael Niden serves as Vice Chairperson of the Needham Board of Assessors. The three-member elected body determines the value of all real estate, personal property, and motor vehicles in Needham to calculate taxes fairly and comply with Massachusetts law.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Board of Assessors \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/assessors"
+            }
+          ]
+        },
+        {
+          "name": "Michael Diener",
+          "title": "Board of Assessors \u2014 Secretary",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "assessors@needhamma.gov",
+          "website": "https://www.needhamma.gov/assessors",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": null,
+          "committees": [
+            "Board of Assessors"
+          ],
+          "background": "Michael Diener is Secretary of the Needham Board of Assessors, the three-member elected body that determines property and motor vehicle values for Needham tax assessments.",
+          "backgroundFull": "Michael Diener serves as Secretary of the Needham Board of Assessors. The three-member elected body determines the assessed value of all real estate, personal property, and motor vehicles in Needham to ensure fair taxation under Massachusetts law.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Board of Assessors \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/assessors"
+            }
+          ]
+        },
+        {
+          "name": "Marc J. Wexler",
+          "title": "Board of Assessors \u2014 Newly Elected",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "assessors@needhamma.gov",
+          "website": "https://www.needhamma.gov/assessors",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": "2026",
+          "nextElection": "2029",
+          "committees": [
+            "Board of Assessors"
+          ],
+          "background": "Marc J. Wexler was elected to the Needham Board of Assessors in the April 14, 2026 Annual Town Election, receiving 4,179 votes. He will serve a three-year term on the board that determines property valuations and motor vehicle excise taxes for Needham.",
+          "backgroundFull": "Marc J. Wexler was elected to the Needham Board of Assessors on April 14, 2026, running uncontested and receiving 4,179 votes. He will serve a three-year term.\n\nThe three-member Board of Assessors determines the value of all real estate, personal property, and motor vehicles in Needham for tax purposes. One member is elected each year to serve a staggered three-year term.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Board of Assessors \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/assessors"
+            }
+          ]
+        },
+        {
+          "name": "Christopher J. Gerstel",
+          "title": "Park & Recreation Commission \u2014 Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "recreation@needhamma.gov",
+          "website": "https://www.needhamma.gov/623/Park-Recreation-Commission",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2027",
+          "committees": [
+            "Park & Recreation Commission"
+          ],
+          "background": "Christopher J. Gerstel is Chair of the Needham Park and Recreation Commission. His term expires in 2027. The Commission manages over 300 acres of parkland, athletic facilities, aquatics, and recreation programming for Needham residents.",
+          "backgroundFull": "Christopher J. Gerstel serves as Chair of the Needham Park and Recreation Commission, with his term expiring in 2027.\n\nThe five-member elected Commission is empowered by Chapter 45 of the Massachusetts General Laws to serve as steward of over 300 acres of Needham parkland including the Town Forest; administer and schedule all outdoor athletic fields and courts; oversee the Pools at RRC summer aquatics facility; develop long-range open space and recreation plans; and support community organizations and youth development programs.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Park & Recreation \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/623/Park-Recreation-Commission"
+            }
+          ]
+        },
+        {
+          "name": "Michelle S. Geddes",
+          "title": "Park & Recreation Commission \u2014 Vice Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "recreation@needhamma.gov",
+          "website": "https://www.needhamma.gov/623/Park-Recreation-Commission",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2028",
+          "committees": [
+            "Park & Recreation Commission"
+          ],
+          "background": "Michelle S. Geddes is Vice Chair of the Needham Park and Recreation Commission. Her term expires in 2028. The Commission manages parkland, athletic facilities, aquatics, and recreation programming for Needham residents.",
+          "backgroundFull": "Michelle S. Geddes serves as Vice Chair of the Needham Park and Recreation Commission, with her term expiring in 2028. The Commission manages over 300 acres of Needham parkland, athletic fields, the Pools at RRC aquatics facility, and community recreation programming.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Park & Recreation \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/623/Park-Recreation-Commission"
+            }
+          ]
+        },
+        {
+          "name": "Cynthia J. Chaston",
+          "title": "Park & Recreation Commission Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "recreation@needhamma.gov",
+          "website": "https://www.needhamma.gov/623/Park-Recreation-Commission",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2028",
+          "committees": [
+            "Park & Recreation Commission"
+          ],
+          "background": "Cynthia J. Chaston is a member of the Needham Park and Recreation Commission. Her term expires in 2028. The Commission manages parkland, athletic facilities, and recreation programming for Needham residents.",
+          "backgroundFull": "Cynthia J. Chaston serves on the Needham Park and Recreation Commission, with her term expiring in 2028. The five-member elected Commission manages parkland, outdoor athletic facilities, aquatics, and community recreation under Chapter 45 of the Massachusetts General Laws.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Park & Recreation \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/623/Park-Recreation-Commission"
+            }
+          ]
+        },
+        {
+          "name": "Dina R. Hannigan",
+          "title": "Park & Recreation Commission Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "recreation@needhamma.gov",
+          "website": "https://www.needhamma.gov/623/Park-Recreation-Commission",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2027",
+          "committees": [
+            "Park & Recreation Commission"
+          ],
+          "background": "Dina R. Hannigan is a member of the Needham Park and Recreation Commission. Her term expires in 2027. The Commission manages parkland, athletic facilities, and recreation programming for Needham residents.",
+          "backgroundFull": "Dina R. Hannigan serves on the Needham Park and Recreation Commission, with her term expiring in 2027. The Commission manages over 300 acres of parkland, outdoor athletic facilities, the Pools at RRC, and youth and community recreation programs.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Park & Recreation \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/623/Park-Recreation-Commission"
+            }
+          ]
+        },
+        {
+          "name": "James Rosenbaum",
+          "title": "Park & Recreation Commission Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "recreation@needhamma.gov",
+          "website": "https://www.needhamma.gov/623/Park-Recreation-Commission",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2029",
+          "committees": [
+            "Park & Recreation Commission"
+          ],
+          "background": "James Rosenbaum is a member of the Needham Park and Recreation Commission, re-elected in the April 14, 2026 Annual Town Election with 4,151 votes. His new term expires in 2029.",
+          "backgroundFull": "James Rosenbaum serves on the Needham Park and Recreation Commission and was re-elected on April 14, 2026, receiving 4,151 votes uncontested. His new term expires in 2029.\n\nThe Commission manages over 300 acres of parkland, outdoor athletic facilities, the Pools at RRC, and community recreation programming.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Park & Recreation \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/623/Park-Recreation-Commission"
+            }
+          ]
+        },
+        {
+          "name": "Daniel Burns",
+          "title": "Commissioner of Trust Funds \u2014 Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "finance@needhamma.gov",
+          "website": "https://www.needhamma.gov/1105/Commissioners-of-Trust-Funds",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2029",
+          "committees": [
+            "Commissioners of Trust Funds"
+          ],
+          "background": "Daniel Burns is Chair of the Needham Commissioners of Trust Funds, re-elected in the April 14, 2026 Annual Town Election with 4,091 votes. The three-member elected board manages and oversees the town's trust funds.",
+          "backgroundFull": "Daniel Burns serves as Chair of the Needham Commissioners of Trust Funds and was re-elected on April 14, 2026, receiving 4,091 votes uncontested. His new term expires in 2029.\n\nThe three-member board is elected to three-year staggered terms and is responsible for managing and overseeing the town's trust funds. If a vacancy arises, the Select Board fills the seat.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Commissioners of Trust Funds \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1105/Commissioners-of-Trust-Funds"
+            }
+          ]
+        },
+        {
+          "name": "Julia Satti Cosentino",
+          "title": "Commissioner of Trust Funds \u2014 Vice Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "finance@needhamma.gov",
+          "website": "https://www.needhamma.gov/1105/Commissioners-of-Trust-Funds",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": null,
+          "committees": [
+            "Commissioners of Trust Funds"
+          ],
+          "background": "Julia Satti Cosentino is Vice Chair of the Needham Commissioners of Trust Funds, the three-member elected board that manages and oversees the town's trust funds.",
+          "backgroundFull": "Julia Satti Cosentino serves as Vice Chair of the Needham Commissioners of Trust Funds. The three-member elected board manages and oversees all of Needham's trust funds, meeting monthly.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Commissioners of Trust Funds \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1105/Commissioners-of-Trust-Funds"
+            }
+          ]
+        },
+        {
+          "name": "Andrew Hopkin",
+          "title": "Commissioner of Trust Funds \u2014 Secretary",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "finance@needhamma.gov",
+          "website": "https://www.needhamma.gov/1105/Commissioners-of-Trust-Funds",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": null,
+          "committees": [
+            "Commissioners of Trust Funds"
+          ],
+          "background": "Andrew Hopkin is Secretary of the Needham Commissioners of Trust Funds, the three-member elected board that manages and oversees the town's trust funds.",
+          "backgroundFull": "Andrew Hopkin serves as Secretary of the Needham Commissioners of Trust Funds. The three-member elected board manages Needham's trust funds, meeting monthly. Vacancies are filled by the Select Board.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Commissioners of Trust Funds \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1105/Commissioners-of-Trust-Funds"
+            }
+          ]
+        },
+        {
+          "name": "Jim Flanagan",
+          "title": "Housing Authority Commissioner \u2014 Vice Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 444-3011",
+          "email": "office@needhamhousing.org",
+          "website": "https://www.needhamhousing.org",
+          "office": "21 Highland Circle, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2029",
+          "committees": [
+            "Needham Housing Authority"
+          ],
+          "background": "Jim Flanagan is Vice Chair of the Needham Housing Authority (NHA), elected by Needham voters. His term expires April 2029. The NHA provides affordable housing to seniors, people with disabilities, and families, managing 436 units across federal and state programs.",
+          "backgroundFull": "Jim Flanagan serves as Vice Chair of the Needham Housing Authority (NHA), having been elected by Needham voters. His term expires April 9, 2029.\n\nThe NHA is governed by a five-member Board of Commissioners. Three are elected by Needham voters, one is a tenant appointed by the Select Board, and one is appointed by the Governor. The NHA owns and manages 436 affordable housing units under state and federal programs, serving seniors, people with disabilities, and families who meet income requirements.\n\nOffice hours: Monday\u2013Thursday 7:30 a.m.\u20134:00 p.m., Friday 7:30 a.m.\u20131:00 p.m.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Housing Authority \u2014 needhamhousing.org",
+              "url": "https://www.needhamhousing.org"
+            }
+          ]
+        },
+        {
+          "name": "Amanda Berman",
+          "title": "Housing Authority Commissioner \u2014 Treasurer",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 444-3011",
+          "email": "office@needhamhousing.org",
+          "website": "https://www.needhamhousing.org",
+          "office": "21 Highland Circle, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2028",
+          "committees": [
+            "Needham Housing Authority"
+          ],
+          "background": "Amanda Berman is Treasurer of the Needham Housing Authority, re-elected by Needham voters in the April 14, 2026 Annual Town Election with 4,155 votes. The NHA manages 436 affordable housing units for seniors, disabled residents, and families.",
+          "backgroundFull": "Amanda Berman serves as Treasurer of the Needham Housing Authority (NHA) and was re-elected by Needham voters on April 14, 2026, receiving 4,155 votes. Her new two-year term expires in April 2028.\n\nThe NHA manages 436 affordable housing units under state and federal programs, serving seniors, people with disabilities, and income-qualifying families. The Board of Commissioners consists of three elected members, one tenant commissioner (Select Board appointed), and one Governor's appointee.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Housing Authority \u2014 needhamhousing.org",
+              "url": "https://www.needhamhousing.org"
+            }
+          ]
+        },
+        {
+          "name": "Geoff Engler",
+          "title": "Housing Authority Commissioner",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 444-3011",
+          "email": "office@needhamhousing.org",
+          "website": "https://www.needhamhousing.org",
+          "office": "21 Highland Circle, Needham, MA 02494",
+          "since": null,
+          "nextElection": "2030",
+          "committees": [
+            "Needham Housing Authority"
+          ],
+          "background": "Geoff Engler is a Commissioner of the Needham Housing Authority, elected by Needham voters. His term expires April 2030. The NHA manages 436 affordable housing units for seniors, disabled residents, and families.",
+          "backgroundFull": "Geoff Engler serves as a Commissioner of the Needham Housing Authority (NHA), having been elected by Needham voters. His term expires April 10, 2030.\n\nThe NHA manages 436 affordable housing units under state and federal programs, serving seniors, people with disabilities, and income-qualifying families.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Housing Authority \u2014 needhamhousing.org",
+              "url": "https://www.needhamhousing.org"
+            }
+          ]
+        },
+        {
+          "name": "Michael K. Fee",
+          "title": "Town Moderator",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 455-7500",
+          "email": "townclerk@needhamma.gov",
+          "website": "https://www.needhamma.gov/1221/Moderator",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": null,
+          "committees": [
+            "Town Meeting"
+          ],
+          "background": "Michael K. Fee is the Needham Town Moderator, elected by voters to a three-year term. The Moderator presides over Needham's Annual and Special Town Meetings \u2014 the town's primary legislative body \u2014 ensuring fair and efficient governance under Massachusetts law and the Town Charter.",
+          "backgroundFull": "Michael K. Fee serves as Town Moderator of Needham, elected by residents to a three-year term.\n\nUnder Massachusetts law and the Needham Town Charter, Town Meeting is the town's primary legislative body \u2014 a 'citizen legislature' where residents vote on the town budget, zoning bylaws, bonding, and major policy decisions. The Moderator presides over all Annual and Special Town Meetings, maintaining order, managing debate, and ensuring votes are conducted fairly and in accordance with parliamentary procedure.\n\nTown Meeting has final authority over all town matters, including:\n- Annual town budget (schools, public works, public safety)\n- Approval of public facilities and infrastructure spending\n- Zoning and by-law changes\n- Issuance of bonds and town debt (requires two-thirds vote)\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Town Moderator \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/1221/Moderator"
+            }
+          ]
+        },
+        {
+          "name": "Heidi Frail",
+          "title": "Select Board Member \u2014 Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(617) 312-0443",
+          "email": "HFrail@needhamma.gov",
+          "website": "https://www.needhamma.gov/488/Select-Board",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": null,
+          "nextElection": "2028",
+          "committees": [
+            "Needham Select Board"
+          ],
+          "background": "Heidi Frail is Chair of the Needham Select Board (April 2026\u20132027). The five-member elected board serves as Needham's chief executive body, overseeing all matters not specifically delegated to another officer or board, and appointing the Town Manager.",
+          "backgroundFull": "Heidi Frail serves as Chair of the Needham Select Board for the April 2026\u2013April 2027 term. Her elected term expires in 2028.\n\nThe Needham Select Board is the five-member chief executive body of town government. Members are elected by residents to staggered three-year terms and serve as the general supervisors of all town matters not specifically delegated by law to another officer or board. The Board appoints the Town Manager, who serves as the chief executive officer of day-to-day town operations.\n\nSelect Board meetings are held on the second and fourth Tuesday of each month at 6:00 p.m. in the Select Board Chambers, Town Hall, 1471 Highland Avenue. Meetings begin with an opportunity for public comment.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Select Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/488/Select-Board"
+            },
+            {
+              "label": "Meet the Select Board 2026\u20132027 \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/DocumentCenter/View/23813/Meet-the-Select-Board-2026-2027"
+            }
+          ],
+          "photo": "HeidiFrail.jpeg"
+        },
+        {
+          "name": "Joshua Levy",
+          "title": "Select Board Member \u2014 Vice Chair",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 343-1242",
+          "email": "jlevy@needhamma.gov",
+          "website": "https://www.selectjoshualevy.com/",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": "2024",
+          "nextElection": "2027",
+          "committees": [
+            "Needham Select Board"
+          ],
+          "background": "Joshua Levy is Vice Chair of the Needham Select Board, first elected in April 2024. A lifelong Needham resident and K-12 Needham Public Schools graduate, he served 12 years as a Town Meeting member and 5 years on the Finance Committee (as chair). He works as an analytical consultant in healthcare and focuses on housing, flooding infrastructure, school buildings, street safety, and transparency.",
+          "backgroundFull": "Joshua Levy is Vice Chair of the Needham Select Board, serving a term expiring in 2027. He was first elected in April 2024.\n\nLevy grew up in Needham and attended Needham Public Schools from kindergarten through 12th grade. He and his wife are raising their family in Needham. For over a decade he contributed to town governance as an elected Town Meeting member (12 years) and as an appointed member of the Finance Committee (5 years), where he served as chair.\n\nProfessionally, Levy is an analytical consultant facilitating patient access to medicines across the US healthcare system.\n\nHis stated priorities on the Select Board include increasing the supply and variety of housing to make Needham more accessible to people of all ages; improving drainage infrastructure to reduce flooding impacts while protecting water quality; rebuilding the aging Pollard and Mitchell schools in a cost-effective and timely manner; improving walking and biking accessibility while reducing motor vehicle collisions; and promoting transparency in government operations and resident engagement.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Select Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/488/Select-Board"
+            },
+            {
+              "label": "Meet the Select Board 2026\u20132027 \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/DocumentCenter/View/23813/Meet-the-Select-Board-2026-2027"
+            },
+            {
+              "label": "Joshua Levy for Select Board \u2014 selectjoshualevy.com",
+              "url": "https://www.selectjoshualevy.com/about"
+            }
+          ],
+          "photo": "JoshuaLevy.jpeg"
+        },
+        {
+          "name": "Kevin Keane",
+          "title": "Select Board Member \u2014 Clerk",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(617) 775-7940",
+          "email": "kkeane@needhamma.gov",
+          "website": "https://www.needhamma.gov/488/Select-Board",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": "2021",
+          "nextElection": "2027",
+          "committees": [
+            "Needham Select Board"
+          ],
+          "background": "Kevin Keane is Clerk of the Needham Select Board, first elected in a 2021 special election to fill the remainder of Lakshmi Balachandra's term. His elected term expires in 2027. He has focused on housing affordability, school buildings, pedestrian safety, and stormwater management.",
+          "backgroundFull": "Kevin Keane serves as Clerk of the Needham Select Board, with his term expiring in 2027. He was first elected in a 2021 special election to fill the remainder of Lakshmi Balachandra's term, and was re-elected to a full term in April 2024.\n\nKeane has focused on a range of Needham priorities including housing affordability and compliance with state MBTA Communities zoning law, completing major school building projects, pedestrian and cyclist safety improvements, and stormwater management following significant flooding events in Needham.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Select Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/488/Select-Board"
+            },
+            {
+              "label": "Meet the Select Board 2026\u20132027 \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/DocumentCenter/View/23813/Meet-the-Select-Board-2026-2027"
+            }
+          ],
+          "photo": "KevinKeane.jpeg"
+        },
+        {
+          "name": "Catherine Reid Dowd",
+          "title": "Select Board Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(617) 435-3623",
+          "email": "cdowd@needhamma.gov",
+          "website": "https://www.needhamma.gov/488/Select-Board",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": "2023",
+          "nextElection": "2029",
+          "committees": [
+            "Needham Select Board"
+          ],
+          "background": "Catherine Reid Dowd is a member of the Needham Select Board, re-elected in the April 14, 2026 Annual Town Election with 4,167 votes. First elected in 2023, she is a government and history teacher at Needham High School and a graduate of Northeastern University School of Law. She is beginning a two-year Massachusetts Attorney General fellowship starting fall 2026.",
+          "backgroundFull": "Catherine Reid Dowd is a member of the Needham Select Board, re-elected on April 14, 2026, receiving 4,167 votes. Her new term expires in 2029. She was first elected in 2023.\n\nDowd is a government and history teacher at Needham High School and a Town Meeting member. She graduated from Northeastern University School of Law in spring 2026 and has been selected as one of seven participants in the Massachusetts Attorney General's Stephanie Lovell Honors Program \u2014 a two-year fellowship beginning in fall 2026 during which she will rotate through the AG office's six core bureaus.\n\nOn the Select Board, Dowd has focused on downtown revitalization, school planning and facilities, open space preservation, and housing development. She previously served as Vice Chair before stepping back from that role following her re-election.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Select Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/488/Select-Board"
+            },
+            {
+              "label": "Meet the Select Board 2026\u20132027 \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/DocumentCenter/View/23813/Meet-the-Select-Board-2026-2027"
+            }
+          ],
+          "photo": "CatherineReidDowd.jpeg"
+        },
+        {
+          "name": "Bill Dermody",
+          "title": "Select Board Member",
+          "level": "local",
+          "city": "Needham",
+          "phone": "(781) 910-0876",
+          "email": "wdermody@needhamma.gov",
+          "website": "https://www.needhamma.gov/488/Select-Board",
+          "office": "Town Hall, 1471 Highland Avenue, Needham, MA 02492",
+          "since": "2026",
+          "nextElection": "2029",
+          "committees": [
+            "Needham Select Board"
+          ],
+          "background": "Bill Dermody is a member of the Needham Select Board, elected in the April 14, 2026 Annual Town Election with 4,411 votes \u2014 the highest vote total in the race. His three-year term expires in 2029.",
+          "backgroundFull": "Bill Dermody was elected to the Needham Select Board on April 14, 2026, receiving 4,411 votes \u2014 the highest total of any candidate in the race. His three-year term expires in 2029.\n\nThe Needham Select Board is the five-member chief executive body of town government, overseeing all matters not specifically delegated by law to another board or officer, and appointing the Town Manager.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Needham Select Board \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/488/Select-Board"
+            },
+            {
+              "label": "Meet the Select Board 2026\u20132027 \u2014 needhamma.gov",
+              "url": "https://www.needhamma.gov/DocumentCenter/View/23813/Meet-the-Select-Board-2026-2027"
+            }
+          ],
+          "photo": "BillDermody.jpeg"
+        }
+      ]
     },
     {
       "id": "ma-05",
@@ -1128,7 +1947,7 @@
           "office": "610 Main Street, Waltham, MA 02452",
           "since": "2017",
           "nextElection": "2027",
-          "photo": "https://www.city.waltham.ma.us/sites/g/files/vyhlif6861/f/styles/news_image_600x400/public/uploads/cathyann_harris.jpg",
+          "photo": "https://www.wcac.org/images/Jack_Koutoujian_Plans_Harris.jpg",
           "committees": [
             "Ordinances and Rules (Chair)",
             "Economic & Community Development"
@@ -1153,7 +1972,7 @@
           "office": "610 Main Street, Waltham, MA 02452",
           "since": "2023",
           "nextElection": "2027",
-          "photo": "https://www.city.waltham.ma.us/sites/g/files/vyhlif6861/f/styles/news_image_600x400/public/uploads/robert_logan.jpg",
+          "photo": "https://d2iou6x4qarbh6.cloudfront.net/wp-content/uploads/2025/10/25202606/Robert-Logan.jpg",
           "committees": [
             "Council President",
             "Ordinances & Rules",
@@ -1449,16 +2268,8 @@
           "backgroundFull": "The Quincy City Council is the legislative body of Quincy, Massachusetts. It consists of 9 members: 6 ward councilors (one for each of Quincy's six wards \u2014 Ward 1 through Ward 6) and 3 councilors-at-large who represent the entire city. All members are elected to two-year terms.\n\nThe City Council works alongside Mayor Thomas Koch to govern Quincy. The Council's responsibilities include adopting the annual municipal budget, enacting local ordinances and zoning changes, approving major contracts and expenditures, and confirming certain mayoral appointments. The Council also holds regular public hearings on zoning variance requests and development projects.\n\nQuincy's six wards cover distinct geographic areas of the city: Ward 1 (North Quincy, Wollaston), Ward 2 (Quincy Center, Merrymount), Ward 3 (Quincy Point, Marina Bay area), Ward 4 (West Quincy, Squantum), Ward 5 (South Quincy, Germantown), and Ward 6 (Montclair, Adams Shore, Atlantic area).\n\nCity Council meetings are held at Quincy City Hall, 1305 Hancock Street, and are open to the public. Residents may address the Council during public comment periods. To contact your ward councilor or an at-large councilor, visit the City of Quincy website at quincyma.gov or call City Hall at 617-376-1000.",
           "sources": [
             {
-              "label": "City of Quincy \u2014 City Council Official Page",
+              "label": "Quincy City Council \u2014 quincyma.gov",
               "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
-            },
-            {
-              "label": "WBUR: Koch allies suffer big council election losses (Nov 2025)",
-              "url": "https://www.wbur.org/news/2025/11/05/quincy-council-incumbent-losses-koch-referendum"
-            },
-            {
-              "label": "WATD: Voters oust four incumbent Quincy councilors (Nov 2025)",
-              "url": "https://959watd.com/blog/2025/11/four-incumbent-quincy-councilors-ousted/"
             }
           ],
           "photo": "https://www.crwflags.com/fotw/images/u/us-maqnc.gif"
@@ -1529,6 +2340,378 @@
             }
           ],
           "photo": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Daniel_J._Hunt.jpg"
+        },
+        {
+          "name": "Noel T. DiBona",
+          "title": "Councillor-at-Large",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1359",
+          "email": "ndibona@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/councillor_at_large_(1).php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2016",
+          "nextElection": "2025",
+          "photo": "https://www.facebook.com/photo/?fbid=352910943513067&set=a.352910936846401",
+          "committees": [
+            "Quincy City Council"
+          ],
+          "background": "Noel T. DiBona is a Councillor-at-Large on the Quincy City Council and the longest-serving current member. A lifelong Quincy resident, he ran the family landscaping business for 26 years, served on the School Committee from 2013 and on the council since 2016, and served as Council President in 2022 and 2023. He has focused on downtown revitalization, responsible development, traffic and parking, affordability, and schools.",
+          "backgroundFull": "Noel DiBona is a lifelong Quincy resident who graduated from Quincy High School in 1993 before earning an Associate's degree from Quincy College and a Bachelor's degree in Sociology from UMass Boston. He and his wife Niamh are raising three children who all attend Quincy Public Schools.\n\nHe ran the family landscaping and snow removal business, Russ DiBona & Son, for over 26 years. He also worked for the Norfolk County Sheriff's Office \u2014 first helping seniors prevent scams and fraud, then coordinating re-entry programs for inmates \u2014 and later served as Director of Administrative Services at the Norfolk County Registry of Deeds. He currently works as an insurance consultant.\n\nNoel began his public service career on the Quincy School Committee in 2013, then has served as a Councillor-at-Large since 2016 \u2014 the longest-serving current council member. He served as Council President in 2022 and 2023.\n\nHis stated priorities include downtown quality of life and the transformation of Quincy Center; responsible development opposing overdevelopment without adequate affordable housing and parking; addressing traffic congestion and parking citywide; ensuring developments include affordable and workforce housing; and school advocacy as a former School Committee member and QPS parent.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/councillor_at_large_(1).php"
+            }
+          ]
+        },
+        {
+          "name": "Anne Mahoney",
+          "title": "Councillor-at-Large \u2014 Council President",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1359",
+          "email": "amahoney@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/councillor_at_large_(2).php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2018",
+          "nextElection": "2025",
+          "photo": "https://images.squarespace-cdn.com/content/v1/6248bf5f1e2baa518da43336/1efdec1f-5ce4-445f-afef-ea2985dacf54/AnneMahoney_headshot_color.jpg?format=300w",
+          "committees": [
+            "Quincy City Council \u2014 President"
+          ],
+          "background": "Anne Mahoney is a Councillor-at-Large and Council President of the Quincy City Council. A lifelong Quincy resident, she earned a Bachelor's in Finance from Suffolk University and built a career in marketing, banking, and strategy. She served on the School Committee from 2006 to 2018 \u2014 overseeing a $90 million school budget \u2014 and as a Councillor-at-Large from 2018 to 2024 before being re-elected in 2025. She has focused on fiscal accountability, managing the city's $1.6 billion debt, balanced development, and restoring public trust.",
+          "backgroundFull": "Anne Mahoney is a lifelong Quincy resident and Council President of the Quincy City Council. She graduated from Quincy High School, earned a Bachelor's degree in Finance from Suffolk University, and built a career in marketing, banking, and business strategy at Citizens Bank, Century Bank, Santander Bank, and several private firms. She co-founded Cyclone Design, Inc. and hosted a community podcast called City Limits.\n\nAnne has served Quincy in elected office for over 18 years \u2014 first as a School Committee member from 2006 to 2018, where she helped oversee a $90 million school budget and chaired the Budget, Finance, and Special Education subcommittees \u2014 then as a Councillor-at-Large from 2018 to 2024. She was re-elected in 2025 and currently serves as Council President.\n\nHer stated priorities include fiscal accountability and independent oversight; managing the city's $1.6 billion debt through regular public reporting and responsible borrowing; balanced development tied to a citywide master plan; restoring public trust by requiring public hearings on major decisions; and communication through her City Limits podcast, neighborhood listening sessions, and social media.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/councillor_at_large_(2).php"
+            }
+          ]
+        },
+        {
+          "name": "Ziqiang Yuan",
+          "title": "Councillor-at-Large",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1358",
+          "email": "zyuan@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/councillor_at_large_(3).php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2025",
+          "nextElection": "2027",
+          "photo": "https://images.squarespace-cdn.com/content/v1/6248bf5f1e2baa518da43336/0e418e39-f4ce-467c-ae82-fc150248effe/headshot+nut+island+-+Ziqiang+Yuan.png?format=300w",
+          "committees": [
+            "Quincy City Council"
+          ],
+          "background": "Ziqiang \"Susan\" Yuan is a Councillor-at-Large on the Quincy City Council, first elected in 2025. Born and raised in China, she earned a Ph.D. in genetics and came to the US in 1999 for postdoctoral research at the University of Vermont. She is the only foreign-born candidate to have won elected office in Quincy in recent memory. She has focused on transparency, fiscal responsibility, fair pay, and civic engagement.",
+          "backgroundFull": "Ziqiang \"Susan\" Yuan was born and raised in a working-class family in China, earning a Ph.D. in genetics before receiving a scholarship to come to the United States in 1999 for postdoctoral research at the University of Vermont. She met her husband Heiko, a German software entrepreneur, at a Taiji club in Boston's Chinatown. They live in Houghs Neck.\n\nAfter eight years in academic research at UVM and Dartmouth, Susan built experience across diverse fields \u2014 cooking meals at a nonprofit, promoting Asian culture through publishing, early childhood education, public service, and most recently as a medical assistant at Action Medicine in Braintree. She became civically active after the council approved large pay raises for the mayor and themselves without public input, helping lead the campaign to oppose those raises. She is active in WeVoters, A Just Quincy, and the Quincy Badminton Club, and ran as an Independent \u2014 the only foreign-born candidate to win elected office in Quincy in recent memory.\n\nHer stated priorities include transparency and public input on major decisions; stricter oversight of city finances, open bidding, regular audits, and public access to budget and contract data; fair pay for frontline city workers before top officials receive raises; proposing mayoral term limits; encouraging immigrant and first-time voters to participate; and opposing public spending on the $850,000 bronze statues at the public safety headquarters.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/councillor_at_large_(3).php"
+            }
+          ]
+        },
+        {
+          "name": "David Jacobs",
+          "title": "Ward 1 Councillor",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1351",
+          "email": "davidjacobs@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_1.php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2025",
+          "nextElection": "2027",
+          "photo": "",
+          "committees": [
+            "Quincy City Council \u2014 Ward 1"
+          ],
+          "background": "David Jacobs is the Ward 1 Councillor on the Quincy City Council, first elected in 2025. A lifelong Quincy resident and QPS graduate, he is a teacher with Boston Public Schools and former National Park Service Ranger. He lives in Ward 1 with his family and has focused on transparent government, community access, fiscal accountability, public housing, and schools.",
+          "backgroundFull": "David Jacobs is a lifelong Quincy resident and proud product of Quincy Public Schools. He and his family live in Ward One \u2014 the neighborhood he represents \u2014 where his children attend Atherton Hough Elementary and preschool.\n\nDavid has been a teacher with Boston Public Schools since 2012. He previously worked as a Park Ranger with the National Park Service at Adams National Historical Park, Badlands National Park, and Saugus Ironworks. He holds graduate certificates in Human Resources Management from Framingham State University and Special Education/Autism from Salem State College.\n\nBefore running for council, he served on the Houghs Neck Community Council for many years and was a longtime board member of the Quincy Band Boosters.\n\nHis stated priorities include transparent government where residents \u2014 not developers \u2014 come first; quarterly town halls, an online newsletter, and translation services; repealing the mayor's 79% raise and the council's 50% raise; ensuring public housing residents have stronger representation on the Quincy Housing Authority Board; and making sure school investments serve Ward One families.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_1.php"
+            }
+          ]
+        },
+        {
+          "name": "Richard C. Ash",
+          "title": "Ward 2 Councillor",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1352",
+          "email": "rcash@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_2.php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2025",
+          "nextElection": "2027",
+          "photo": "",
+          "committees": [
+            "Quincy City Council \u2014 Ward 2"
+          ],
+          "background": "Richard C. Ash is the Ward 2 Councillor on the Quincy City Council, first elected in 2025. A fifth-generation Quincy resident and Quincy Point native, he holds a B.S. in Finance and a law degree from Suffolk University and practices civil litigation, family law, and election law. He serves as President of the Ward 2 Civic Association and Quincy Pride, Inc., and is a Chamber of Commerce Ambassador.",
+          "backgroundFull": "Richard C. Ash is a fifth-generation Quincy resident and third-generation Quincy Point native. His great-grandfather worked at the Fore River Shipyard. He lives in a multi-family home in Quincy Point with his partner Mateus, his mother Abby, and his Aunt Tina.\n\nRichard attended Quincy Public Schools before earning a Bachelor of Science in Finance (cum laude) and his law degree from Suffolk University. He practices civil litigation, family law, and election law at Baker, Braverman & Barbadoro, P.C. in Quincy. He serves as President of both the Ward 2 Civic Association and Quincy Pride, Inc., is an Ambassador for the Quincy Chamber of Commerce, and was named a Quincy Dems COVID Hero in 2021 for helping seniors with groceries and prescriptions during the pandemic. He is also a Justice of the Peace and Notary Public.\n\nHis stated priorities include senior safety and security, particularly at 1000 Southern Artery and the Fore River Clubhouse; smart development protecting green spaces, beaches, and the neighborhood character of Quincy Point and Penn's Hill; affordable housing for multi-generational Quincy families; supporting businesses along the Washington Street Corridor; communication and transparency through quarterly community meetings; and celebrating the diversity of Ward 2.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_2.php"
+            }
+          ]
+        },
+        {
+          "name": "Walter Hubley",
+          "title": "Ward 3 Councillor",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1353",
+          "email": "whubley@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_3.php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2025",
+          "nextElection": "2027",
+          "photo": "https://www.patriotledger.com/gcdn/authoring/authoring-images/2025/04/17/NPAL/83143674007-041725-gd-qui-hubley-01.JPG",
+          "committees": [
+            "Quincy City Council \u2014 Ward 3"
+          ],
+          "background": "Walter Hubley is the Ward 3 Councillor on the Quincy City Council, first elected in 2025. A Quincy native and North Quincy High graduate, he has led the Wollaston Hill Neighborhood Association for 15 years and created PorchFest Quincy. He was VP of Strategic Technology at Atlantic Broadband, CEO at the Woodward School for Girls, and is currently Senior IT Program Manager at The Community Builders, one of the country's leading nonprofit affordable housing organizations.",
+          "backgroundFull": "Walter Hubley grew up on Wollaston Hill and still lives in his family home there with his wife Kathryn, a Quincy School Committee member. He is the adopted son of the late Edgar and Ruth Hubley, who fostered nearly 40 children over 30 years. Walter and Kathryn became foster parents during COVID-19 and later hosted international students from Hong Kong, China, Vietnam, and Costa Rica.\n\nWalter attended Quincy Public Schools \u2014 Wollaston Elementary, Central Middle School, and North Quincy High (Class of 1989). He spent over a decade as Vice President of Strategic Technology at Atlantic Broadband, then served as CEO and Head of School at the Woodward School for Girls from 2016 to 2018. He currently works as a Senior IT Program Manager at The Community Builders, one of the country's leading nonprofit affordable housing organizations.\n\nIn the community, Walter co-founded the Wollaston Hill Neighborhood Association \u2014 leading it for 15 years \u2014 created PorchFest Quincy, and secured a $144,000 Community Preservation Act grant to restore Safford Park, which reopened in 2015.\n\nHis stated priorities include Ward 3 residents first; government transparency and accountability; responsible development that respects neighborhood history and green spaces (including opposing a proposed Taco Bell drive-thru at the Newport Avenue Stop & Shop); and community building through events like PorchFest and neighborhood cookouts.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_3.php"
+            }
+          ]
+        },
+        {
+          "name": "Virginia Ryan",
+          "title": "Ward 4 Councillor",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1354",
+          "email": "vryan@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_4.php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2025",
+          "nextElection": "2027",
+          "photo": "https://www.patriotledger.com/gcdn/authoring/authoring-images/2025/10/23/NPAL/86856889007-img-5198-headshot-v-ryan-v-1-ps.jpg",
+          "committees": [
+            "Quincy City Council \u2014 Ward 4"
+          ],
+          "background": "Virginia Ryan is the Ward 4 Councillor on the Quincy City Council, first elected in 2025. Originally from Dorchester, she has lived in Quincy for over 20 years. She spent 25 years in accounting and benefits management at Gillette and Procter & Gamble. Active in WeVoters, Quincy Votes, and AJust Quincy, she has focused on transparency, community access, fiscal responsibility, and voter engagement.",
+          "backgroundFull": "Virginia Ryan has lived in Quincy for over 20 years, where she raised her two children. Originally from Dorchester, she attended public schools before studying Accounting at Quincy College, where she also volunteered as a literacy tutor.\n\nVirginia spent 25 years in accounting and benefits management at Gillette and Procter & Gamble, overseeing retirement plans, payroll, and employee benefits for thousands of workers. She later worked in healthcare administration and real estate.\n\nShe became more politically active after the 2016 national election and was inspired to run for local office after witnessing very low voter turnout in a 2023 Quincy special election. She is active in WeVoters, Quincy Votes, and AJust Quincy \u2014 three groups focused on increasing resident voices and voter registration.\n\nHer stated priorities include transparency and accountability in city government; quarterly town halls and public comment before council meetings; repealing the mayor's 79% raise, the council's 50% raise, and automatic annual raises; and civic engagement through her work in voter registration.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_4.php"
+            }
+          ]
+        },
+        {
+          "name": "Maggie McKee",
+          "title": "Ward 5 Councillor",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1355",
+          "email": "mmckee@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_5.php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2025",
+          "nextElection": "2027",
+          "photo": "https://greenvoterguidema.com/wp-content/uploads/maggiephoto-e1759159204691-768x630.jpg",
+          "committees": [
+            "Quincy City Council \u2014 Ward 5"
+          ],
+          "background": "Maggie McKee is the Ward 5 Councillor on the Quincy City Council, first elected in 2025. She studied philosophy and physics at Grinnell College, earned a graduate certificate in science writing from UC Santa Cruz, and worked as an award-winning science journalist. She co-founded Quincy Votes! in 2021 and the Quincy Tree Alliance, and in 2024 helped organize the 6,000-signature campaign against the mayor's and council's pay raises. She has been endorsed by the Environmental League of Massachusetts Action Fund.",
+          "backgroundFull": "Maggie McKee was born in Washington, DC, and raised by her late mother Kitty. She studied philosophy and physics at Grinnell College, taught English in Vietnam and Japan, and earned a graduate certificate in science writing from UC Santa Cruz. She worked as a science journalist covering climate change and space before moving to Wollaston with her husband in 2009. She has lived in Quincy for 15 years and is raising her son here.\n\nMaggie served on the board of the Quincy Climate Action Network, chaired a city task force on composting, and founded the Quincy Tree Alliance to protect trees that cool the air and prevent flooding. In 2021 she co-founded Quincy Votes! to fight low voter turnout. In 2024, she helped organize a campaign that gathered 6,000 signatures in 20 days against the mayor's 79% and the council's 50% raises \u2014 forcing politicians to delay them.\n\nShe has been endorsed by the Environmental League of Massachusetts Action Fund, 350 Mass Action, and named a 'rising star' by Mass Alliance.\n\nHer stated priorities include government transparency with monthly public hearings and conflict-of-interest disclosure; quarterly town halls and translation services; repealing the mayor's and council's raises; protecting Quincy's tree canopy, composting, and clean energy; affordable housing serving everyday residents; and civic engagement through Quincy Votes!\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_5.php"
+            }
+          ]
+        },
+        {
+          "name": "Deborah Riley",
+          "title": "Ward 6 Councillor",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 376-1356",
+          "email": "driley@quincyma.gov",
+          "website": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_6.php",
+          "office": "Historic City Hall, 1305 Hancock Street, Quincy, MA 02169",
+          "since": "2025",
+          "nextElection": "2027",
+          "photo": "",
+          "committees": [
+            "Quincy City Council \u2014 Ward 6"
+          ],
+          "background": "Deborah Riley is the Ward 6 Councillor on the Quincy City Council, first elected in 2025 after previously running in 2023. A UMass Lowell graduate in Information Systems, she spent 10 years as a quality assurance engineer at Fidelity Investments before becoming a licensed real estate agent. She has volunteered extensively with the Squantum School PTO, Quincy Lions, Rotary, and youth hockey, and founded the Promposal college financial literacy program.",
+          "backgroundFull": "Deborah Riley was born in Billerica and has lived in Quincy for over 35 years, raising her two sons here \u2014 one of whom is a Quincy police officer. She is a UMass Lowell graduate with a bachelor's degree in Information Systems and spent 10 years as a quality assurance engineer at Fidelity Investments before becoming a licensed real estate agent. She is a certified yoga instructor and founded the 'Promposal' college financial literacy program.\n\nShe has volunteered extensively \u2014 serving as President and Treasurer of the Squantum School PTO, as well as with Star of the Sea Church, St. Ann's Church, Quincy Youth Hockey, and the Quincy Lions and Rotary Clubs. She ran for Ward 6 in 2023 before winning the seat in 2025.\n\nHer stated priorities include communication and transparency with mailed newsletters and resident meetings; fiscal oversight and auditing, including of the Community Preservation Fund and the bronze statues at the public safety headquarters; housing including property tax credits for owner-occupied homes and incentives for 55+ housing; expanding the seasonal Squantum ferry and road/transit project updates; reviewing the Granite Links Golf Course lease extension with an independent real estate specialist; protecting Quincy's 27 miles of beaches; and advocating for Long Island Bridge alternatives for mental health access.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy City Council \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/index.php"
+            },
+            {
+              "label": "Official Profile \u2014 quincyma.gov",
+              "url": "https://www.quincyma.gov/government/elected_officials/city_council/city_councillors/ward_6.php"
+            }
+          ]
+        },
+        {
+          "name": "Paul L. Bregoli",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 984-8755",
+          "email": "paulbregoli@quincypublicschools.com",
+          "website": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019",
+          "office": "34 Coddington Street, Quincy, MA 02169",
+          "since": null,
+          "nextElection": null,
+          "photo": "",
+          "committees": [
+            "Quincy School Committee"
+          ],
+          "background": "Paul L. Bregoli is an elected member of the Quincy School Committee, the seven-member body that sets policy, hires and evaluates the Superintendent, and oversees the Quincy Public Schools budget. The Mayor chairs the committee; members are elected citywide to four-year terms.",
+          "backgroundFull": "Paul L. Bregoli serves on the Quincy School Committee, the seven-member body governing Quincy Public Schools. Members are elected citywide to four-year terms. The committee sets educational policy, hires and evaluates the Superintendent, and oversees the school budget. The Mayor serves as Chair.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy School Committee Members \u2014 quincypublicschools.com",
+              "url": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019"
+            }
+          ]
+        },
+        {
+          "name": "Tina M. Cahill",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 984-8755",
+          "email": "tinacahill@quincypublicschools.com",
+          "website": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019",
+          "office": "34 Coddington Street, Quincy, MA 02169",
+          "since": null,
+          "nextElection": null,
+          "photo": "",
+          "committees": [
+            "Quincy School Committee"
+          ],
+          "background": "Tina M. Cahill is an elected member of the Quincy School Committee, the seven-member body that sets policy, hires and evaluates the Superintendent, and oversees the Quincy Public Schools budget.",
+          "backgroundFull": "Tina M. Cahill serves on the Quincy School Committee, the seven-member elected body governing Quincy Public Schools. Members are elected citywide to four-year terms and are responsible for setting educational policy, hiring and evaluating the Superintendent, and overseeing the school budget.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy School Committee Members \u2014 quincypublicschools.com",
+              "url": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019"
+            }
+          ]
+        },
+        {
+          "name": "Kate Campbell",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 984-8755",
+          "email": "marykatecampbell@quincypublicschools.com",
+          "website": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019",
+          "office": "34 Coddington Street, Quincy, MA 02169",
+          "since": null,
+          "nextElection": null,
+          "photo": "",
+          "committees": [
+            "Quincy School Committee"
+          ],
+          "background": "Kate Campbell is an elected member of the Quincy School Committee, the seven-member body that sets policy, hires and evaluates the Superintendent, and oversees the Quincy Public Schools budget.",
+          "backgroundFull": "Kate Campbell serves on the Quincy School Committee, the seven-member elected body governing Quincy Public Schools. Members are elected citywide to four-year terms and are responsible for setting educational policy, hiring and evaluating the Superintendent, and overseeing the school budget.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy School Committee Members \u2014 quincypublicschools.com",
+              "url": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019"
+            }
+          ]
+        },
+        {
+          "name": "Tom Leung",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 984-8755",
+          "email": "tommyleung@quincypublicschools.com",
+          "website": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019",
+          "office": "34 Coddington Street, Quincy, MA 02169",
+          "since": null,
+          "nextElection": null,
+          "photo": "",
+          "committees": [
+            "Quincy School Committee"
+          ],
+          "background": "Tom Leung is an elected member of the Quincy School Committee, the seven-member body that sets policy, hires and evaluates the Superintendent, and oversees the Quincy Public Schools budget.",
+          "backgroundFull": "Tom Leung serves on the Quincy School Committee, the seven-member elected body governing Quincy Public Schools. Members are elected citywide to four-year terms and are responsible for setting educational policy, hiring and evaluating the Superintendent, and overseeing the school budget.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy School Committee Members \u2014 quincypublicschools.com",
+              "url": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019"
+            }
+          ]
+        },
+        {
+          "name": "Courtney C. Perdios",
+          "title": "School Committee Member",
+          "level": "local",
+          "city": "Quincy",
+          "phone": "(617) 984-8755",
+          "email": "courtneyperdios@quincypublicschools.com",
+          "website": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019",
+          "office": "34 Coddington Street, Quincy, MA 02169",
+          "since": null,
+          "nextElection": null,
+          "photo": "",
+          "committees": [
+            "Quincy School Committee"
+          ],
+          "background": "Courtney C. Perdios is an elected member of the Quincy School Committee, the seven-member body that sets policy, hires and evaluates the Superintendent, and oversees the Quincy Public Schools budget.",
+          "backgroundFull": "Courtney C. Perdios serves on the Quincy School Committee, the seven-member elected body governing Quincy Public Schools. Members are elected citywide to four-year terms and are responsible for setting educational policy, hiring and evaluating the Superintendent, and overseeing the school budget.\n\nNote: This profile is informational. It does not represent an endorsement.",
+          "sources": [
+            {
+              "label": "Quincy School Committee Members \u2014 quincypublicschools.com",
+              "url": "https://www.quincypublicschools.com/school_committee/quincy_school_committee_members_2018-2019"
+            }
+          ]
         }
       ]
     },

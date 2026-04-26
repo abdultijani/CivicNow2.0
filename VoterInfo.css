@@ -1589,3 +1589,60 @@
   .vi-cd-num { font-size: 0.95rem; }
   .vi-cd-unit { min-width: 26px; }
 }
+
+/* ── Election Results Card ── */
+.vi-results-section-label {
+  font-size: .68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--vi-muted);
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--vi-border);
+}
+.vi-result-row--elected .vi-candidate-name {
+  font-weight: 700;
+}
+.vi-result-check {
+  font-size: .8rem;
+  flex-shrink: 0;
+  color: #16a34a;
+  width: 14px;
+}
+.vi-result-votes {
+  margin-left: auto;
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--vi-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ── Results card tab switcher ── */
+.vi-results-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.vi-rtab {
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1.5px solid var(--vi-border);
+  background: transparent;
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--vi-muted);
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+.vi-rtab--active {
+  background: var(--vi-navy);
+  color: #fff;
+  border-color: var(--vi-navy);
+}
+.vi-rtab:not(.vi-rtab--active):hover {
+  border-color: var(--vi-navy);
+  color: var(--vi-navy);
+}
