@@ -431,7 +431,8 @@
             }
           ],
           "totalVoters": 7453,
-          "type": "Annual Municipal Election"
+          "type": "Annual Municipal Election",
+          "officialResultsUrl": "https://www.city.waltham.ma.us/elections/pages/election-results#docaccess-16f1e27e0c6d343a8ba1ba08571e5844"
         },
         "nextLocalElection": {
           "date": "2027-11-02",
@@ -1805,7 +1806,8 @@
             }
           ],
           "totalVoters": 15852,
-          "type": "Annual Municipal Election"
+          "type": "Annual Municipal Election",
+          "officialResultsUrl": "https://www.quincyma.gov/departments/city_clerk/election/election_results.php#outer-9148"
         },
         "nextLocalElection": {
           "date": "2027-11-02",

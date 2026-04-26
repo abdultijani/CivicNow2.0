@@ -1294,7 +1294,7 @@ function renderElectionResults(muniKey, data) {
       (ballotHtml ? '<div id="' + tabIdB + '" class="vi-offices-list" style="display:none;">' + ballotHtml + '</div>' : '') +
 
       '<div style="margin-top:10px;font-size:.75rem;color:var(--vi-muted);">' +
-        '<a href="' + clerk.website + '" target="_blank" rel="noopener" class="vi-rc-link" style="margin:0;">Official results &#8594;</a>' +
+        '<a href="' + (rec.officialResultsUrl || clerk.website) + '" target="_blank" rel="noopener" class="vi-rc-link" style="margin:0;">Official results &#8594;</a>' +
       '</div>' +
     '</div>';
   }
