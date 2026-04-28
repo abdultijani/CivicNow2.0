@@ -1145,7 +1145,11 @@ function renderElectionResults(muniKey, data) {
       var bm = boardMembers[bmi];
       var repkey = 'local-add-ma-08-sharon-' + bm.idx;
       var profileUrl = 'FindReps.html?address=' + encodeURIComponent('Sharon, MA') + '&repkey=' + encodeURIComponent(repkey);
+      var bmPhoto = (window._repsPhotoMap && window._repsPhotoMap[repkey])
+        ? '<img src="' + window._repsPhotoMap[repkey] + '" alt="' + bm.name + '" class="vi-candidate-thumb" onerror="this.style.display=\'none\'">'
+        : '';
       memberRows += '<div class="vi-candidate-row">' +
+        bmPhoto +
         '<a href="' + profileUrl + '" class="vi-candidate-link" title="View ' + bm.name + '\'s full profile on Find Representatives">' +
           bm.name +
           ' <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:middle;opacity:.6"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
@@ -1186,14 +1190,18 @@ function renderElectionResults(muniKey, data) {
     // Helper: build a candidate name — link to FindReps if findRepsId exists
     var resultName = function(c, muted) {
       var style = muted ? ' style="opacity:.65;"' : '';
+      var photoHtml = '';
+      if (c.findRepsId && window._repsPhotoMap && window._repsPhotoMap[c.findRepsId]) {
+        photoHtml = '<img src="' + window._repsPhotoMap[c.findRepsId] + '" alt="' + c.name + '" class="vi-candidate-thumb" onerror="this.style.display=\'none\'">';
+      }
       if (c.findRepsId) {
         var url = 'FindReps.html?address=' + encodeURIComponent(muni.name + ', MA') + '&repkey=' + encodeURIComponent(c.findRepsId);
-        return '<a href="' + url + '" class="vi-candidate-link" title="View ' + c.name + '\'s full profile">' +
+        return photoHtml + '<a href="' + url + '" class="vi-candidate-link" title="View ' + c.name + '\'s full profile">' +
           c.name +
           ' <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align:middle;opacity:.6"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
           '</a>';
       }
-      return '<span class="vi-candidate-name"' + style + '>' + c.name + '</span>';
+      return photoHtml + '<span class="vi-candidate-name"' + style + '>' + c.name + '</span>';
     }
 
     var resultsHtml = '';
@@ -1258,8 +1266,11 @@ function renderElectionResults(muniKey, data) {
           var badge = bc.elected
             ? '<span class="vi-incumbent-badge" style="background:#e8f8f0;color:#16a34a;">Elected ✓</span>'
             : '<span style="font-size:.68rem;color:var(--vi-muted);padding:2px 7px;">Did not win</span>';
+          var bcPhoto = (bc.findRepsId && window._repsPhotoMap && window._repsPhotoMap[bc.findRepsId])
+            ? '<img src="' + window._repsPhotoMap[bc.findRepsId] + '" alt="' + bc.name + '" class="vi-candidate-thumb" onerror="this.style.display=\'none\'">'
+            : '';
           bRows += '<div class="vi-candidate-row">' +
-            (bc.findRepsId ? resultName(bc, false) : '<span class="vi-candidate-name"' + (bc.elected ? '' : ' style="opacity:.65;"') + '>' + bc.name + '</span>') +
+            (bc.findRepsId ? resultName(bc, false) : (bcPhoto + '<span class="vi-candidate-name"' + (bc.elected ? '' : ' style="opacity:.65;"') + '>' + bc.name + '</span>')) +
             badge +
             (bc.votes != null ? '<span class="vi-result-votes"' + (bc.elected ? '' : ' style="opacity:.65;"') + '>' + bc.votes.toLocaleString() + '</span>' : '') +
           '</div>';
