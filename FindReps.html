@@ -664,10 +664,10 @@ function openProfile(key) {
         var picker = document.createElement('div');
         picker.id = 'fr-email-picker';
         picker.style.cssText = 'position:absolute;z-index:9999;background:#fff;border:1px solid #dde3ed;border-radius:10px;box-shadow:0 8px 28px rgba(0,33,71,.18);min-width:190px;overflow:hidden;padding:4px 0;font-family:inherit;';
-        // Gmail: pass email raw — encodeURIComponent turns @ into %40 which Gmail ignores
-        var gmailUrl   = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + emailAddr;
-        // Outlook Web works for both personal (live.com) and work (office.com) accounts
-        var outlookUrl = 'https://outlook.live.com/mail/0/deeplink/compose?to=' + emailAddr;
+        // Gmail: u/0 targets first signed-in account, tf=1 forces compose window with To pre-filled
+        var gmailUrl   = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=' + emailAddr;
+        // Outlook: office.com works for both personal and work/school accounts when already signed in
+        var outlookUrl = 'https://outlook.office.com/mail/deeplink/compose?to=' + emailAddr;
         var options = [
           { label: '📧 Open in Gmail',        url: gmailUrl },
           { label: '📨 Open in Outlook Web',  url: outlookUrl },
