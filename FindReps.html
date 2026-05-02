@@ -683,7 +683,14 @@ function openProfile(key) {
             ev.stopPropagation();
             picker.remove();
             if (opt.url) {
-              window.open(opt.url, '_blank', 'noopener');
+              var a = document.createElement('a');
+              a.href = opt.url;
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.style.display = 'none';
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
             } else {
               navigator.clipboard.writeText(emailAddr).then(function() {
                 var orig = btn.innerHTML;
@@ -855,14 +862,17 @@ function openProfile(key) {
   const mapLink = document.getElementById('modalMapLink');
   mapLink.href = `https://www.google.com/maps/search/${encodeURIComponent(districtLabel + ' Massachusetts district')}`;
 
-  // Open
-  document.getElementById('profileModal').classList.add('open');
+  // Open — compensate for scrollbar width to prevent layout shift/flash
+  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
   document.body.style.overflow = 'hidden';
+  document.body.style.paddingRight = scrollBarWidth + 'px';
+  document.getElementById('profileModal').classList.add('open');
 }
 
 function closeModal() {
   document.getElementById('profileModal').classList.remove('open');
   document.body.style.overflow = '';
+  document.body.style.paddingRight = '';
 }
 
 function handleOverlayClick(e) {
