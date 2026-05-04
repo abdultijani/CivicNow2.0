@@ -1379,3 +1379,19 @@
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
+
+/* ── Coverage Disclaimer Notice ── */
+.fr-coverage-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: rgba(0,33,71,.04);
+  border: 1px solid rgba(0,33,71,.12);
+  border-left: 3px solid var(--fr-navy, #002147);
+  border-radius: 8px;
+  padding: 11px 14px;
+  margin: 16px 0 4px;
+  font-size: 0.82rem;
+  color: #4a5568;
+  line-height: 1.55;
+}
